@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-sarabun: var(--font-sarabun);
+
+  /* BPP Primary Colors */
+  --color-banpu-cyan: #6bbfb3;
+  --color-banpu-purple: #264997;
+  --color-banpu-grey: #939598;
+  --color-banpu-black: #1a2c3e;
+
+  /* BPP Teal Scale */
+  --color-banpu-cyan-20: #ccecf5;
+  --color-banpu-cyan-40: #99d9eb;
+  --color-banpu-cyan-60: #4dbee0;
+
+  /* BPP Navy Scale */
+  --color-banpu-purple-100: #d6e4ee;
+  --color-banpu-purple-300: #a0bed4;
+  --color-banpu-purple-500: #4d87a8;
+  --color-banpu-purple-700: #264997;
+
+  /* BPP Green (unchanged) */
+  --color-banpu-green-100: #97d5c9;
+  --color-banpu-green-300: #51aba1;
+  --color-banpu-green-500: #00b49d;
+  --color-banpu-green-700: #2e5f64;
+
+  /* Graphic Colors - Grey */
+  --color-banpu-grey-100: #d2d3d3;
+  --color-banpu-grey-300: #c0bfbf;
+  --color-banpu-grey-500: #939598;
+}
+
+@utility text-gradient-banpu {
+  background-image: linear-gradient(to right, #6bbfb3, #264997);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom Scrollbar for a sleek look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}

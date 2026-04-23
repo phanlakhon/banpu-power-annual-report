@@ -1,0 +1,37 @@
+{
+  "Menu": {
+    "highlight": "Highlights of the Year",
+    "performance": "Performance in the Past Year",
+    "board_report": "Board of Directors' Report",
+    "ceo_message": "Message from the CEO",
+    "part1": "Business Operation and Performance",
+    "part1_1": "Group Structure and Operations",
+    "part1_2": "Business Group Information",
+    "part1_3": "Market Conditions and Competition",
+    "part1_4": "Assets Used in Business Operations",
+    "part1_5": "Banpu Power Public Company Limited Group Structure",
+    "part1_6": "Subsidiaries, Associates and Joint Ventures",
+    "part1_7": "Major Shareholders",
+    "part1_8": "Debentures",
+    "part1_9": "Dividend Policy",
+    "part1_10": "Risk Management and Risk Factors",
+    "part1_11": "Driving Business for Sustainability",
+    "part1_12": "Management Discussion and Analysis",
+    "part1_13": "General and Other Important Information",
+    "part2": "Corporate Governance",
+    "part2_1": "Corporate Governance Policy",
+    "part2_2": "Corporate Governance Structure",
+    "part2_3": "Corporate Governance Performance Report",
+    "part2_4": "Internal Control and Related Party Transactions",
+    "part3": "Certification of Information Accuracy",
+    "part3_1": "Attachment 1: Board of Directors and Executives Details",
+    "part3_2": "Attachment 2: Directors of the Company, Subsidiaries, Associates and JVs",
+    "part3_3": "Attachment 3: Corporate Governance Policy and Business Ethics"
+  },
+  "Hero": {
+    "title": "Balanced Energy, Paving the Way Forward",
+    "power_plants": "Power Plants",
+    "megawatt": "Megawatt",
+    "project": "Project"
+  }
+}
