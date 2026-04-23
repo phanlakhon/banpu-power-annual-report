@@ -21,8 +21,10 @@ function renderSection(
     const t = (text: { th: string; en: string }) =>
         locale === "th" ? text.th : text.en;
 
+    let content: React.ReactNode = null;
+
     if (section.type === "text") {
-        return (
+        content = (
             <div className="mb-6 md:mb-8">
                 {section.title && (
                     <h3
@@ -37,10 +39,8 @@ function renderSection(
                 </p>
             </div>
         );
-    }
-
-    if (section.type === "highlights") {
-        return (
+    } else if (section.type === "highlights") {
+        content = (
             <div className="mb-6 md:mb-8">
                 {section.title && (
                     <h3
@@ -73,10 +73,8 @@ function renderSection(
                 </div>
             </div>
         );
-    }
-
-    if (section.type === "quote") {
-        return (
+    } else if (section.type === "quote") {
+        content = (
             <div className="mb-6 md:mb-8">
                 <blockquote
                     className="border-l-4 pl-4 md:pl-6 py-2 italic text-gray-800 text-sm md:text-base leading-relaxed"
@@ -94,10 +92,8 @@ function renderSection(
                 )}
             </div>
         );
-    }
-
-    if (section.type === "list") {
-        return (
+    } else if (section.type === "list") {
+        content = (
             <div className="mb-6 md:mb-8">
                 {section.title && (
                     <h3
@@ -122,10 +118,8 @@ function renderSection(
                 </ul>
             </div>
         );
-    }
-
-    if (section.type === "pdf_banner") {
-        return (
+    } else if (section.type === "pdf_banner") {
+        content = (
             <div className="w-full">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -139,12 +133,10 @@ function renderSection(
                 ))}
             </div>
         );
-    }
-
-    if (section.type === "pdf_row") {
+    } else if (section.type === "pdf_row") {
         const gapClasses = section.withGap ? "gap-6 sm:gap-[2%]" : "gap-6 sm:gap-0";
 
-        return (
+        content = (
             <div className={`flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ${gapClasses} my-8 sm:my-12 md:my-16 lg:my-20 px-8 sm:px-[6%]`}>
                 {section.items.map((item, idx) => {
                     return (
@@ -159,10 +151,8 @@ function renderSection(
                 })}
             </div>
         );
-    }
-
-    if (section.type === "pdf_page") {
-        return (
+    } else if (section.type === "pdf_page") {
+        content = (
             <div className="w-full relative" style={{ backgroundColor: section.backgroundColor || '#f5f9fb' }}>
                 {section.desktopFullImage && (
                     <div className="hidden sm:block w-full">
@@ -197,10 +187,8 @@ function renderSection(
                 )}
             </div>
         );
-    }
-
-    if (section.type === "pdf_table") {
-        return (
+    } else if (section.type === "pdf_table") {
+        content = (
             <div className="w-full px-4 sm:px-8 md:px-[2%] mb-10 md:mb-16">
                 <div className="overflow-x-auto pb-4 custom-scrollbar">
                     <table className="w-full min-w-[600px] xl:min-w-full text-left border-collapse border-t-2 border-b-2 border-banpu-purple">
@@ -272,30 +260,24 @@ function renderSection(
                 </div>
             </div>
         );
-    }
-
-    if (section.type === "pdf_title") {
-        return (
+    } else if (section.type === "pdf_title") {
+        content = (
             <div className="px-4 sm:px-8 md:px-[2%] py-6 sm:py-8 md:py-10">
                 <h2 className="text-2xl font-medium text-gradient-banpu leading-tight">
                     {t(section.text)}
                 </h2>
             </div>
         );
-    }
-
-    if (section.type === "pdf_sub_title") {
-        return (
+    } else if (section.type === "pdf_sub_title") {
+        content = (
             <div className="w-full text-center mt-8 mb-4">
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800">
                     {t(section.text)}
                 </h3>
             </div>
         );
-    }
-
-    if (section.type === "pdf_quote_block") {
-        return (
+    } else if (section.type === "pdf_quote_block") {
+        content = (
             <div className="w-full px-8 sm:px-[10%] py-8 md:py-12 flex flex-col items-center text-center relative mt-2 mb-6">
                 {/* Solid light blue container with rounded feel */}
                 <div className="absolute inset-0 bg-banpu-cyan-20 -z-10 rounded-2xl mx-4 sm:mx-8 md:mx-[2%]"></div>
@@ -331,10 +313,8 @@ function renderSection(
                 </div>
             </div>
         );
-    }
-
-    if (section.type === "pdf_text_columns") {
-        return (
+    } else if (section.type === "pdf_text_columns") {
+        content = (
             <div className={`px-8 sm:px-[6%] py-4 md:py-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 ${
                 section.fontFamily === 'sarabun' ? 'font-sarabun' : ''
             }`}>
@@ -345,23 +325,31 @@ function renderSection(
                 ))}
             </div>
         );
-    }
-
-    if (section.type === "pdf_header") {
-        return null; // Temporarily hidden as per user request
-    }
-
-    if (section.type === "pdf_note") {
-        return (
+    } else if (section.type === "pdf_note") {
+        content = (
             <div className="px-4 sm:px-8 md:px-[2%] mt-4 sm:mt-6 mb-6 text-[10px] sm:text-[11px] xl:text-xs text-gray-800 font-medium leading-relaxed whitespace-pre-line">
                 {!section.hidePrefix && <strong>{locale === 'th' ? 'หมายเหตุ :' : 'Note :'} </strong>}{t(section.text)}
             </div>
         );
+    } else if (section.type === "pdf_html") {
+        content = (
+            <div 
+                className={section.className}
+                dangerouslySetInnerHTML={{ __html: t(section.content) }}
+            />
+        );
     }
 
+    if (!content) return null;
 
+    if (section.visibility === 'desktop-only') {
+        return <div className="hidden lg:block">{content}</div>;
+    }
+    if (section.visibility === 'mobile-only') {
+        return <div className="lg:hidden block">{content}</div>;
+    }
 
-    return null;
+    return content;
 }
 
 export default async function PageDetail({ params }: Props) {

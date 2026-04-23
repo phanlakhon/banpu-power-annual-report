@@ -92,7 +92,7 @@ export default function Sidebar() {
       <div className="p-6 shrink-0">
         <Link href={`/${locale}/`} className="flex justify-center mb-6">
           <div className="text-center">
-            <img src="/logo.png" alt="BANPU POWER" className="h-14" />
+            <img src="/logo.png?v=2" alt="BANPU POWER" className="h-14" />
           </div>
         </Link>
       </div>
@@ -101,6 +101,7 @@ export default function Sidebar() {
         <h2 className="text-banpu-purple text-xl font-bold mb-4">สารบัญ</h2>
 
         <div className="space-y-3">
+          <NavLink href={p('00')} pageId="00" label={t('intro')} pathname={pathname} />
           <NavLink href={p('006')} pageId="006" label={t('highlight')} pathname={pathname} />
           <NavLink href={p('008')} pageId="008" label={t('performance')} pathname={pathname} />
           <NavLink href={p('010')} pageId="010" label={t('board_report')} pathname={pathname} />

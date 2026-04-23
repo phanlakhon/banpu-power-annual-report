@@ -13,8 +13,8 @@
   --font-sarabun: var(--font-sarabun);
 
   /* BPP Primary Colors */
-  --color-banpu-cyan: #6bbfb3;
-  --color-banpu-purple: #264997;
+  --color-banpu-cyan: #6cc0b3;
+  --color-banpu-purple: #264897;
   --color-banpu-grey: #939598;
   --color-banpu-black: #1a2c3e;
 
@@ -42,7 +42,7 @@
 }
 
 @utility text-gradient-banpu {
-  background-image: linear-gradient(to right, #6bbfb3, #264997);
+  background-image: linear-gradient(to right, #6cc0b3, #264897);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

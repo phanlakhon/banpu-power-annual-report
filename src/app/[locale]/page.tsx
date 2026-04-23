@@ -10,12 +10,10 @@ export default async function HomePage({ params }: Props) {
 
     return (
         <div className="relative w-full min-h-screen flex items-center overflow-hidden">
-            <Image
-                src="/homepage-bg.jpg"
+            <img
+                src="/homepage-bg.jpg?v=2"
                 alt="Background"
-                fill
-                className="object-cover pointer-events-none"
-                priority
+                className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />
             <div className="absolute inset-0 bg-white/10 z-0" />
 
@@ -31,11 +29,9 @@ export default async function HomePage({ params }: Props) {
                 <div className="w-full min-w-1/2 md:flex-1 flex flex-col gap-4 md:gap-6 lg:gap-10">
                     {/* Logo */}
                     <div className="mb-1">
-                        <Image
-                            src="/logo.png"
+                        <img
+                            src="/logo.png?v=2"
                             alt="BANPU"
-                            width={200}
-                            height={56}
                             className="h-10 sm:h-12 md:h-18 w-auto"
                         />
                     </div>
@@ -64,7 +60,7 @@ export default async function HomePage({ params }: Props) {
                     {/* CTAs */}
                     <div className="flex flex-wrap gap-3 mt-2">
                         <Link
-                            href={`/${locale}/pages/016`}
+                            href={`/${locale}/pages/00`}
                             className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-full font-semibold text-sm text-white shadow-md hover:opacity-90 transition-opacity"
                             style={{ background: "#6bbfb3" }}
                         >

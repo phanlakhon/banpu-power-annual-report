@@ -1,3 +1,5 @@
+import { page00Data } from "./pages/page-00";
+
 export type BilingualText = { th: string; en: string };
 
 export type TableRowData = {
@@ -14,32 +16,35 @@ export type TableSectionData = {
 };
 
 export type PageSection =
-  | { type: 'text'; title?: BilingualText; content: BilingualText }
-  | { type: 'highlights'; title?: BilingualText; content: BilingualText; items: Array<{ label: BilingualText; value: string }> }
-  | { type: 'quote'; content: BilingualText; attribution?: BilingualText }
-  | { type: 'list'; title?: BilingualText; items: BilingualText[] }
-  | { type: 'image'; src: string; alt?: string; caption?: BilingualText }
-  | { type: 'pdf_banner'; src: string; mobileSrcs?: string[]; alt?: string }
-  | { type: 'pdf_row'; items: Array<{ src: string; alt?: string; colSpan?: number }>; withGap?: boolean }
-  | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: string }
-  | { type: 'pdf_note'; text: BilingualText; hidePrefix?: boolean }
-  | { type: 'pdf_header'; text: BilingualText }
-  | { type: 'pdf_title'; text: BilingualText }
-  | { type: 'pdf_sub_title'; text: BilingualText }
+  | { type: 'text'; title?: BilingualText; content: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'highlights'; title?: BilingualText; content: BilingualText; items: Array<{ label: BilingualText; value: string }>; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'quote'; content: BilingualText; attribution?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'list'; title?: BilingualText; items: BilingualText[]; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'image'; src: string; alt?: string; caption?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_banner'; src: string; mobileSrcs?: string[]; alt?: string; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_row'; items: Array<{ src: string; alt?: string; colSpan?: number }>; withGap?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: string; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_note'; text: BilingualText; hidePrefix?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_header'; text: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_title'; text: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_sub_title'; text: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
   | {
     type: 'pdf_quote_block';
     text: BilingualText;
     signatureSrc: string;
     signatureName: BilingualText;
-    signaturePosition: BilingualText
+    signaturePosition: BilingualText;
+    visibility?: 'desktop-only' | 'mobile-only';
   }
-  | { type: 'pdf_text_columns'; columns: BilingualText[]; fontFamily?: string }
+  | { type: 'pdf_text_columns'; columns: BilingualText[]; fontFamily?: string; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_html'; content: BilingualText; className?: string; visibility?: 'desktop-only' | 'mobile-only' }
   | {
     type: 'pdf_table';
     headerTitle?: BilingualText;
     columns: BilingualText[];
     sections: TableSectionData[];
     highlightColumnIndex?: number;
+    visibility?: 'desktop-only' | 'mobile-only';
   };
 
 export type PageData = {
@@ -55,21 +60,21 @@ export type PageData = {
 };
 
 export const pagesData: Record<string, PageData> = {
-  // ── ส่วนนำ (Pre-section pages) ──────────────────────────────────────────
+  '00': page00Data,
   '006': {
     pageId: '006',
     title: { th: 'จุดเด่นในรอบปี', en: 'Highlights of the Year' },
-    accentColor: '#1e90e6',
+    accentColor: '#6cc0b3',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
-    prevPage: undefined,
+    prevPage: '00',
     nextPage: '008',
   },
   '008': {
     pageId: '008',
     title: { th: 'ผลการดำเนินงานในรอบปีที่ผ่านมา', en: 'Performance in the Past Year' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -101,7 +106,7 @@ export const pagesData: Record<string, PageData> = {
   '016': {
     pageId: '016',
     title: { th: 'โครงสร้างและการดำเนินงานของกลุ่มบริษัท', en: 'Group Structure and Operations' },
-    accentColor: '#1e90e6',
+    accentColor: '#6cc0b3',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -111,7 +116,7 @@ export const pagesData: Record<string, PageData> = {
   '026': {
     pageId: '026',
     title: { th: 'ข้อมูลกลุ่มธุรกิจ', en: 'Business Group Information' },
-    accentColor: '#1e90e6',
+    accentColor: '#6cc0b3',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -121,7 +126,7 @@ export const pagesData: Record<string, PageData> = {
   '038': {
     pageId: '038',
     title: { th: 'ภาวะตลาดและการแข่งขัน', en: 'Market Conditions and Competition' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -161,7 +166,7 @@ export const pagesData: Record<string, PageData> = {
   '073': {
     pageId: '073',
     title: { th: 'ผู้ถือหุ้นรายใหญ่', en: 'Major Shareholders' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -171,7 +176,7 @@ export const pagesData: Record<string, PageData> = {
   '074': {
     pageId: '074',
     title: { th: 'หุ้นกู้', en: 'Debentures' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -181,7 +186,7 @@ export const pagesData: Record<string, PageData> = {
   '075': {
     pageId: '075',
     title: { th: 'นโยบายการจ่ายเงินปันผล', en: 'Dividend Policy' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -233,7 +238,7 @@ export const pagesData: Record<string, PageData> = {
   '130': {
     pageId: '130',
     title: { th: 'นโยบายการกำกับดูแลกิจการ', en: 'Corporate Governance Policy' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -263,7 +268,7 @@ export const pagesData: Record<string, PageData> = {
   '198': {
     pageId: '198',
     title: { th: 'การควบคุมภายในและรายการระหว่างกัน', en: 'Internal Control and Related Party Transactions' },
-    accentColor: '#2a2e82',
+    accentColor: '#264897',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -275,7 +280,7 @@ export const pagesData: Record<string, PageData> = {
   '210': {
     pageId: '210',
     title: { th: 'เอกสารแบบ 1 รายละเอียดเกี่ยวกับคณะกรรมการบริษัทและผู้บริหาร', en: 'Attachment 1: Board of Directors and Executives Details' },
-    accentColor: '#1e90e6',
+    accentColor: '#6cc0b3',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -285,7 +290,7 @@ export const pagesData: Record<string, PageData> = {
   '228': {
     pageId: '228',
     title: { th: 'เอกสารแนบ 2 รายละเอียดเกี่ยวกับกรรมการของบริษัทฯ บริษัทย่อย บริษัทร่วม และบริษัทร่วมค้า', en: 'Attachment 2: Directors of the Company, Subsidiaries, Associates and JVs' },
-    accentColor: '#1e90e6',
+    accentColor: '#6cc0b3',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -295,7 +300,7 @@ export const pagesData: Record<string, PageData> = {
   '230': {
     pageId: '230',
     title: { th: 'เอกสารแบบ 3 นโยบายและแนวปฏิบัติการกำกับดูแลกิจการ และจรรยาบรรณธุรกิจ', en: 'Attachment 3: Corporate Governance Policy and Business Ethics' },
-    accentColor: '#1e90e6',
+    accentColor: '#6cc0b3',
     backgroundColor: '#ffffff',
     layout: 'pdf_composition',
     sections: [],
@@ -305,7 +310,7 @@ export const pagesData: Record<string, PageData> = {
 };
 
 export const pageOrder = [
-  '006', '008', '010', '012',
+  '00','006', '008', '010', '012',
   '016', '026', '038', '060', '062', '064', '073', '074', '075', '076', '083', '116', '127',
   '130', '158', '182', '198',
   '210', '228', '230',

@@ -17,14 +17,14 @@ export default function LanguageSwitcher() {
     <div className="bg-white flex items-stretch">
       <button
         onClick={() => switchLocale('th')}
-        className={`px-4 py-3 sm:px-6 sm:py-4 text-sm transition-colors cursor-pointer ${locale === 'th' ? 'bg-banpu-purple text-white' : 'text-gray-600 hover:bg-gray-100'
+        className={`px-4 py-3 sm:px-6 sm:py-4 text-sm transition-colors cursor-pointer ${locale === 'th' ? 'bg-banpu-cyan text-white' : 'text-gray-600 hover:bg-gray-100'
           }`}
       >
         TH
       </button>
       <button
         onClick={() => switchLocale('en')}
-        className={`px-4 py-3 sm:px-6 sm:py-4 text-sm transition-colors cursor-pointer ${locale === 'en' ? 'bg-banpu-purple text-white' : 'text-gray-600 hover:bg-gray-100'
+        className={`px-4 py-3 sm:px-6 sm:py-4 text-sm transition-colors cursor-pointer ${locale === 'en' ? 'bg-banpu-cyan text-white' : 'text-gray-600 hover:bg-gray-100'
           }`}
       >
         EN

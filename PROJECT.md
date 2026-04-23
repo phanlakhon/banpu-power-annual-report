@@ -71,9 +71,9 @@ public/
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Deep Navy | `#2a2e82` | Headings, primary text |
+| Deep Navy | `#264897` | Headings, primary text |
 | Royal Purple | `#311b92` | Active nav, accent |
-| Brand Blue | `#1e90e6` | CTA buttons, links |
+| Brand Blue | `#6cc0b3` | CTA buttons, links |
 | Medium Purple | `#4b3fa7` | Secondary headings |
 | Active Purple | `#5b3e96` | Language switcher active state |
 | Light Blue BG | `#eaf6fb` | Page backgrounds |
