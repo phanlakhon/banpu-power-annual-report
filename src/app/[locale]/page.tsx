@@ -11,7 +11,7 @@ export default async function HomePage({ params }: Props) {
     return (
         <div className="relative w-full min-h-screen flex items-center overflow-hidden">
             <img
-                src="/homepage-bg.jpg?v=2"
+                src="/homepage-bg.webp?v=2"
                 alt="Background"
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />
@@ -30,7 +30,7 @@ export default async function HomePage({ params }: Props) {
                     {/* Logo */}
                     <div className="mb-1">
                         <img
-                            src="/logo.png?v=2"
+                            src="/logo.webp?v=2"
                             alt="BANPU"
                             className="h-10 sm:h-12 md:h-18 w-auto"
                         />
@@ -86,7 +86,7 @@ export default async function HomePage({ params }: Props) {
                 <div className="shrink-0 flex items-center justify-center">
                     <div className="w-full max-w-sm mx-auto">
                         <Image
-                            src="/page_1.png"
+                            src="/page_1.webp"
                             alt="page-1"
                             width={1240}
                             height={1754}

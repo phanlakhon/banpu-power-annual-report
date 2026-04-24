@@ -12,8 +12,8 @@ export const page00Data: PageData = {
       items: [
         {
           type: 'pdf_banner',
-          src: '/page-intro/intro_p01_full.png',
-          mobileSrcs: ['/page-intro/intro_p01_mobile.png']
+          src: '/page-intro/intro_p01_full.webp',
+          mobileSrcs: ['/page-intro/intro_p01_mobile.webp']
         }
       ]
     },
@@ -22,12 +22,12 @@ export const page00Data: PageData = {
       items: [
         {
           type: 'pdf_banner',
-          src: '/page-intro/intro_p02_full.png',
+          src: '/page-intro/intro_p02_full.webp',
           visibility: 'desktop-only'
         },
         {
           type: 'pdf_banner',
-          src: '/page-intro/intro_p02_mobile_head.png',
+          src: '/page-intro/intro_p02_mobile_head.webp',
           visibility: 'mobile-only'
         },
         {
@@ -35,7 +35,7 @@ export const page00Data: PageData = {
           visibility: 'mobile-only',
           content: {
             th: `
-              <div class="px-8 py-6 space-y-6 font-noto bg-white">
+              <div class="px-4 py-6 space-y-6 font-noto bg-white">
                 <div class="text-banpu-cyan text-xl font-bold">
                   “Empowering Tomorrow”
                 </div>
@@ -44,24 +44,24 @@ export const page00Data: PageData = {
                   <p>ทั้งนี้ ที่ประชุมวิสามัญผู้ถือหุ้น ครั้งที่ 1/2569 ซึ่งจัดขึ้นเมื่อวันที่ 29 มกราคม 2569 ได้มีมติอนุมัติการควบบริษัทระหว่าง BPP และบริษัท บ้านปู จำกัด (มหาชน) หรือ BANPU เพื่อจัดตั้งบริษัทใหม่ และเตรียมนำเข้าจดทะเบียนในตลาดหลักทรัพย์แห่งประเทศไทยภายในไตรมาส 3/2569</p>
                 </div>
               </div>
-              <div class="px-8 py-8 bg-[#eaf6fb] space-y-4">
+              <div class="px-4 py-8 bg-[#eaf6fb] space-y-4">
                 <div class="text-gray-800 text-sm leading-relaxed">
                   การเปลี่ยนผ่านเชิงกลยุทธ์ครั้งนี้จะยกระดับบทบาทของ BPP สู่ผู้นำด้าน <strong class="">‘Utility-scale Power and Integrated Businesses’</strong> ภายใต้ <strong class="">‘Power+’</strong> (ไฟฟ้าและธุรกิจที่เกี่ยวเนื่อง) หนึ่งในกลุ่มธุรกิจหลักของกลุ่มบ้านปู ดำเนินธุรกิจไฟฟ้าเต็มรูปแบบ (Power Pure-play Platform) ครอบคลุมห่วงโซ่คุณค่าธุรกิจพลังงาน (Energy Value Chain) เพื่อเสริมสร้างศักยภาพการแข่งขัน และขับเคลื่อนการเติบโตทางธุรกิจ (Growth Engine) ของกลุ่มบ้านปูในระยะยาว
                 </div>
               </div>
-              <div class="px-8 py-8 bg-white space-y-6">
+              <div class="px-4 py-8 bg-white space-y-6">
                 <div class="text-gray-800 text-sm leading-relaxed">
                   การปรับโครงสร้างสู่กลุ่มธุรกิจ <strong class="">‘Power+’</strong> จะผสานสินทรัพย์โรงไฟฟ้าพลังงานพื้นฐาน (Base Load Power Plant) ในภูมิภาคเอเชียแปซิฟิกและสหรัฐอเมริกา ครอบคลุมทั้ง
                 </div>
                 
                 <div class="space-y-4">
-                  <img src="/page-intro/intro_p02_mobile_icon_1.png" class="w-full h-auto object-contain" />
-                  <img src="/page-intro/intro_p02_mobile_icon_2.png" class="w-full h-auto object-contain" />
+                  <img src="/page-intro/intro_p02_mobile_icon_1.webp" class="w-full h-auto object-contain" />
+                  <img src="/page-intro/intro_p02_mobile_icon_2.webp" class="w-full h-auto object-contain" />
                 </div>
               </div>
             `,
             en: `
-              <div class="px-8 py-6 space-y-6 font-noto bg-white">
+              <div class="px-4 py-6 space-y-6 font-noto bg-white">
                 <div class="text-banpu-cyan text-xl font-bold uppercase">
                   “Empowering Tomorrow”
                 </div>
@@ -70,19 +70,19 @@ export const page00Data: PageData = {
                   <p>On January 29, 2026, the Extraordinary General Meeting of Shareholders No. 1/2026 approved the merger between BPP and Banpu Public Company Limited (BANPU) to establish a new company, with registration on the Stock Exchange of Thailand expected within Q3/2026.</p>
                 </div>
               </div>
-              <div class="px-8 py-8 bg-[#eaf6fb] space-y-4">
+              <div class="px-4 py-8 bg-[#eaf6fb] space-y-4">
                 <div class="text-gray-800 text-sm leading-relaxed">
                   This strategic transition will elevate BPP's role to a leader in <strong class="">‘Utility-scale Power and Integrated Businesses’</strong> under <strong class="">‘Power+’</strong> (Power and related businesses), one of Banpu Group's core business units. As a Power Pure-play Platform covering the Energy Value Chain, we aim to enhance competitiveness and drive long-term business growth for Banpu Group.
                 </div>
               </div>
-              <div class="px-8 py-8 bg-white space-y-6">
+              <div class="px-4 py-8 bg-white space-y-6">
                 <div class="text-gray-800 text-sm leading-relaxed">
                   The restructuring into the <strong class="">‘Power+’</strong> business group will integrate base load power plant assets in the Asia-Pacific region and the U.S., encompassing:
                 </div>
                 
                 <div class="space-y-4">
-                  <img src="/page-intro/intro_p02_mobile_icon_1.png" class="w-full h-auto object-contain" />
-                  <img src="/page-intro/intro_p02_mobile_icon_2.png" class="w-full h-auto object-contain" />
+                  <img src="/page-intro/intro_p02_mobile_icon_1.webp" class="w-full h-auto object-contain" />
+                  <img src="/page-intro/intro_p02_mobile_icon_2.webp" class="w-full h-auto object-contain" />
                 </div>
               </div>
             `

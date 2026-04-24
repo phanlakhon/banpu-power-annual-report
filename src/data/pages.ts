@@ -59,35 +59,71 @@ export type PageData = {
   nextPage?: string;
 };
 
+import { page006Data } from "./pages/page-006";
+import { page008Data } from "./pages/page-008";
+
 export const pagesData: Record<string, PageData> = {
   '00': page00Data,
-  '006': {
-    pageId: '006',
-    title: { th: 'จุดเด่นในรอบปี', en: 'Highlights of the Year' },
-    accentColor: '#6cc0b3',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
-    sections: [],
-    prevPage: '00',
-    nextPage: '008',
-  },
-  '008': {
-    pageId: '008',
-    title: { th: 'ผลการดำเนินงานในรอบปีที่ผ่านมา', en: 'Performance in the Past Year' },
-    accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
-    sections: [],
-    prevPage: '006',
-    nextPage: '010',
-  },
+  '006': page006Data,
+  '008': page008Data,
   '010': {
     pageId: '010',
     title: { th: 'รายงานคณะกรรมการ', en: "Board of Directors' Report" },
     accentColor: '#311b92',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#f0f8ff',
     layout: 'pdf_composition',
-    sections: [],
+    sections: [
+      {
+        type: 'pdf_page',
+        items: [
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p01_full.webp',
+            visibility: 'desktop-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p01_mobile_head_1.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p01_mobile_head_2.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p01_mobile_body.webp',
+            visibility: 'mobile-only'
+          },
+        ]
+      },
+      {
+        type: 'pdf_page',
+        items: [
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p02_full.webp',
+            visibility: 'desktop-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p02_mobile_head.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p02_mobile_body_1.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-010/010_p02_mobile_body_2.webp',
+            visibility: 'mobile-only'
+          },
+        ]
+      }
+    ],
     prevPage: '008',
     nextPage: '012',
   },
@@ -95,9 +131,75 @@ export const pagesData: Record<string, PageData> = {
     pageId: '012',
     title: { th: 'สารจากประธานเจ้าหน้าที่บริหาร', en: 'Message from the CEO' },
     accentColor: '#1565c0',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#f0f8ff',
     layout: 'pdf_composition',
-    sections: [],
+    sections: [
+      {
+        type: 'pdf_page',
+        items: [
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p01_full.webp',
+            visibility: 'desktop-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p01_mobile_head_1.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p01_mobile_head_2.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p01_mobile_title.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p01_mobile_detail_1.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p01_mobile_detail_2.webp',
+            visibility: 'mobile-only'
+          },
+        ]
+      },
+      {
+        type: 'pdf_page',
+        items: [
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p02_full.webp',
+            visibility: 'desktop-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p02_mobile_head.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p02_mobile_banner.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p02_mobile_detail_1.webp',
+            visibility: 'mobile-only'
+          },
+          {
+            type: 'pdf_banner',
+            src: '/page-012/012_p02_mobile_detail_2.webp',
+            visibility: 'mobile-only'
+          },
+        ]
+      }
+    ],
     prevPage: '010',
     nextPage: '016',
   },
@@ -107,8 +209,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '016',
     title: { th: 'โครงสร้างและการดำเนินงานของกลุ่มบริษัท', en: 'Group Structure and Operations' },
     accentColor: '#6cc0b3',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '012',
     nextPage: '026',
@@ -117,8 +219,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '026',
     title: { th: 'ข้อมูลกลุ่มธุรกิจ', en: 'Business Group Information' },
     accentColor: '#6cc0b3',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '016',
     nextPage: '038',
@@ -127,8 +229,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '038',
     title: { th: 'ภาวะตลาดและการแข่งขัน', en: 'Market Conditions and Competition' },
     accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '026',
     nextPage: '060',
@@ -137,8 +239,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '060',
     title: { th: 'สินทรัพย์ที่ใช้ในการประกอบธุรกิจ', en: 'Assets Used in Business Operations' },
     accentColor: '#4b3fa7',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '038',
     nextPage: '062',
@@ -147,8 +249,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '062',
     title: { th: 'โครงสร้างกลุ่มบริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน)', en: 'Banpu Power Public Company Limited Group Structure' },
     accentColor: '#4b3fa7',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '060',
     nextPage: '064',
@@ -157,8 +259,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '064',
     title: { th: 'รายชื่อบริษัทย่อย และบริษัทร่วม และการร่วมค้า', en: 'Subsidiaries, Associates and Joint Ventures' },
     accentColor: '#4b3fa7',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '062',
     nextPage: '073',
@@ -167,8 +269,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '073',
     title: { th: 'ผู้ถือหุ้นรายใหญ่', en: 'Major Shareholders' },
     accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '064',
     nextPage: '074',
@@ -177,8 +279,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '074',
     title: { th: 'หุ้นกู้', en: 'Debentures' },
     accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '073',
     nextPage: '075',
@@ -187,8 +289,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '075',
     title: { th: 'นโยบายการจ่ายเงินปันผล', en: 'Dividend Policy' },
     accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '074',
     nextPage: '076',
@@ -197,8 +299,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '076',
     title: { th: 'การบริหารจัดการความเสี่ยงและปัจจัยความเสี่ยง', en: 'Risk Management and Risk Factors' },
     accentColor: '#c62828',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '075',
     nextPage: '083',
@@ -207,8 +309,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '083',
     title: { th: 'การขับเคลื่อนธุรกิจเพื่อความยั่งยืน', en: 'Driving Business for Sustainability' },
     accentColor: '#2e7d32',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '076',
     nextPage: '116',
@@ -217,8 +319,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '116',
     title: { th: 'คำอธิบายและการวิเคราะห์ของฝ่ายจัดการ', en: 'Management Discussion and Analysis' },
     accentColor: '#1565c0',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '083',
     nextPage: '127',
@@ -227,8 +329,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '127',
     title: { th: 'ข้อมูลทั่วไปและข้อมูลสำคัญอื่น ๆ', en: 'General and Other Important Information' },
     accentColor: '#455a64',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '116',
     nextPage: '130',
@@ -239,8 +341,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '130',
     title: { th: 'นโยบายการกำกับดูแลกิจการ', en: 'Corporate Governance Policy' },
     accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '127',
     nextPage: '158',
@@ -249,8 +351,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '158',
     title: { th: 'โครงสร้างการกำกับดูแลกิจการ', en: 'Corporate Governance Structure' },
     accentColor: '#311b92',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '130',
     nextPage: '182',
@@ -259,8 +361,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '182',
     title: { th: 'รายงานผลการดำเนินงานด้านการกำกับดูแลกิจการ', en: 'Corporate Governance Performance Report' },
     accentColor: '#311b92',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '158',
     nextPage: '198',
@@ -269,8 +371,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '198',
     title: { th: 'การควบคุมภายในและรายการระหว่างกัน', en: 'Internal Control and Related Party Transactions' },
     accentColor: '#264897',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '182',
     nextPage: '210',
@@ -281,8 +383,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '210',
     title: { th: 'เอกสารแบบ 1 รายละเอียดเกี่ยวกับคณะกรรมการบริษัทและผู้บริหาร', en: 'Attachment 1: Board of Directors and Executives Details' },
     accentColor: '#6cc0b3',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '198',
     nextPage: '228',
@@ -291,8 +393,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '228',
     title: { th: 'เอกสารแนบ 2 รายละเอียดเกี่ยวกับกรรมการของบริษัทฯ บริษัทย่อย บริษัทร่วม และบริษัทร่วมค้า', en: 'Attachment 2: Directors of the Company, Subsidiaries, Associates and JVs' },
     accentColor: '#6cc0b3',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '210',
     nextPage: '230',
@@ -301,8 +403,8 @@ export const pagesData: Record<string, PageData> = {
     pageId: '230',
     title: { th: 'เอกสารแบบ 3 นโยบายและแนวปฏิบัติการกำกับดูแลกิจการ และจรรยาบรรณธุรกิจ', en: 'Attachment 3: Corporate Governance Policy and Business Ethics' },
     accentColor: '#6cc0b3',
-    backgroundColor: '#ffffff',
-    layout: 'pdf_composition',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_single_full',
     sections: [],
     prevPage: '228',
     nextPage: undefined,
@@ -310,7 +412,7 @@ export const pagesData: Record<string, PageData> = {
 };
 
 export const pageOrder = [
-  '00','006', '008', '010', '012',
+  '00', '006', '008', '010', '012',
   '016', '026', '038', '060', '062', '064', '073', '074', '075', '076', '083', '116', '127',
   '130', '158', '182', '198',
   '210', '228', '230',

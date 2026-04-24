@@ -363,7 +363,7 @@ export default async function PageDetail({ params }: Props) {
     return (
         <div className="min-h-screen flex flex-col transition-colors duration-300" style={{ backgroundColor: page.backgroundColor || '#f5f9fb' }}>
             {/* Page content */}
-            <div className={page.layout === 'pdf_composition' ? "w-full mx-auto lg:p-2 p-1" : page.layout === 'pdf_single_full' ? "w-full" : "px-4 sm:px-6 md:px-10 py-4 md:py-6"}>
+            <div className={(page.layout === 'pdf_composition' ? "w-full max-w-[1320px] mx-auto lg:p-2 p-1" : page.layout === 'pdf_single_full' ? "w-full max-w-[660px] mx-auto" : "px-4 sm:px-6 md:px-10 py-4 md:py-6") + " flex-grow"}>
                 <div className={page.layout === 'pdf_composition' ? "grid grid-cols-1 xl:grid-cols-2 w-full gap-y-2" : page.layout === 'pdf_single_full' ? "flex flex-col w-full" : "max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-4 sm:p-5 md:p-6 lg:p-8"}>
                     {page.sections.length > 0 ? (
                         page.sections.map((section, i) => (
