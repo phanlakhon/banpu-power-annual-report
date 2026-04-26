@@ -21,6 +21,9 @@ function renderSection(
     const t = (text: { th: string; en: string }) =>
         locale === "th" ? text.th : text.en;
 
+    const img = (src: string | { th: string; en: string }) =>
+        typeof src === "string" ? src : locale === "th" ? src.th : src.en;
+
     let content: React.ReactNode = null;
 
     if (section.type === "text") {
@@ -123,13 +126,13 @@ function renderSection(
             <div className="w-full">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                    src={section.src}
+                    src={img(section.src)}
                     alt={section.alt || "banner"}
                     className={`w-full h-auto object-contain ${section.mobileSrcs?.length ? 'sm:block hidden' : ''}`}
                 />
                 {section.mobileSrcs?.map((src, i) => (
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    <img key={`mob-${i}`} src={src} className="w-full h-auto object-contain sm:hidden block" />
+                    <img key={`mob-${i}`} src={img(src)} alt="" className="w-full h-auto object-contain sm:hidden block" />
                 ))}
             </div>
         );
@@ -143,7 +146,7 @@ function renderSection(
                         /* eslint-disable-next-line @next/next/no-img-element */
                         <img
                             key={idx}
-                            src={item.src}
+                            src={img(item.src)}
                             alt={item.alt || `column-${idx}`}
                             className="w-full max-w-[300px] sm:max-w-none sm:w-auto h-auto object-contain min-w-0 shrink"
                         />
@@ -158,7 +161,7 @@ function renderSection(
                     <div className="hidden sm:block w-full">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src={section.desktopFullImage}
+                            src={img(section.desktopFullImage)}
                             alt={section.pageNumber ? `Page ${section.pageNumber}` : "PDF Page"}
                             className="w-full h-auto object-contain"
                         />

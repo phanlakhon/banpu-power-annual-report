@@ -12,22 +12,12 @@ export const page002Data: PageData = {
       items: [
         {
           type: 'pdf_banner',
-          src: '/page-008/008_p01_full.webp',
+          src: { th: '/page_002/008_p01_full_th.webp', en: '/page_002/008_p01_full_en.webp' },
           visibility: 'desktop-only'
         },
         {
           type: 'pdf_banner',
-          src: '/page-008/008_p01_mobile_head_1.webp',
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: '/page-008/008_p01_mobile_head_2.webp',
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: '/page-008/008_p01_mobile_table.webp',
+          src: { th: '/page_002/008_p01_mobile_table_th.webp', en: '/page_002/008_p01_mobile_table_en.webp' },
           visibility: 'mobile-only'
         },
       ]
@@ -37,17 +27,12 @@ export const page002Data: PageData = {
       items: [
         {
           type: 'pdf_banner',
-          src: '/page-008/008_p02_full.webp',
+          src: { th: '/page_002/008_p02_full_th.webp', en: '/page_002/008_p02_full_en.webp' },
           visibility: 'desktop-only'
         },
         {
           type: 'pdf_banner',
-          src: '/page-008/008_p02_mobile_head.webp',
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: '/page-008/008_p02_mobile_table.webp',
+          src: { th: '/page_002/008_p02_mobile_table_th.webp', en: '/page_002/008_p02_mobile_table_en.webp' },
           visibility: 'mobile-only'
         },
         {

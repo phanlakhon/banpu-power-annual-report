@@ -4,6 +4,9 @@ import { page002Data } from "./pages/page-002";
 
 export type BilingualText = { th: string; en: string };
 
+// src can be a plain string (same image for both locales) or locale-specific { th, en }
+export type LocalizedSrc = string | { th: string; en: string };
+
 export type TableRowData = {
   label: BilingualText;
   unit?: BilingualText;
@@ -22,10 +25,10 @@ export type PageSection =
   | { type: 'highlights'; title?: BilingualText; content: BilingualText; items: Array<{ label: BilingualText; value: string }>; visibility?: 'desktop-only' | 'mobile-only' }
   | { type: 'quote'; content: BilingualText; attribution?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
   | { type: 'list'; title?: BilingualText; items: BilingualText[]; visibility?: 'desktop-only' | 'mobile-only' }
-  | { type: 'image'; src: string; alt?: string; caption?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
-  | { type: 'pdf_banner'; src: string; mobileSrcs?: string[]; alt?: string; visibility?: 'desktop-only' | 'mobile-only' }
-  | { type: 'pdf_row'; items: Array<{ src: string; alt?: string; colSpan?: number }>; withGap?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
-  | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: string; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'image'; src: LocalizedSrc; alt?: string; caption?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_banner'; src: LocalizedSrc; mobileSrcs?: LocalizedSrc[]; alt?: string; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_row'; items: Array<{ src: LocalizedSrc; alt?: string; colSpan?: number }>; withGap?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
+  | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: LocalizedSrc; visibility?: 'desktop-only' | 'mobile-only' }
   | { type: 'pdf_note'; text: BilingualText; hidePrefix?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
   | { type: 'pdf_header'; text: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
   | { type: 'pdf_title'; text: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
@@ -76,19 +79,16 @@ export const pagesData: Record<string, PageData> = {
       {
         type: 'pdf_page',
         items: [
-          { type: 'pdf_banner', src: '/page-010/010_p01_full.webp', visibility: 'desktop-only' },
-          { type: 'pdf_banner', src: '/page-010/010_p01_mobile_head_1.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-010/010_p01_mobile_head_2.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-010/010_p01_mobile_body.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_003/010_p01_full_th.webp', en: '/page_003/010_p01_full_en.webp' }, visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: { th: '/page_003/010_p01_mobile_body_th.webp', en: '/page_003/010_p01_mobile_body_en.webp' }, visibility: 'mobile-only' },
         ]
       },
       {
         type: 'pdf_page',
         items: [
-          { type: 'pdf_banner', src: '/page-010/010_p02_full.webp', visibility: 'desktop-only' },
-          { type: 'pdf_banner', src: '/page-010/010_p02_mobile_head.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-010/010_p02_mobile_body_1.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-010/010_p02_mobile_body_2.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_003/010_p02_full_th.webp', en: '/page_003/010_p02_full_en.webp' }, visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: { th: '/page_003/010_p02_mobile_body_1_th.webp', en: '/page_003/010_p02_mobile_body_1_en.webp' }, visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_003/010_p02_mobile_body_2_th.webp', en: '/page_003/010_p02_mobile_body_2_en.webp' }, visibility: 'mobile-only' },
         ]
       }
     ],
@@ -106,22 +106,19 @@ export const pagesData: Record<string, PageData> = {
       {
         type: 'pdf_page',
         items: [
-          { type: 'pdf_banner', src: '/page-012/012_p01_full.webp', visibility: 'desktop-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_head_1.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_head_2.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_title.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_detail_1.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_detail_2.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p01_full_th.webp', en: '/page_004/012_p01_full_en.webp' }, visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p01_mobile_title_th.webp', en: '/page_004/012_p01_mobile_title_en.webp' }, visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p01_mobile_detail_1_th.webp', en: '/page_004/012_p01_mobile_detail_1_en.webp' }, visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p01_mobile_detail_2_th.webp', en: '/page_004/012_p01_mobile_detail_2_en.webp' }, visibility: 'mobile-only' },
         ]
       },
       {
         type: 'pdf_page',
         items: [
-          { type: 'pdf_banner', src: '/page-012/012_p02_full.webp', visibility: 'desktop-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_head.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_banner.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_detail_1.webp', visibility: 'mobile-only' },
-          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_detail_2.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p02_full_th.webp', en: '/page_004/012_p02_full_en.webp' }, visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p02_mobile_banner_th.webp', en: '/page_004/012_p02_mobile_banner_en.webp' }, visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p02_mobile_detail_1_th.webp', en: '/page_004/012_p02_mobile_detail_1_en.webp' }, visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: { th: '/page_004/012_p02_mobile_detail_2_th.webp', en: '/page_004/012_p02_mobile_detail_2_en.webp' }, visibility: 'mobile-only' },
         ]
       }
     ],

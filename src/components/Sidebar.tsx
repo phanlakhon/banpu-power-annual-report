@@ -34,11 +34,12 @@ function NavLink({ href, pageId, label, pathname }: NavLinkProps) {
 type AccordionItemProps = {
   title: string;
   number: string;
+  partPrefix: string;
   items: { label: string; page: string; href: string }[];
   defaultOpen?: boolean;
 };
 
-function AccordionItem({ title, number, items, defaultOpen = true }: AccordionItemProps) {
+function AccordionItem({ title, number, partPrefix, items, defaultOpen = true }: AccordionItemProps) {
   const pathname = usePathname();
   const hasActiveItem = items.some(item => pathname === item.href);
   const [isOpen, setIsOpen] = useState(defaultOpen || hasActiveItem);
@@ -51,7 +52,7 @@ function AccordionItem({ title, number, items, defaultOpen = true }: AccordionIt
       >
         <div className={`text-3xl font-light -mt-1.25 transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-cyan'}`}>{number}</div>
         <div className="flex-1">
-          <div className="text-xs text-banpu-cyan font-medium mb-1">ส่วนที่</div>
+          <div className="text-xs text-banpu-cyan font-medium mb-1">{partPrefix}</div>
           <div className={`font-semibold text-sm leading-tight flex items-center justify-between transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-purple'}`}>
             {title}
             {isOpen ? (
@@ -119,6 +120,7 @@ export default function Sidebar() {
         <AccordionItem
           number="1"
           title={t('part1')}
+          partPrefix={t('part_prefix')}
           items={[
             { page: '005', label: t('part1_1'), href: p('005') },
             { page: '006', label: t('part1_2'), href: p('006') },
@@ -140,6 +142,7 @@ export default function Sidebar() {
         <AccordionItem
           number="2"
           title={t('part2')}
+          partPrefix={t('part_prefix')}
           items={[
             { page: '018', label: t('part2_1'), href: p('018') },
             { page: '019', label: t('part2_2'), href: p('019') },
@@ -152,6 +155,7 @@ export default function Sidebar() {
         <AccordionItem
           number="3"
           title={t('part3')}
+          partPrefix={t('part_prefix')}
           items={[
             { page: '022', label: t('part3_1'), href: p('022') },
             { page: '023', label: t('part3_2'), href: p('023') },

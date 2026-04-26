@@ -1,40 +1,54 @@
 import { PageData } from "../pages";
 
 export const page000Data: PageData = {
-  pageId: '000',
-  title: { th: 'บทนำ', en: 'Introduction' },
-  accentColor: '#6cc0b3',
-  backgroundColor: '#f0f8ff',
-  layout: 'pdf_composition',
-  sections: [
-    {
-      type: 'pdf_page',
-      items: [
+    pageId: "000",
+    title: { th: "บทนำ", en: "Introduction" },
+    accentColor: "#6cc0b3",
+    backgroundColor: "#f0f8ff",
+    layout: "pdf_composition",
+    sections: [
         {
-          type: 'pdf_banner',
-          src: '/page-intro/intro_p01_full.webp',
-          mobileSrcs: ['/page-intro/intro_p01_mobile.webp']
-        }
-      ]
-    },
-    {
-      type: 'pdf_page',
-      items: [
-        {
-          type: 'pdf_banner',
-          src: '/page-intro/intro_p02_full.webp',
-          visibility: 'desktop-only'
+            type: "pdf_page",
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: {
+                        th: "/page_intro/intro_p01_full_th.webp",
+                        en: "/page_intro/intro_p01_full_en.webp",
+                    },
+                    mobileSrcs: [
+                        {
+                            th: "/page_intro/intro_p01_mobile_th.webp",
+                            en: "/page_intro/intro_p01_mobile_en.webp",
+                        },
+                    ],
+                },
+            ],
         },
         {
-          type: 'pdf_banner',
-          src: '/page-intro/intro_p02_mobile_head.webp',
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_html',
-          visibility: 'mobile-only',
-          content: {
-            th: `
+            type: "pdf_page",
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: {
+                        th: "/page_intro/intro_p02_full_th.webp",
+                        en: "/page_intro/intro_p02_full_en.webp",
+                    },
+                    visibility: "desktop-only",
+                },
+                {
+                    type: "pdf_banner",
+                    src: {
+                        th: "/page_intro/intro_p02_mobile_head_th.webp",
+                        en: "/page_intro/intro_p02_mobile_head_en.webp",
+                    },
+                    visibility: "mobile-only",
+                },
+                {
+                    type: "pdf_html",
+                    visibility: "mobile-only",
+                    content: {
+                        th: `
               <div class="px-4 py-6 space-y-6 font-noto bg-white">
                 <div class="text-banpu-cyan text-xl font-bold">
                   "Empowering Tomorrow"
@@ -55,12 +69,12 @@ export const page000Data: PageData = {
                 </div>
 
                 <div class="space-y-4">
-                  <img src="/page-intro/intro_p02_mobile_icon_1.webp" class="w-full h-auto object-contain" />
-                  <img src="/page-intro/intro_p02_mobile_icon_2.webp" class="w-full h-auto object-contain" />
+                  <img src="/page_intro/intro_p02_mobile_icon_1_th.webp" class="w-full h-auto object-contain" />
+                  <img src="/page_intro/intro_p02_mobile_icon_2_th.webp" class="w-full h-auto object-contain" />
                 </div>
               </div>
             `,
-            en: `
+                        en: `
               <div class="px-4 py-6 space-y-6 font-noto bg-white">
                 <div class="text-banpu-cyan text-xl font-bold uppercase">
                   "Empowering Tomorrow"
@@ -81,15 +95,15 @@ export const page000Data: PageData = {
                 </div>
 
                 <div class="space-y-4">
-                  <img src="/page-intro/intro_p02_mobile_icon_1.webp" class="w-full h-auto object-contain" />
-                  <img src="/page-intro/intro_p02_mobile_icon_2.webp" class="w-full h-auto object-contain" />
+                  <img src="/page_intro/intro_p02_mobile_icon_1_en.webp" class="w-full h-auto object-contain" />
+                  <img src="/page_intro/intro_p02_mobile_icon_2_en.webp" class="w-full h-auto object-contain" />
                 </div>
               </div>
-            `
-          }
-        }
-      ]
-    }
-  ],
-  nextPage: '001'
+            `,
+                    },
+                },
+            ],
+        },
+    ],
+    nextPage: "001",
 };
