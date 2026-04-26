@@ -1,4 +1,6 @@
-import { page00Data } from "./pages/page-00";
+import { page000Data } from "./pages/page-000";
+import { page001Data } from "./pages/page-001";
+import { page002Data } from "./pages/page-002";
 
 export type BilingualText = { th: string; en: string };
 
@@ -59,16 +61,14 @@ export type PageData = {
   nextPage?: string;
 };
 
-import { page006Data } from "./pages/page-006";
-import { page008Data } from "./pages/page-008";
-
 export const pagesData: Record<string, PageData> = {
-  '00': page00Data,
-  '006': page006Data,
-  '008': page008Data,
-  '010': {
-    pageId: '010',
-    title: { th: 'รายงานคณะกรรมการ', en: "Board of Directors' Report" },
+  '000': page000Data,
+  '001': page001Data,
+  '002': page002Data,
+
+  '003': {
+    pageId: '003',
+    title: { th: 'รายงานคณะกรรมการ', en: "Board of Directors' Review" },
     accentColor: '#311b92',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_composition',
@@ -76,60 +76,29 @@ export const pagesData: Record<string, PageData> = {
       {
         type: 'pdf_page',
         items: [
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p01_full.webp',
-            visibility: 'desktop-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p01_mobile_head_1.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p01_mobile_head_2.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p01_mobile_body.webp',
-            visibility: 'mobile-only'
-          },
+          { type: 'pdf_banner', src: '/page-010/010_p01_full.webp', visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: '/page-010/010_p01_mobile_head_1.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-010/010_p01_mobile_head_2.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-010/010_p01_mobile_body.webp', visibility: 'mobile-only' },
         ]
       },
       {
         type: 'pdf_page',
         items: [
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p02_full.webp',
-            visibility: 'desktop-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p02_mobile_head.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p02_mobile_body_1.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-010/010_p02_mobile_body_2.webp',
-            visibility: 'mobile-only'
-          },
+          { type: 'pdf_banner', src: '/page-010/010_p02_full.webp', visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: '/page-010/010_p02_mobile_head.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-010/010_p02_mobile_body_1.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-010/010_p02_mobile_body_2.webp', visibility: 'mobile-only' },
         ]
       }
     ],
-    prevPage: '008',
-    nextPage: '012',
+    prevPage: '002',
+    nextPage: '004',
   },
-  '012': {
-    pageId: '012',
-    title: { th: 'สารจากประธานเจ้าหน้าที่บริหาร', en: 'Message from the CEO' },
+
+  '004': {
+    pageId: '004',
+    title: { th: 'สารจากประธานเจ้าหน้าที่บริหาร', en: "Chief Executive Officer's Review" },
     accentColor: '#1565c0',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_composition',
@@ -137,283 +106,239 @@ export const pagesData: Record<string, PageData> = {
       {
         type: 'pdf_page',
         items: [
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p01_full.webp',
-            visibility: 'desktop-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p01_mobile_head_1.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p01_mobile_head_2.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p01_mobile_title.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p01_mobile_detail_1.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p01_mobile_detail_2.webp',
-            visibility: 'mobile-only'
-          },
+          { type: 'pdf_banner', src: '/page-012/012_p01_full.webp', visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_head_1.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_head_2.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_title.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_detail_1.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p01_mobile_detail_2.webp', visibility: 'mobile-only' },
         ]
       },
       {
         type: 'pdf_page',
         items: [
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p02_full.webp',
-            visibility: 'desktop-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p02_mobile_head.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p02_mobile_banner.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p02_mobile_detail_1.webp',
-            visibility: 'mobile-only'
-          },
-          {
-            type: 'pdf_banner',
-            src: '/page-012/012_p02_mobile_detail_2.webp',
-            visibility: 'mobile-only'
-          },
+          { type: 'pdf_banner', src: '/page-012/012_p02_full.webp', visibility: 'desktop-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_head.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_banner.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_detail_1.webp', visibility: 'mobile-only' },
+          { type: 'pdf_banner', src: '/page-012/012_p02_mobile_detail_2.webp', visibility: 'mobile-only' },
         ]
       }
     ],
-    prevPage: '010',
-    nextPage: '016',
+    prevPage: '003',
+    nextPage: '005',
   },
 
   // ── ส่วนที่ 01 การประกอบธุรกิจและผลการดำเนินงาน ─────────────────────────
-  '016': {
-    pageId: '016',
-    title: { th: 'โครงสร้างและการดำเนินงานของกลุ่มบริษัท', en: 'Group Structure and Operations' },
+  '005': {
+    pageId: '005',
+    title: { th: 'โครงสร้างและการดำเนินงานของกลุ่มบริษัท', en: 'Group Structure and Business Operations' },
     accentColor: '#6cc0b3',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '012',
-    nextPage: '026',
+    prevPage: '004',
+    nextPage: '006',
   },
-  '026': {
-    pageId: '026',
-    title: { th: 'ข้อมูลกลุ่มธุรกิจ', en: 'Business Group Information' },
+  '006': {
+    pageId: '006',
+    title: { th: 'ข้อมูลกลุ่มธุรกิจ', en: 'Information of Business Group' },
     accentColor: '#6cc0b3',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '016',
-    nextPage: '038',
+    prevPage: '005',
+    nextPage: '007',
   },
-  '038': {
-    pageId: '038',
-    title: { th: 'ภาวะตลาดและการแข่งขัน', en: 'Market Conditions and Competition' },
+  '007': {
+    pageId: '007',
+    title: { th: 'ภาวะตลาดและการแข่งขัน', en: 'Market and Competition' },
     accentColor: '#264897',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '026',
-    nextPage: '060',
+    prevPage: '006',
+    nextPage: '008',
   },
-  '060': {
-    pageId: '060',
-    title: { th: 'สินทรัพย์ที่ใช้ในการประกอบธุรกิจ', en: 'Assets Used in Business Operations' },
+  '008': {
+    pageId: '008',
+    title: { th: 'สินทรัพย์ที่ใช้ในการประกอบธุรกิจ', en: 'Assets for Business Operations' },
     accentColor: '#4b3fa7',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '038',
-    nextPage: '062',
+    prevPage: '007',
+    nextPage: '009',
   },
-  '062': {
-    pageId: '062',
+  '009': {
+    pageId: '009',
     title: { th: 'โครงสร้างกลุ่มบริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน)', en: 'Banpu Power Public Company Limited Group Structure' },
     accentColor: '#4b3fa7',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '060',
-    nextPage: '064',
+    prevPage: '008',
+    nextPage: '010',
   },
-  '064': {
-    pageId: '064',
-    title: { th: 'รายชื่อบริษัทย่อย และบริษัทร่วม และการร่วมค้า', en: 'Subsidiaries, Associates and Joint Ventures' },
+  '010': {
+    pageId: '010',
+    title: { th: 'รายชื่อบริษัทย่อย และบริษัทร่วม และการร่วมค้า', en: 'Details of the Company, Its Subsidiaries, Associated Companies and Joint Ventures' },
     accentColor: '#4b3fa7',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '062',
-    nextPage: '073',
+    prevPage: '009',
+    nextPage: '011',
   },
-  '073': {
-    pageId: '073',
+  '011': {
+    pageId: '011',
     title: { th: 'ผู้ถือหุ้นรายใหญ่', en: 'Major Shareholders' },
     accentColor: '#264897',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '064',
-    nextPage: '074',
+    prevPage: '010',
+    nextPage: '012',
   },
-  '074': {
-    pageId: '074',
-    title: { th: 'หุ้นกู้', en: 'Debentures' },
+  '012': {
+    pageId: '012',
+    title: { th: 'หุ้นกู้', en: 'Debenture' },
     accentColor: '#264897',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '073',
-    nextPage: '075',
+    prevPage: '011',
+    nextPage: '013',
   },
-  '075': {
-    pageId: '075',
+  '013': {
+    pageId: '013',
     title: { th: 'นโยบายการจ่ายเงินปันผล', en: 'Dividend Policy' },
     accentColor: '#264897',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '074',
-    nextPage: '076',
+    prevPage: '012',
+    nextPage: '014',
   },
-  '076': {
-    pageId: '076',
+  '014': {
+    pageId: '014',
     title: { th: 'การบริหารจัดการความเสี่ยงและปัจจัยความเสี่ยง', en: 'Risk Management and Risk Factors' },
     accentColor: '#c62828',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '075',
-    nextPage: '083',
+    prevPage: '013',
+    nextPage: '015',
   },
-  '083': {
-    pageId: '083',
-    title: { th: 'การขับเคลื่อนธุรกิจเพื่อความยั่งยืน', en: 'Driving Business for Sustainability' },
+  '015': {
+    pageId: '015',
+    title: { th: 'การขับเคลื่อนธุรกิจเพื่อความยั่งยืน', en: 'Driving Business Sustainability' },
     accentColor: '#2e7d32',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '076',
-    nextPage: '116',
+    prevPage: '014',
+    nextPage: '016',
   },
-  '116': {
-    pageId: '116',
-    title: { th: 'คำอธิบายและการวิเคราะห์ของฝ่ายจัดการ', en: 'Management Discussion and Analysis' },
+  '016': {
+    pageId: '016',
+    title: { th: 'คำอธิบายและการวิเคราะห์ของฝ่ายจัดการ และอัตราส่วนทางการเงิน', en: "Management's Discussion and Analysis and Financial Ratios" },
     accentColor: '#1565c0',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '083',
-    nextPage: '127',
+    prevPage: '015',
+    nextPage: '017',
   },
-  '127': {
-    pageId: '127',
-    title: { th: 'ข้อมูลทั่วไปและข้อมูลสำคัญอื่น ๆ', en: 'General and Other Important Information' },
+  '017': {
+    pageId: '017',
+    title: { th: 'ข้อมูลทั่วไปและข้อมูลสำคัญอื่น ๆ', en: 'General Information and Other Important Information' },
     accentColor: '#455a64',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '116',
-    nextPage: '130',
+    prevPage: '016',
+    nextPage: '018',
   },
 
   // ── ส่วนที่ 02 การกำกับดูแลกิจการ ───────────────────────────────────────
-  '130': {
-    pageId: '130',
+  '018': {
+    pageId: '018',
     title: { th: 'นโยบายการกำกับดูแลกิจการ', en: 'Corporate Governance Policy' },
     accentColor: '#264897',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '127',
-    nextPage: '158',
+    prevPage: '017',
+    nextPage: '019',
   },
-  '158': {
-    pageId: '158',
-    title: { th: 'โครงสร้างการกำกับดูแลกิจการ', en: 'Corporate Governance Structure' },
+  '019': {
+    pageId: '019',
+    title: { th: 'โครงสร้างการกำกับดูแลกิจการ และข้อมูลสำคัญเกี่ยวกับคณะกรรมการ คณะกรรมการชุดย่อย ผู้บริหาร พนักงาน และอื่น ๆ', en: 'Corporate Governance Structure and Details of the Board of Directors, Sub-Committees, the Management, Employees, and Others' },
     accentColor: '#311b92',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '130',
-    nextPage: '182',
+    prevPage: '018',
+    nextPage: '020',
   },
-  '182': {
-    pageId: '182',
-    title: { th: 'รายงานผลการดำเนินงานด้านการกำกับดูแลกิจการ', en: 'Corporate Governance Performance Report' },
+  '020': {
+    pageId: '020',
+    title: { th: 'รายงานผลการดำเนินงานด้านการกำกับดูแลกิจการ', en: 'Corporate Governance Performance' },
     accentColor: '#311b92',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '158',
-    nextPage: '198',
+    prevPage: '019',
+    nextPage: '021',
   },
-  '198': {
-    pageId: '198',
-    title: { th: 'การควบคุมภายในและรายการระหว่างกัน', en: 'Internal Control and Related Party Transactions' },
+  '021': {
+    pageId: '021',
+    title: { th: 'การควบคุมภายในและรายการระหว่างกัน', en: 'Internal Control and Connected Transactions' },
     accentColor: '#264897',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '182',
-    nextPage: '210',
+    prevPage: '020',
+    nextPage: '022',
   },
 
   // ── ส่วนที่ 03 การรับรองความถูกต้องของข้อมูล ────────────────────────────
-  '210': {
-    pageId: '210',
-    title: { th: 'เอกสารแบบ 1 รายละเอียดเกี่ยวกับคณะกรรมการบริษัทและผู้บริหาร', en: 'Attachment 1: Board of Directors and Executives Details' },
+  '022': {
+    pageId: '022',
+    title: { th: 'เอกสารแบบ 1 รายละเอียดเกี่ยวกับคณะกรรมการบริษัทและผู้บริหาร', en: 'Attachment 1 Details about the Board of Directors and Management' },
     accentColor: '#6cc0b3',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '198',
-    nextPage: '228',
+    prevPage: '021',
+    nextPage: '023',
   },
-  '228': {
-    pageId: '228',
-    title: { th: 'เอกสารแนบ 2 รายละเอียดเกี่ยวกับกรรมการของบริษัทฯ บริษัทย่อย บริษัทร่วม และบริษัทร่วมค้า', en: 'Attachment 2: Directors of the Company, Subsidiaries, Associates and JVs' },
+  '023': {
+    pageId: '023',
+    title: { th: 'เอกสารแนบ 2 รายละเอียดเกี่ยวกับกรรมการของบริษัทฯ บริษัทย่อย บริษัทร่วม และบริษัทร่วมค้า', en: 'Attachment 2 Details of Directors of BPP and Its Subsidiaries, Associated Companies, and Joint Ventures' },
     accentColor: '#6cc0b3',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '210',
-    nextPage: '230',
+    prevPage: '022',
+    nextPage: '024',
   },
-  '230': {
-    pageId: '230',
-    title: { th: 'เอกสารแบบ 3 นโยบายและแนวปฏิบัติการกำกับดูแลกิจการ และจรรยาบรรณธุรกิจ', en: 'Attachment 3: Corporate Governance Policy and Business Ethics' },
+  '024': {
+    pageId: '024',
+    title: { th: 'เอกสารแบบ 3 นโยบายและแนวปฏิบัติการกำกับดูแลกิจการ และจรรยาบรรณธุรกิจ', en: 'Attachment 3 Corporate Governance Policy and Practices and Code of Conduct' },
     accentColor: '#6cc0b3',
     backgroundColor: '#f0f8ff',
     layout: 'pdf_single_full',
     sections: [],
-    prevPage: '228',
+    prevPage: '023',
     nextPage: undefined,
   },
 };
 
 export const pageOrder = [
-  '00', '006', '008', '010', '012',
-  '016', '026', '038', '060', '062', '064', '073', '074', '075', '076', '083', '116', '127',
-  '130', '158', '182', '198',
-  '210', '228', '230',
+  '000', '001', '002', '003', '004',
+  '005', '006', '007', '008', '009', '010', '011', '012', '013', '014', '015', '016', '017',
+  '018', '019', '020', '021',
+  '022', '023', '024',
 ];
