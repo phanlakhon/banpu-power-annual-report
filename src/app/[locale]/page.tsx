@@ -38,23 +38,19 @@ export default async function HomePage({ params }: Props) {
 
                     {/* Headings */}
                     <div className="space-y-2">
-                        <h1 className="text-3xl md:text-4xl lg:text-4xl font-medium leading-relaxed text-gradient-banpu">
-                            {isEn
-                                ? "Balanced Energy, Paving the Way Forward"
-                                : "สมดุลพลังงาน ปูทางสู่อนาคต"}
+                        <h1 className="text-xl md:text-3xl lg:text-4xl font-medium leading-tight tracking-tight text-[#264997]">
+                            {isEn ? "PIONEERING ENERGY" : "บุกเบิกพลังงาน"}
                         </h1>
-                        <h2 className="text-xl md:text-3xl lg:text-3xl font-medium text-banpu-purple">
-                            {isEn
-                                ? "Smart Energy for Sustainability"
-                                : "พลังงานอัจฉริยะเพื่อความยั่งยืน"}
+                        <h2 className="text-base md:text-xl lg:text-2xl font-normal tracking-tight text-[#6bbfb3]">
+                            {isEn ? "EMPOWERING TOMORROW" : "สร้างพลังแห่งอนาคต"}
                         </h2>
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-sm md:text-xl leading-relaxed">
+                    <p className="text-gray-600 text-sm md:text-lg leading-relaxed max-w-2xl">
                         {isEn
-                            ? "Committed to building a sustainable energy future to continuously elevate the quality of life for people everywhere."
-                            : "มุ่งมั่นสร้างสรรค์อนาคตพลังงานที่ยั่งยืน เพื่อยกระดับคุณภาพชีวิตของผู้คนอย่างต่อเนื่อง"}
+                            ? "Pioneering Energy for a Sustainable Future"
+                            : "บุกเบิกนวัตกรรมพลังงาน เพื่ออนาคตที่ยั่งยืน"}
                     </p>
 
                     {/* CTAs */}
@@ -74,7 +70,7 @@ export default async function HomePage({ params }: Props) {
                             className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-full font-semibold text-sm text-white shadow-md hover:opacity-90 transition-opacity"
                             style={{ background: "#6bbfb3" }}
                         >
-                            {isEn ? "Highlights of the Year" : "จุดเด่นในรอบปี"}
+                            {isEn ? "Financial Highlights" : "จุดเด่นในรอบปี"}
                             <span className="w-5 h-5 rounded-full border-2 border-white/50 flex items-center justify-center">
                                 <ExternalLink size={9} />
                             </span>
