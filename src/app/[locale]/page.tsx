@@ -62,7 +62,7 @@ export default async function HomePage({ params }: Props) {
                         <Link
                             href={`/${locale}/pages/000`}
                             className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-full font-semibold text-sm text-white shadow-md hover:opacity-90 transition-opacity"
-                            style={{ background: "#6bbfb3" }}
+                            style={{ background: "#264997" }}
                         >
                             {isEn ? "Banpu Power Business" : "ธุรกิจบ้านปู เพาเวอร์"}
                             <span className="w-5 h-5 rounded-full border-2 border-white/50 flex items-center justify-center">
@@ -72,7 +72,7 @@ export default async function HomePage({ params }: Props) {
                         <Link
                             href={`/${locale}/pages/001`}
                             className="inline-flex items-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-full font-semibold text-sm text-white shadow-md hover:opacity-90 transition-opacity"
-                            style={{ background: "#264997" }}
+                            style={{ background: "#6bbfb3" }}
                         >
                             {isEn ? "Highlights of the Year" : "จุดเด่นในรอบปี"}
                             <span className="w-5 h-5 rounded-full border-2 border-white/50 flex items-center justify-center">
