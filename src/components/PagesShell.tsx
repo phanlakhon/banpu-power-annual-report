@@ -31,12 +31,12 @@ export default function PagesShell({ children }: { children: React.ReactNode }) 
       */}
       <div
         className={[
-          'fixed inset-y-0 left-0 z-40 transition-transform duration-300 ease-in-out',
+          'fixed inset-y-0 left-0 z-40 transition-transform duration-200 ease-in-out',
           'lg:static lg:inset-auto lg:z-auto lg:transition-none lg:shrink-0',
           sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0',
         ].join(' ')}
       >
-        <Sidebar />
+        <Sidebar onNavigate={() => setSidebarOpen(false)} />
       </div>
 
       {/* Main column */}

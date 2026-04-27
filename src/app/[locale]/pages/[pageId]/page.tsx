@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { pagesData, type PageSection } from "@/data/pages";
+import { pagesData, type PageSection, type LocalizedSrc } from "@/data/pages";
+import FadeImage from "@/components/FadeImage";
+import PrevNextNav from "@/components/PrevNextNav";
 import React from "react";
 
 type Props = {
@@ -13,10 +12,27 @@ export function generateStaticParams() {
     return Object.keys(pagesData).map((pageId) => ({ pageId }));
 }
 
+function getFirstImageSrc(sections: PageSection[], locale: string): string | null {
+    const getImg = (s: LocalizedSrc) =>
+        typeof s === "string" ? s : locale === "th" ? s.th : s.en;
+    for (const section of sections) {
+        if (section.type === "pdf_page") {
+            if (section.desktopFullImage) return getImg(section.desktopFullImage);
+            for (const item of section.items) {
+                if (item.type === "pdf_banner") return getImg(item.src);
+            }
+        }
+        if (section.type === "pdf_banner") return getImg(section.src);
+        if (section.type === "pdf_row" && section.items.length > 0) return getImg(section.items[0].src);
+    }
+    return null;
+}
+
 function renderSection(
     section: PageSection,
     locale: string,
     accentColor: string,
+    isFirst = false,
 ) {
     const t = (text: { th: string; en: string }) =>
         locale === "th" ? text.th : text.en;
@@ -124,15 +140,16 @@ function renderSection(
     } else if (section.type === "pdf_banner") {
         content = (
             <div className="w-full">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <FadeImage
                     src={img(section.src)}
                     alt={section.alt || "banner"}
                     className={`w-full h-auto object-contain ${section.mobileSrcs?.length ? 'sm:block hidden' : ''}`}
+                    decoding="async"
+                    loading={isFirst ? "eager" : "lazy"}
+                    fetchPriority={isFirst ? "high" : "auto"}
                 />
                 {section.mobileSrcs?.map((src, i) => (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img key={`mob-${i}`} src={img(src)} alt="" className="w-full h-auto object-contain sm:hidden block" />
+                    <FadeImage key={`mob-${i}`} src={img(src)} alt="" className="w-full h-auto object-contain sm:hidden block" decoding="async" loading="lazy" />
                 ))}
             </div>
         );
@@ -141,36 +158,39 @@ function renderSection(
 
         content = (
             <div className={`flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ${gapClasses} my-8 sm:my-12 md:my-16 lg:my-20 px-8 sm:px-[6%]`}>
-                {section.items.map((item, idx) => {
-                    return (
-                        /* eslint-disable-next-line @next/next/no-img-element */
-                        <img
-                            key={idx}
-                            src={img(item.src)}
-                            alt={item.alt || `column-${idx}`}
-                            className="w-full max-w-[300px] sm:max-w-none sm:w-auto h-auto object-contain min-w-0 shrink"
-                        />
-                    );
-                })}
+                {section.items.map((item, idx) => (
+                    <FadeImage
+                        key={idx}
+                        src={img(item.src)}
+                        alt={item.alt || `column-${idx}`}
+                        className="w-full max-w-[300px] sm:max-w-none sm:w-auto h-auto object-contain min-w-0 shrink"
+                        decoding="async"
+                        loading={isFirst && idx === 0 ? "eager" : "lazy"}
+                        fetchPriority={isFirst && idx === 0 ? "high" : "auto"}
+                    />
+                ))}
             </div>
         );
     } else if (section.type === "pdf_page") {
         content = (
             <div className="w-full relative" style={{ backgroundColor: section.backgroundColor || '#f5f9fb' }}>
                 {section.desktopFullImage && (
-                    <div className="hidden sm:block w-full">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                    <div className="hidden sm:block w-full" style={{ aspectRatio: '1 / 1.4142' }}>
+                        <FadeImage
                             src={img(section.desktopFullImage)}
                             alt={section.pageNumber ? `Page ${section.pageNumber}` : "PDF Page"}
-                            className="w-full h-auto object-contain"
+                            className="w-full h-full object-contain"
+                            wrapperClassName="w-full h-full"
+                            decoding="async"
+                            loading={isFirst ? "eager" : "lazy"}
+                            fetchPriority={isFirst ? "high" : "auto"}
                         />
                     </div>
                 )}
                 <div className={`${section.desktopFullImage ? 'sm:hidden' : ''} max-w-[1100px] mx-auto w-full`}>
                     {section.items.map((subSection, i) => (
                         <div key={i}>
-                            {renderSection(subSection, locale, accentColor)}
+                            {renderSection(subSection, locale, accentColor, isFirst && i === 0)}
                         </div>
                     ))}
                 </div>
@@ -305,8 +325,7 @@ function renderSection(
 
                 {/* Signature area */}
                 <div className="mt-8 md:mt-10 self-end mr-10 md:mr-20 flex flex-col items-center gap-0.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={section.signatureSrc} alt="Signature" className="h-10 md:h-12 object-contain" />
+                    <FadeImage src={section.signatureSrc} alt="Signature" className="h-10 md:h-12 object-contain" decoding="async" loading="lazy" />
                     <div className="text-sm md:text-base font-bold text-banpu-purple mt-2">
                         {t(section.signatureName)}
                     </div>
@@ -363,8 +382,11 @@ export default async function PageDetail({ params }: Props) {
     const t = (text: { th: string; en: string }) =>
         locale === "th" ? text.th : text.en;
 
+    const firstImageSrc = getFirstImageSrc(page.sections, locale);
+
     return (
         <div className="min-h-screen flex flex-col transition-colors duration-300" style={{ backgroundColor: page.backgroundColor || '#f5f9fb' }}>
+            {firstImageSrc && <link rel="preload" as="image" href={firstImageSrc} />}
             {/* Page content */}
             <div className={(page.layout === 'pdf_composition' ? "w-full max-w-[1320px] mx-auto lg:p-2 p-1" : page.layout === 'pdf_single_full' ? "w-full max-w-[660px] mx-auto" : "px-4 sm:px-6 md:px-10 py-4 md:py-6") + " flex-grow"}>
                 <div className={page.layout === 'pdf_composition' ? "grid grid-cols-1 xl:grid-cols-2 w-full gap-y-2" : page.layout === 'pdf_single_full' ? "flex flex-col w-full" : "max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-4 sm:p-5 md:p-6 lg:p-8"}>
@@ -375,6 +397,7 @@ export default async function PageDetail({ params }: Props) {
                                     section,
                                     locale,
                                     page.accentColor,
+                                    i === 0,
                                 )}
                             </div>
                         ))
@@ -401,63 +424,11 @@ export default async function PageDetail({ params }: Props) {
                 </div>
             </div>
 
-            {/* Prev / Next navigation */}
-            <div className="shrink-0 border-t border-gray-100 bg-white/80 backdrop-blur-md px-4 sm:px-6 md:px-10 py-3 md:py-4 bottom-0 z-20">
-                <div className="max-w-[1100px] mx-auto flex items-center justify-between gap-4">
-                    {page.prevPage ? (
-                        <Link
-                            href={`/${locale}/pages/${page.prevPage}`}
-                            className="group flex items-center gap-2 text-xs md:text-sm font-semibold text-gray-600 hover:text-banpu-purple transition-all max-w-[40%]"
-                        >
-                            <div className="w-8 h-8 shrink-0 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-banpu-purple group-hover:bg-banpu-cyan-20 transition-all">
-                                <ChevronLeft size={18} />
-                            </div>
-                            <div className="flex flex-col min-w-0">
-                                <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider">{locale === "th" ? "ก่อนหน้า" : "Previous"}</span>
-                                <span className="truncate text-banpu-purple">
-                                    {pagesData[page.prevPage] ? t(pagesData[page.prevPage].title) : `${locale === "th" ? "หน้า" : "Page"} ${page.prevPage}`}
-                                </span>
-                            </div>
-                        </Link>
-                    ) : (
-                        <Link
-                            href={`/${locale}`}
-                            className="group flex items-center gap-2 text-xs md:text-sm font-semibold text-gray-600 hover:text-banpu-purple transition-all"
-                        >
-                            <div className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-banpu-purple group-hover:bg-banpu-cyan-20 transition-all">
-                                <ChevronLeft size={18} />
-                            </div>
-                            <span>{locale === "th" ? "หน้าหลัก" : "Home"}</span>
-                        </Link>
-                    )}
-
-                    <div className="hidden md:flex flex-col items-center">
-                        <span className="text-[10px] font-bold text-banpu-purple tracking-[0.2em] uppercase">Banpu Power</span>
-                        <span className="text-[9px] text-gray-400 mt-0.5">
-                            {locale === "th" ? "รายงานประจำปี 2568" : "Annual Report 2025"}
-                        </span>
-                    </div>
-
-                    {page.nextPage ? (
-                        <Link
-                            href={`/${locale}/pages/${page.nextPage}`}
-                            className="group flex items-center gap-2 text-right text-xs md:text-sm font-semibold text-gray-600 hover:text-banpu-purple transition-all max-w-[40%]"
-                        >
-                            <div className="flex flex-col min-w-0">
-                                <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider">{locale === "th" ? "ถัดไป" : "Next"}</span>
-                                <span className="truncate text-banpu-purple">
-                                    {pagesData[page.nextPage] ? t(pagesData[page.nextPage].title) : `${locale === "th" ? "หน้า" : "Page"} ${page.nextPage}`}
-                                </span>
-                            </div>
-                            <div className="w-8 h-8 shrink-0 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-banpu-purple group-hover:bg-banpu-cyan-20 transition-all">
-                                <ChevronRight size={18} />
-                            </div>
-                        </Link>
-                    ) : (
-                        <div className="w-[80px]"></div>
-                    )}
-                </div>
-            </div>
+            <PrevNextNav
+                locale={locale}
+                prevPage={page.prevPage ? { id: page.prevPage, title: t(pagesData[page.prevPage].title) } : undefined}
+                nextPage={page.nextPage ? { id: page.nextPage, title: t(pagesData[page.nextPage].title) } : undefined}
+            />
         </div>
     );
 }

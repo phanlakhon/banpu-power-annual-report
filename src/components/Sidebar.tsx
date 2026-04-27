@@ -13,12 +13,13 @@ type NavLinkProps = {
   pageId: string;
   label: string;
   pathname: string;
+  onNavigate?: () => void;
 };
 
-function NavLink({ href, pageId, label, pathname }: NavLinkProps) {
+function NavLink({ href, pageId, label, pathname, onNavigate }: NavLinkProps) {
   const isActive = pathname === href;
   return (
-    <Link href={href} className="flex gap-3 group items-start">
+    <Link href={href} className="flex gap-3 group items-start" onClick={onNavigate}>
       {showPageIds && (
         <span className={`text-sm min-w-7.5 transition-colors font-bold ${isActive ? 'text-gradient-banpu' : 'text-banpu-cyan'}`}>
           {pageId}
@@ -37,9 +38,10 @@ type AccordionItemProps = {
   partPrefix: string;
   items: { label: string; page: string; href: string }[];
   defaultOpen?: boolean;
+  onNavigate?: () => void;
 };
 
-function AccordionItem({ title, number, partPrefix, items, defaultOpen = true }: AccordionItemProps) {
+function AccordionItem({ title, number, partPrefix, items, defaultOpen = true, onNavigate }: AccordionItemProps) {
   const pathname = usePathname();
   const hasActiveItem = items.some(item => pathname === item.href);
   const [isOpen, setIsOpen] = useState(defaultOpen || hasActiveItem);
@@ -69,7 +71,7 @@ function AccordionItem({ title, number, partPrefix, items, defaultOpen = true }:
           {items.map((item, idx) => {
             const isActive = pathname === item.href;
             return (
-              <Link key={idx} href={item.href} className="flex gap-3 group/item items-start">
+              <Link key={idx} href={item.href} className="flex gap-3 group/item items-start" onClick={onNavigate}>
                 {showPageIds && (
                   <span className={`text-xs min-w-7.5 mt-px transition-colors font-bold ${isActive ? 'text-gradient-banpu' : 'text-banpu-cyan group-hover/item:text-banpu-purple'}`}>
                     {item.page}
@@ -87,7 +89,7 @@ function AccordionItem({ title, number, partPrefix, items, defaultOpen = true }:
   );
 }
 
-export default function Sidebar() {
+export default function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const t = useTranslations('Menu');
   const locale = useLocale();
   const pathname = usePathname();
@@ -97,7 +99,7 @@ export default function Sidebar() {
   return (
     <aside className="w-72 h-full bg-[#f0f9fb] flex flex-col shadow-xl z-20 overflow-y-auto">
       <div className="p-6 shrink-0">
-        <Link href={`/${locale}/`} className="flex justify-center mb-6">
+        <Link href={`/${locale}/`} className="flex justify-center mb-6" onClick={onNavigate}>
           <div className="text-center">
             <img src="/logo.webp?v=2" alt="BANPU POWER" className="h-14" />
           </div>
@@ -108,11 +110,11 @@ export default function Sidebar() {
         <h2 className="text-banpu-purple text-xl font-bold mb-4">สารบัญ</h2>
 
         <div className="space-y-3">
-          <NavLink href={p('000')} pageId="000" label={t('intro')} pathname={pathname} />
-          <NavLink href={p('001')} pageId="001" label={t('highlight')} pathname={pathname} />
-          <NavLink href={p('002')} pageId="002" label={t('performance')} pathname={pathname} />
-          <NavLink href={p('003')} pageId="003" label={t('board_report')} pathname={pathname} />
-          <NavLink href={p('004')} pageId="004" label={t('ceo_message')} pathname={pathname} />
+          <NavLink href={p('000')} pageId="000" label={t('intro')} pathname={pathname} onNavigate={onNavigate} />
+          <NavLink href={p('001')} pageId="001" label={t('highlight')} pathname={pathname} onNavigate={onNavigate} />
+          <NavLink href={p('002')} pageId="002" label={t('performance')} pathname={pathname} onNavigate={onNavigate} />
+          <NavLink href={p('003')} pageId="003" label={t('board_report')} pathname={pathname} onNavigate={onNavigate} />
+          <NavLink href={p('004')} pageId="004" label={t('ceo_message')} pathname={pathname} onNavigate={onNavigate} />
         </div>
 
         <div className="my-4 border-t border-banpu-cyan-20" />
@@ -121,6 +123,7 @@ export default function Sidebar() {
           number="1"
           title={t('part1')}
           partPrefix={t('part_prefix')}
+          onNavigate={onNavigate}
           items={[
             { page: '005', label: t('part1_1'), href: p('005') },
             { page: '006', label: t('part1_2'), href: p('006') },
@@ -143,6 +146,7 @@ export default function Sidebar() {
           number="2"
           title={t('part2')}
           partPrefix={t('part_prefix')}
+          onNavigate={onNavigate}
           items={[
             { page: '018', label: t('part2_1'), href: p('018') },
             { page: '019', label: t('part2_2'), href: p('019') },
@@ -156,6 +160,7 @@ export default function Sidebar() {
           number="3"
           title={t('part3')}
           partPrefix={t('part_prefix')}
+          onNavigate={onNavigate}
           items={[
             { page: '022', label: t('part3_1'), href: p('022') },
             { page: '023', label: t('part3_2'), href: p('023') },
