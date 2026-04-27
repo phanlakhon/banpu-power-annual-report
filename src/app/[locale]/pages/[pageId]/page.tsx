@@ -157,7 +157,7 @@ function renderSection(
         const gapClasses = section.withGap ? "gap-6 sm:gap-[2%]" : "gap-6 sm:gap-0";
 
         content = (
-            <div className={`flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ${gapClasses} my-8 sm:my-12 md:my-16 lg:my-20 px-8 sm:px-[6%]`}>
+            <div className={`flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start ${gapClasses} my-8 sm:my-12 md:my-16 lg:my-20 px-4 sm:px-[6%]`}>
                 {section.items.map((item, idx) => (
                     <FadeImage
                         key={idx}
@@ -301,9 +301,9 @@ function renderSection(
         );
     } else if (section.type === "pdf_quote_block") {
         content = (
-            <div className="w-full px-8 sm:px-[10%] py-8 md:py-12 flex flex-col items-center text-center relative mt-2 mb-6">
+            <div className="w-full px-4 sm:px-[10%] py-8 md:py-12 flex flex-col items-center text-center relative mt-2 mb-6">
                 {/* Solid light blue container with rounded feel */}
-                <div className="absolute inset-0 bg-banpu-cyan-20 -z-10 rounded-2xl mx-4 sm:mx-8 md:mx-[2%]"></div>
+                <div className="absolute inset-0 bg-banpu-cyan-20 -z-10 rounded-2xl mx-2 sm:mx-8 md:mx-[2%]"></div>
                 
                 {/* Opening Quote */}
                 <div className="text-banpu-cyan opacity-60 mb-4">
@@ -337,7 +337,7 @@ function renderSection(
         );
     } else if (section.type === "pdf_text_columns") {
         content = (
-            <div className={`px-8 sm:px-[6%] py-4 md:py-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 ${
+            <div className={`px-4 sm:px-8 md:px-[6%] py-4 md:py-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 ${
                 section.fontFamily === 'sarabun' ? 'font-sarabun' : ''
             }`}>
                 {section.columns.map((col, i) => (
