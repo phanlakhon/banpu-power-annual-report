@@ -1,0 +1,2 @@
+import { PageData } from "../pages";
+export const page019Data: PageData = { pageId: '019', title: { th: 'โครงสร้างการกำกับดูแลกิจการ และข้อมูลสำคัญเกี่ยวกับคณะกรรมการ คณะกรรมการชุดย่อย ผู้บริหาร พนักงาน และอื่น ๆ', en: 'Corporate Governance Structure and Details of the Board of Directors, Sub-Committees, the Management, Employees, and Others' }, accentColor: '#311b92', backgroundColor: '#f0f8ff', layout: 'pdf_single_full', sections: [], prevPage: '018', nextPage: '020' };
