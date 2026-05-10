@@ -23,6 +23,33 @@ import page021 from './021';
 import page022 from './022';
 import page023 from './023';
 import page024 from './024';
+import page025 from './025';
+import page026 from './026';
+import page027 from './027';
+import page028 from './028';
+import page029 from './029';
+import page030 from './030';
+import page031 from './031';
+import page032 from './032';
+import page033 from './033';
+import page034 from './034';
+import page035 from './035';
+import page036 from './036';
+import page037 from './037';
+import page038 from './038';
+import page039 from './039';
+import page040 from './040';
+import page041 from './041';
+import page042 from './042';
+import page043 from './043';
+import page044 from './044';
+import page045 from './045';
+import page046 from './046';
+import page047 from './047';
+import page048 from './048';
+import page049 from './049';
+import page050 from './050';
+import page051 from './051';
 
 export type { BilingualText, BilingualSrc, PageSection, PageData, TableRowData, TableSectionData } from './types';
 
@@ -54,10 +81,41 @@ export const pagesData: Record<string, PageData> = {
     '022': page022,
     '023': page023,
     '024': page024,
+    '025': page025,
+    '026': page026,
+    '027': page027,
+    '028': page028,
+    '029': page029,
+    '030': page030,
+    '031': page031,
+    '032': page032,
+    '033': page033,
+    '034': page034,
+    '035': page035,
+    '036': page036,
+    '037': page037,
+    '038': page038,
+    '039': page039,
+    '040': page040,
+    '041': page041,
+    '042': page042,
+    '043': page043,
+    '044': page044,
+    '045': page045,
+    '046': page046,
+    '047': page047,
+    '048': page048,
+    '049': page049,
+    '050': page050,
+    '051': page051,
 };
 
 export const pageOrder = [
     '000', '001', '002', '003', '004',
     '005', '006', '007', '008', '009', '010', '011', '012', '013', '014', '015', '016', '017',
-    '018', '019', '020', '021', '022', '023', '024',
+    '018', '019', '020', '021', '022', '023', '024', '025', '026', '027',
+    '028', '029', '030', '031',
+    '032', '033', '034', '035', '036', '037', '038', '039', '040',
+    '041', '042', '043', '044', '045', '046', '047', '048',
+    '049', '050', '051',
 ];

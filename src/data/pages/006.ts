@@ -2,8 +2,8 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "006",
-    title: { th: "ข้อมูลกลุ่มธุรกิจ", en: "Information of Business Group" },
-    accentColor: "#6cc0b3",
+    title: { th: "วิสัยทัศน์และพันธกิจ", en: "Vision and Mission" },
+    accentColor: "#264897",
     backgroundColor: "#f0f8ff",
     layout: "pdf_single_full",
     sections: [

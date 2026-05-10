@@ -2,7 +2,7 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "008",
-    title: { th: "ชื่อ สถานที่ตั้งสำนักงานใหญ่ประเภทธุรกิจ เลขทะเบียนบริษัท และจำนวนหุ้น", en: "Name, Headquarters Location, Type of Business, Registration Number, and Number of Shares" },
+    title: { th: "ชื่อ สถานที่ตั้งสำนักงานใหญ่ ประเภทธุรกิจ เลขทะเบียนบริษัท และจำนวนหุ้น", en: "Name, Registered Office, Type of Business, Company Registration Number, and Number of Shares" },
     accentColor: "#264897",
     backgroundColor: "#f0f8ff",
     layout: "pdf_single_full",

@@ -2,10 +2,10 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "022",
-    title: { th: "เอกสารแบบ 1 รายละเอียดเกี่ยวกับคณะกรรมการบริษัทและผู้บริหาร", en: "Attachment 1 Details about the Board of Directors and Management" },
+    title: { th: "การขับเคลื่อนธุรกิจเพื่อความยั่งยืน", en: "Driving Business Sustainability" },
     accentColor: "#6cc0b3",
     backgroundColor: "#f0f8ff",
-    layout: "pdf_single_full",
+    layout: "pdf_composition",
     sections: [],
     prevPage: "021",
     nextPage: "023",

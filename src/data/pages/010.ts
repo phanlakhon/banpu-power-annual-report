@@ -2,7 +2,7 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "010",
-    title: { th: "แผนที่แสดงธุรกิจบริษัทฯ และกำลังผลิตตามสัดส่วนการลงทุน", en: "Operation Map and Equity-based Power Capacity" },
+    title: { th: "แผนที่แสดงธุรกิจบริษัทและกำลังผลิตตามสัดส่วนการลงทุน", en: "Map Showing Business Locations and Production Capacity by Investment Proportion" },
     accentColor: "#6cc0b3",
     backgroundColor: "#f0f8ff",
     layout: "pdf_composition",

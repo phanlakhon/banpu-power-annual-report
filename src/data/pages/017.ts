@@ -2,8 +2,8 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "017",
-    title: { th: "ข้อมูลทั่วไปและข้อมูลสำคัญอื่น ๆ", en: "General Information and Other Important Information" },
-    accentColor: "#455a64",
+    title: { th: "ผู้ถือหุ้นรายใหญ่", en: "Major Shareholders" },
+    accentColor: "#264897",
     backgroundColor: "#f0f8ff",
     layout: "pdf_single_full",
     sections: [],

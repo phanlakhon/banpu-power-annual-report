@@ -2,8 +2,8 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "019",
-    title: { th: "โครงสร้างการกำกับดูแลกิจการ และข้อมูลสำคัญเกี่ยวกับคณะกรรมการ คณะกรรมการชุดย่อย ผู้บริหาร พนักงาน และอื่น ๆ", en: "Corporate Governance Structure and Details of the Board of Directors, Sub-Committees, the Management, Employees, and Others" },
-    accentColor: "#311b92",
+    title: { th: "นโยบายการจ่ายเงินปันผล", en: "Dividend Policy" },
+    accentColor: "#264897",
     backgroundColor: "#f0f8ff",
     layout: "pdf_single_full",
     sections: [],

@@ -2,10 +2,10 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "012",
-    title: { th: "หุ้นกู้", en: "Debenture" },
+    title: { th: "ภาวะตลาดและการแข่งขัน", en: "Market and Competition" },
     accentColor: "#264897",
     backgroundColor: "#f0f8ff",
-    layout: "pdf_single_full",
+    layout: "pdf_composition",
     sections: [],
     prevPage: "011",
     nextPage: "013",

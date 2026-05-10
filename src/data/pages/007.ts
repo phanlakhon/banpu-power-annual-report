@@ -2,7 +2,7 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "007",
-    title: { th: "ภาวะตลาดและการแข่งขัน", en: "Market and Competition" },
+    title: { th: "สรุปการเปลี่ยนแปลงและพัฒนาการที่สำคัญในรอบปีที่ผ่านมา", en: "Summary of Significant Changes and Developments during the Year" },
     accentColor: "#264897",
     backgroundColor: "#f0f8ff",
     layout: "pdf_composition",
