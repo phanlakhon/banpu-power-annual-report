@@ -41,7 +41,6 @@ export type PageSection =
           visibility?: 'desktop-only' | 'mobile-only';
       }
     | { type: 'pdf_text_columns'; columns: BilingualText[]; fontFamily?: string; visibility?: 'desktop-only' | 'mobile-only' }
-    | { type: 'pdf_html'; content: BilingualText; className?: string; visibility?: 'desktop-only' | 'mobile-only' }
     | {
           type: 'pdf_table';
           headerTitle?: BilingualText;
