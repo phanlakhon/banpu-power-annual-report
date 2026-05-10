@@ -9,19 +9,18 @@ const page: PageData = {
     sections: [
         {
             type: 'pdf_page',
+            desktopFullImage: { th: '/page_002/008_p01_full_th.webp', en: '/page_002/008_p01_full_en.webp' },
             items: [
-                { type: 'pdf_banner', src: { th: '/page_002/008_p01_full_th.webp', en: '/page_002/008_p01_full_en.webp' }, visibility: 'desktop-only' },
-                { type: 'pdf_banner', src: { th: '/page_002/008_p01_mobile_table_th.webp', en: '/page_002/008_p01_mobile_table_en.webp' }, visibility: 'mobile-only' },
+                { type: 'pdf_banner', src: { th: '/page_002/008_p01_mobile_table_th.webp', en: '/page_002/008_p01_mobile_table_en.webp' } },
             ],
         },
         {
             type: 'pdf_page',
+            desktopFullImage: { th: '/page_002/008_p02_full_th.webp', en: '/page_002/008_p02_full_en.webp' },
             items: [
-                { type: 'pdf_banner', src: { th: '/page_002/008_p02_full_th.webp', en: '/page_002/008_p02_full_en.webp' }, visibility: 'desktop-only' },
-                { type: 'pdf_banner', src: { th: '/page_002/008_p02_mobile_table_th.webp', en: '/page_002/008_p02_mobile_table_en.webp' }, visibility: 'mobile-only' },
+                { type: 'pdf_banner', src: { th: '/page_002/008_p02_mobile_table_th.webp', en: '/page_002/008_p02_mobile_table_en.webp' } },
                 {
                     type: 'pdf_html',
-                    visibility: 'mobile-only',
                     content: {
                         th: `
               <div class="px-5 py-4 bg-white font-sarabun space-y-2 text-[11px] text-gray-600 leading-relaxed">

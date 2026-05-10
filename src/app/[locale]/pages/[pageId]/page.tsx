@@ -202,7 +202,7 @@ function renderSection(
                         />
                     </div>
                 )}
-                <div className={`${section.desktopFullImage ? 'sm:hidden' : ''} max-w-[1100px] mx-auto w-full`}>
+                <div className={`${section.desktopFullImage ? 'sm:hidden max-w-[410px]' : 'max-w-275'} mx-auto w-full`}>
                     {section.items.map((subSection, i) => (
                         <div key={i}>
                             {renderSection(subSection, locale, accentColor, isFirst && i === 0)}
@@ -315,7 +315,7 @@ function renderSection(
             : section.size === 'lg' ? `text-lg sm:text-xl ${weightClass}`
             : `text-base sm:text-lg md:text-xl font-bold`;
         content = (
-            <div className={`w-full pt-3 pb-1 px-4 sm:px-8 md:px-[6%] ${section.textAlign === 'center' ? 'text-center' : ''}`}>
+            <div className={`w-full pt-3 pb-3 px-4 sm:px-8 md:px-[6%] ${section.textAlign === 'center' ? 'text-center' : ''}`}>
                 <h3
                     className={sizeClass}
                     style={{ color: section.color ?? 'var(--color-banpu-cyan)' }}
@@ -503,8 +503,8 @@ export default async function PageDetail({ params }: Props) {
         <div className="min-h-screen flex flex-col transition-colors duration-300" style={{ backgroundColor: page.backgroundColor || '#f5f9fb' }}>
             {firstImageSrc && <link rel="preload" as="image" href={firstImageSrc} />}
             {/* Page content */}
-            <div className={(page.layout === 'pdf_composition' ? "w-full max-w-[1320px] mx-auto lg:p-2 p-1" : page.layout === 'pdf_single_full' ? "w-full max-w-[660px] mx-auto" : "px-4 sm:px-6 md:px-10 py-4 md:py-6") + " flex-grow"}>
-                <div className={page.layout === 'pdf_composition' ? "grid grid-cols-1 xl:grid-cols-2 w-full gap-y-2" : page.layout === 'pdf_single_full' ? "flex flex-col w-full" : "max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-4 sm:p-5 md:p-6 lg:p-8"}>
+            <div className={`flex-grow ${page.layout === 'pdf_composition' ? "w-full max-w-360 mx-auto lg:p-2 p-1" : page.layout === 'pdf_single_full' ? "w-full max-w-275 mx-auto lg:p-2 p-1" : "px-4 sm:px-6 md:px-10 py-4 md:py-6"}`}>
+                <div className={page.layout === 'pdf_composition' ? "grid grid-cols-1 xl:grid-cols-2 w-full md:gap-y-2" : page.layout === 'pdf_single_full' ? "flex flex-col w-full" : "max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-4 sm:p-5 md:p-6 lg:p-8"}>
                     {page.sections.length > 0 ? (
                         page.sections.map((section, i) => (
                             <div key={i}>
