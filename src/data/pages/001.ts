@@ -1,65 +1,33 @@
-import { PageData } from "../pages";
+import type { PageData } from './types';
 
-export const page001Data: PageData = {
-  pageId: '001',
-  title: { th: 'จุดเด่นในรอบปี', en: 'Financial Highlights' },
-  accentColor: '#6cc0b3',
-  backgroundColor: '#f0f8ff',
-  layout: 'pdf_composition',
-  sections: [
-    {
-      type: 'pdf_page',
-      items: [
+const page: PageData = {
+    pageId: '001',
+    title: { th: 'จุดเด่นในรอบปี', en: 'Financial Highlights' },
+    accentColor: '#6cc0b3',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_composition',
+    sections: [
         {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p01_full_th.webp', en: '/page_001/006_p01_full_en.webp' },
-          visibility: 'desktop-only'
+            type: 'pdf_page',
+            items: [
+                { type: 'pdf_banner', src: { th: '/page_001/006_p01_full_th.webp', en: '/page_001/006_p01_full_en.webp' }, visibility: 'desktop-only' },
+                { type: 'pdf_banner', src: { th: '/page_001/006_p01_mobile_section2_1_th.webp', en: '/page_001/006_p01_mobile_section2_1_en.webp' }, visibility: 'mobile-only' },
+                { type: 'pdf_banner', src: { th: '/page_001/006_p01_mobile_section2_2_th.webp', en: '/page_001/006_p01_mobile_section2_2_en.webp' }, visibility: 'mobile-only' },
+                { type: 'pdf_banner', src: { th: '/page_001/006_p01_mobile_table_th.webp', en: '/page_001/006_p01_mobile_table_en.webp' }, visibility: 'mobile-only' },
+            ],
         },
         {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p01_mobile_section2_1_th.webp', en: '/page_001/006_p01_mobile_section2_1_en.webp' },
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p01_mobile_section2_2_th.webp', en: '/page_001/006_p01_mobile_section2_2_en.webp' },
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p01_mobile_table_th.webp', en: '/page_001/006_p01_mobile_table_en.webp' },
-          visibility: 'mobile-only'
-        },
-      ]
-    },
-    {
-      type: 'pdf_page',
-      items: [
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p02_full_th.webp', en: '/page_001/006_p02_full_en.webp' },
-          visibility: 'desktop-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p02_mobile_section2_1_th.webp', en: '/page_001/006_p02_mobile_section2_1_en.webp' },
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p02_mobile_section2_2_th.webp', en: '/page_001/006_p02_mobile_section2_2_en.webp' },
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_001/006_p02_mobile_table_th.webp', en: '/page_001/006_p02_mobile_table_en.webp' },
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_html',
-          visibility: 'mobile-only',
-          content: {
-            th: `
+            type: 'pdf_page',
+            items: [
+                { type: 'pdf_banner', src: { th: '/page_001/006_p02_full_th.webp', en: '/page_001/006_p02_full_en.webp' }, visibility: 'desktop-only' },
+                { type: 'pdf_banner', src: { th: '/page_001/006_p02_mobile_section2_1_th.webp', en: '/page_001/006_p02_mobile_section2_1_en.webp' }, visibility: 'mobile-only' },
+                { type: 'pdf_banner', src: { th: '/page_001/006_p02_mobile_section2_2_th.webp', en: '/page_001/006_p02_mobile_section2_2_en.webp' }, visibility: 'mobile-only' },
+                { type: 'pdf_banner', src: { th: '/page_001/006_p02_mobile_table_th.webp', en: '/page_001/006_p02_mobile_table_en.webp' }, visibility: 'mobile-only' },
+                {
+                    type: 'pdf_html',
+                    visibility: 'mobile-only',
+                    content: {
+                        th: `
               <div class="px-5 py-4 bg-white font-sarabun space-y-1 text-[11px] text-gray-600 leading-relaxed">
                 <div class="flex gap-1">
                   <span class="shrink-0">*</span>
@@ -78,7 +46,7 @@ export const page001Data: PageData = {
                 </div>
               </div>
             `,
-            en: `
+                        en: `
               <div class="px-5 py-4 bg-white font-sarabun space-y-1 text-[11px] text-gray-600 leading-relaxed">
                 <div class="flex gap-1">
                   <span class="shrink-0">*</span>
@@ -96,12 +64,14 @@ export const page001Data: PageData = {
                   <strong>Note:</strong> Financial information and ratios are based on the consolidated financial statements.
                 </div>
               </div>
-            `
-          }
-        }
-      ]
-    }
-  ],
-  prevPage: '000',
-  nextPage: '002'
+            `,
+                    },
+                },
+            ],
+        },
+    ],
+    prevPage: '000',
+    nextPage: '002',
 };
+
+export default page;

@@ -1,6 +1,6 @@
-import { PageData } from "../pages";
+import type { PageData } from './types';
 
-export const page000Data: PageData = {
+const page: PageData = {
     pageId: "000",
     title: { th: "บทนำ", en: "Introduction" },
     accentColor: "#6cc0b3",
@@ -107,3 +107,5 @@ export const page000Data: PageData = {
     ],
     nextPage: "001",
 };
+
+export default page;

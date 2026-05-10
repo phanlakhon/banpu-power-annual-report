@@ -46,26 +46,34 @@ function AccordionItem({ title, number, partPrefix, items, defaultOpen = true, o
   const hasActiveItem = items.some(item => pathname === item.href);
   const [isOpen, setIsOpen] = useState(defaultOpen || hasActiveItem);
   const open = hasActiveItem || isOpen;
+  const firstHref = items[0]?.href;
 
   return (
     <div className="mb-4">
-      <button
-        onClick={() => { if (!hasActiveItem) setIsOpen(!isOpen); }}
-        className="flex w-full items-start gap-3 text-left group"
-      >
-        <div className={`text-3xl font-light -mt-1.25 transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-cyan'}`}>{number}</div>
+      <div className="flex w-full items-start gap-3">
+        <Link
+          href={firstHref}
+          onClick={onNavigate}
+          className={`text-3xl font-light -mt-1.25 transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-cyan hover:text-banpu-purple'}`}
+        >
+          {number}
+        </Link>
         <div className="flex-1">
           <div className="text-xs text-banpu-cyan font-medium mb-1">{partPrefix}</div>
           <div className={`font-semibold text-sm leading-tight flex items-center justify-between transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-purple'}`}>
-            {title}
-            {open ? (
-              <ChevronDown size={14} className="text-gray-400" />
-            ) : (
-              <ChevronRight size={14} className="text-gray-400" />
-            )}
+            <Link href={firstHref} onClick={onNavigate} className={`flex-1 transition-colors ${!hasActiveItem ? 'hover:text-banpu-cyan' : ''}`}>
+              {title}
+            </Link>
+            <button onClick={() => { if (!hasActiveItem) setIsOpen(!isOpen); }} className="shrink-0 ml-1">
+              {open ? (
+                <ChevronDown size={14} className="text-gray-400" />
+              ) : (
+                <ChevronRight size={14} className="text-gray-400" />
+              )}
+            </button>
           </div>
         </div>
-      </button>
+      </div>
 
       {open && (
         <div className="mt-4 pl-10 space-y-3">

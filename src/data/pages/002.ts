@@ -1,45 +1,29 @@
-import { PageData } from "../pages";
+import type { PageData } from './types';
 
-export const page002Data: PageData = {
-  pageId: '002',
-  title: { th: 'ผลการดำเนินงานในรอบปีที่ผ่านมา', en: 'Operating Results' },
-  accentColor: '#264897',
-  backgroundColor: '#f0f8ff',
-  layout: 'pdf_composition',
-  sections: [
-    {
-      type: 'pdf_page',
-      items: [
+const page: PageData = {
+    pageId: '002',
+    title: { th: 'ผลการดำเนินงานในรอบปีที่ผ่านมา', en: 'Operating Results' },
+    accentColor: '#264897',
+    backgroundColor: '#f0f8ff',
+    layout: 'pdf_composition',
+    sections: [
         {
-          type: 'pdf_banner',
-          src: { th: '/page_002/008_p01_full_th.webp', en: '/page_002/008_p01_full_en.webp' },
-          visibility: 'desktop-only'
+            type: 'pdf_page',
+            items: [
+                { type: 'pdf_banner', src: { th: '/page_002/008_p01_full_th.webp', en: '/page_002/008_p01_full_en.webp' }, visibility: 'desktop-only' },
+                { type: 'pdf_banner', src: { th: '/page_002/008_p01_mobile_table_th.webp', en: '/page_002/008_p01_mobile_table_en.webp' }, visibility: 'mobile-only' },
+            ],
         },
         {
-          type: 'pdf_banner',
-          src: { th: '/page_002/008_p01_mobile_table_th.webp', en: '/page_002/008_p01_mobile_table_en.webp' },
-          visibility: 'mobile-only'
-        },
-      ]
-    },
-    {
-      type: 'pdf_page',
-      items: [
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_002/008_p02_full_th.webp', en: '/page_002/008_p02_full_en.webp' },
-          visibility: 'desktop-only'
-        },
-        {
-          type: 'pdf_banner',
-          src: { th: '/page_002/008_p02_mobile_table_th.webp', en: '/page_002/008_p02_mobile_table_en.webp' },
-          visibility: 'mobile-only'
-        },
-        {
-          type: 'pdf_html',
-          visibility: 'mobile-only',
-          content: {
-            th: `
+            type: 'pdf_page',
+            items: [
+                { type: 'pdf_banner', src: { th: '/page_002/008_p02_full_th.webp', en: '/page_002/008_p02_full_en.webp' }, visibility: 'desktop-only' },
+                { type: 'pdf_banner', src: { th: '/page_002/008_p02_mobile_table_th.webp', en: '/page_002/008_p02_mobile_table_en.webp' }, visibility: 'mobile-only' },
+                {
+                    type: 'pdf_html',
+                    visibility: 'mobile-only',
+                    content: {
+                        th: `
               <div class="px-5 py-4 bg-white font-sarabun space-y-2 text-[11px] text-gray-600 leading-relaxed">
                 <div class="font-bold mb-1">หมายเหตุ:</div>
                 <div class="flex gap-1.5">
@@ -59,7 +43,7 @@ export const page002Data: PageData = {
                 </div>
               </div>
             `,
-            en: `
+                        en: `
               <div class="px-5 py-4 bg-white font-sarabun space-y-2 text-[11px] text-gray-600 leading-relaxed">
                 <div class="font-bold mb-1">Note:</div>
                 <div class="flex gap-1.5">
@@ -78,12 +62,14 @@ export const page002Data: PageData = {
                   </div>
                 </div>
               </div>
-            `
-          }
-        }
-      ]
-    }
-  ],
-  prevPage: '001',
-  nextPage: '003'
+            `,
+                    },
+                },
+            ],
+        },
+    ],
+    prevPage: '001',
+    nextPage: '003',
 };
+
+export default page;
