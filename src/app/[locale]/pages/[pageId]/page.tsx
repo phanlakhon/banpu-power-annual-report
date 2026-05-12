@@ -310,7 +310,7 @@ function renderSection(
             : section.size === 'md' ? `text-base sm:text-lg ${weightClass}`
             : `text-lg sm:text-xl ${weightClass}`;
         content = (
-            <div className={`w-full pt-3 pb-3 px-4 sm:px-8 md:px-[6%] ${section.textAlign === 'center' ? 'text-center' : ''}`}>
+            <div className={`w-full pt-3 pb-3 pr-4 sm:pr-8 md:pr-[6%] ${section.textAlign === 'center' ? 'text-center' : ''}`} style={{ paddingLeft: '1.4rem' }}>
                 <h3
                     className={sizeClass}
                     style={{ color: section.color ?? 'var(--color-banpu-cyan)' }}
@@ -351,8 +351,8 @@ function renderSection(
         const boldParts = boldPhraseText && bodyText.includes(boldPhraseText) ? bodyText.split(boldPhraseText) : null;
         const colorParts = colorPhraseText && bodyText.includes(colorPhraseText) ? bodyText.split(colorPhraseText) : null;
         content = (
-            <div className="pr-4 sm:pr-8 md:pr-[2%] py-1" style={{ paddingLeft: section.paddingLeft ?? '1rem' }}>
-                <p className="font-sarabun font-light text-base text-gray-800 leading-relaxed whitespace-pre-line">
+            <div className="pr-4 sm:pr-8 md:pr-[2%] py-1" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
+                <p className="font-sarabun font-light text-[0.9rem] text-gray-800 leading-relaxed whitespace-pre-line">
                     {boldParts
                         ? boldParts.flatMap((part, i) =>
                             i < boldParts.length - 1 ? [part, <strong key={i}>{boldPhraseText}</strong>] : [part]
@@ -367,10 +367,10 @@ function renderSection(
         );
     } else if (section.type === "pdf_numbered_list") {
         content = (
-            <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1rem' }}>
+            <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
                 <ol className="space-y-4">
                     {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 items-start text-base text-gray-800 leading-relaxed">
+                        <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
                             <span className={`shrink-0 ${item.label.th || item.label.en ? 'font-medium' : 'font-normal'}`}>{(section.startFrom ?? 1) + i}.</span>
                             <div>
                                 <span>
@@ -398,10 +398,10 @@ function renderSection(
         const labelColor = section.labelColor ?? listColor;
         const itemSep = section.itemSeparator ?? ' – ';
         content = (
-            <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1rem' }}>
+            <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
                 <ul className="space-y-2">
                     {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 items-start text-base text-gray-800 leading-relaxed">
+                        <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
                             <span className="shrink-0 font-sarabun font-light" style={{ color: listColor }}>•</span>
                             {'label' in item ? (
                                 <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{t(item.description)}</span></span>
