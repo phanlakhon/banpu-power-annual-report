@@ -20,7 +20,7 @@ export type PageSection =
     | { type: 'quote'; content: BilingualText; attribution?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'list'; title?: BilingualText; items: BilingualText[]; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'image'; src: BilingualSrc; alt?: string; caption?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
-    | { type: 'pdf_banner'; src: BilingualSrc; mobileSrcs?: BilingualSrc[]; alt?: string; minWidth?: number; visibility?: 'desktop-only' | 'mobile-only' }
+    | { type: 'pdf_banner'; src: BilingualSrc; mobileSrcs?: BilingualSrc[]; alt?: string; minWidth?: number; href?: string; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_row'; items: Array<{ src: BilingualSrc; alt?: string; colSpan?: number }>; withGap?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: BilingualSrc; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_note'; text: BilingualText; hidePrefix?: boolean; visibility?: 'desktop-only' | 'mobile-only' }

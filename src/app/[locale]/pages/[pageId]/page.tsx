@@ -133,17 +133,21 @@ function renderSection(
                     </h3>
                 )}
                 <ul className="space-y-2 md:space-y-3">
-                    {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 md:gap-3 items-start">
-                            <span
-                                className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
-                                style={{ background: accentColor }}
-                            />
-                            <span className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                                {t(item)}
-                            </span>
-                        </li>
-                    ))}
+                    {section.items.map((item, i) => {
+                        const itemText = t(item);
+                        if (!itemText) return null;
+                        return (
+                            <li key={i} className="flex gap-2 md:gap-3 items-start">
+                                <span
+                                    className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
+                                    style={{ background: accentColor }}
+                                />
+                                <span className="text-gray-700 text-xs md:text-sm leading-relaxed">
+                                    {itemText}
+                                </span>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         );
@@ -152,8 +156,9 @@ function renderSection(
         if (!bannerSrc) return null;
         const imgClass = `h-auto object-contain ${section.mobileSrcs?.length ? 'sm:block hidden' : ''} ${section.minWidth ? '' : 'w-full'}`;
         const imgStyle = section.minWidth ? { minWidth: section.minWidth, width: '100%' } : undefined;
-        content = (
-            <div className={section.minWidth ? 'w-full overflow-x-auto custom-scrollbar' : 'w-full'}>
+        
+        const bannerImage = (
+            <>
                 <FadeImage
                     src={bannerSrc}
                     alt={section.alt || "banner"}
@@ -165,6 +170,18 @@ function renderSection(
                 {section.mobileSrcs?.map((src, i) => (
                     <FadeImage key={`mob-${i}`} src={img(src)} alt="" className="w-full h-auto object-contain sm:hidden block" loading="lazy" />
                 ))}
+            </>
+        );
+
+        content = (
+            <div className={section.minWidth ? 'w-full overflow-x-auto custom-scrollbar' : 'w-full'}>
+                {section.href ? (
+                    <a href={section.href} target="_blank" rel="noopener noreferrer" className="block w-full">
+                        {bannerImage}
+                    </a>
+                ) : (
+                    bannerImage
+                )}
             </div>
         );
     } else if (section.type === "pdf_row") {
@@ -306,7 +323,7 @@ function renderSection(
         const subTitleText = t(section.text);
         if (!subTitleText) return null;
         const weightClass = section.weight === 'semibold' ? 'font-semibold' : section.weight === 'medium' ? 'font-medium' : 'font-bold';
-        const sizeClass = section.size === 'sm' ? `text-base ${weightClass}`
+        const sizeClass = section.size === 'sm' ? `text-[15px] ${weightClass}`
             : section.size === 'md' ? `text-base sm:text-lg ${weightClass}`
             : `text-lg sm:text-xl ${weightClass}`;
         content = (
@@ -370,12 +387,18 @@ function renderSection(
             <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
                 <ol className="space-y-4">
                     {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
-                            <span className={`shrink-0 ${item.label.th || item.label.en ? 'font-medium' : 'font-normal'}`}>{(section.startFrom ?? 1) + i}.</span>
+                        <li key={i} className="flex gap-2 items-start font-sarabun font-light text-[0.9rem] text-gray-800 leading-relaxed">
+                            <span className="shrink-0">{(section.startFrom ?? 1) + i}.</span>
                             <div>
                                 <span>
-                                    <span className="font-medium">{t(item.label)}</span>
-                                    <span className="font-sarabun font-light"> {t(item.description)}</span>
+                                    {t(item.description) ? (
+                                        <>
+                                            <span className="font-bold">{t(item.label)}</span>
+                                            <span> {t(item.description)}</span>
+                                        </>
+                                    ) : (
+                                        <span>{t(item.label)}</span>
+                                    )}
                                 </span>
                                 {item.subItems && item.subItems.length > 0 && (
                                     <ul className="mt-2 space-y-1 ml-4">
@@ -394,22 +417,27 @@ function renderSection(
             </div>
         );
     } else if (section.type === "pdf_list") {
-        const listColor = section.color ?? 'var(--color-banpu-purple)';
+        const listColor = section.color ?? '#000000';
         const labelColor = section.labelColor ?? listColor;
         const itemSep = section.itemSeparator ?? ' – ';
         content = (
             <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
                 <ul className="space-y-2">
-                    {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
-                            <span className="shrink-0 font-sarabun font-light" style={{ color: listColor }}>•</span>
-                            {'label' in item ? (
-                                <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{t(item.description)}</span></span>
-                            ) : (
-                                <span className="font-sarabun font-light">{t(item)}</span>
-                            )}
-                        </li>
-                    ))}
+                    {section.items.map((item, i) => {
+                        const content = 'label' in item ? t(item.description) : t(item);
+                        if (!content) return null;
+                        
+                        return (
+                            <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
+                                <span className="shrink-0 font-sarabun font-light" style={{ color: listColor }}>•</span>
+                                {'label' in item ? (
+                                    <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{content}</span></span>
+                                ) : (
+                                    <span className="font-sarabun font-light">{content}</span>
+                                )}
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         );
