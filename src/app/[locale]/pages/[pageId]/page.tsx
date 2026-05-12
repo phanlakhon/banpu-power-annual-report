@@ -133,17 +133,21 @@ function renderSection(
                     </h3>
                 )}
                 <ul className="space-y-2 md:space-y-3">
-                    {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 md:gap-3 items-start">
-                            <span
-                                className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
-                                style={{ background: accentColor }}
-                            />
-                            <span className="text-gray-700 text-xs md:text-sm leading-relaxed">
-                                {t(item)}
-                            </span>
-                        </li>
-                    ))}
+                    {section.items.map((item, i) => {
+                        const itemText = t(item);
+                        if (!itemText) return null;
+                        return (
+                            <li key={i} className="flex gap-2 md:gap-3 items-start">
+                                <span
+                                    className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
+                                    style={{ background: accentColor }}
+                                />
+                                <span className="text-gray-700 text-xs md:text-sm leading-relaxed">
+                                    {itemText}
+                                </span>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         );
@@ -387,8 +391,14 @@ function renderSection(
                             <span className="shrink-0">{(section.startFrom ?? 1) + i}.</span>
                             <div>
                                 <span>
-                                    <span>{t(item.label)}</span>
-                                    <span> {t(item.description)}</span>
+                                    {t(item.description) ? (
+                                        <>
+                                            <span className="font-bold">{t(item.label)}</span>
+                                            <span> {t(item.description)}</span>
+                                        </>
+                                    ) : (
+                                        <span>{t(item.label)}</span>
+                                    )}
                                 </span>
                                 {item.subItems && item.subItems.length > 0 && (
                                     <ul className="mt-2 space-y-1 ml-4">
@@ -413,16 +423,21 @@ function renderSection(
         content = (
             <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
                 <ul className="space-y-2">
-                    {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
-                            <span className="shrink-0 font-sarabun font-light" style={{ color: listColor }}>•</span>
-                            {'label' in item ? (
-                                <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{t(item.description)}</span></span>
-                            ) : (
-                                <span className="font-sarabun font-light">{t(item)}</span>
-                            )}
-                        </li>
-                    ))}
+                    {section.items.map((item, i) => {
+                        const content = 'label' in item ? t(item.description) : t(item);
+                        if (!content) return null;
+                        
+                        return (
+                            <li key={i} className="flex gap-2 items-start text-[0.9rem] text-gray-800 leading-relaxed">
+                                <span className="shrink-0 font-sarabun font-light" style={{ color: listColor }}>•</span>
+                                {'label' in item ? (
+                                    <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{content}</span></span>
+                                ) : (
+                                    <span className="font-sarabun font-light">{content}</span>
+                                )}
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         );
