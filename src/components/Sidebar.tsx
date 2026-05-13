@@ -37,22 +37,23 @@ type AccordionItemProps = {
   number: string;
   partPrefix: string;
   items: { label: string; page: string; href: string; isSection?: boolean }[];
+  headerHref?: string;
   defaultOpen?: boolean;
   onNavigate?: () => void;
 };
 
-function AccordionItem({ title, number, partPrefix, items, defaultOpen = true, onNavigate }: AccordionItemProps) {
+function AccordionItem({ title, number, partPrefix, items, headerHref, defaultOpen = true, onNavigate }: AccordionItemProps) {
   const pathname = usePathname();
-  const hasActiveItem = items.some(item => pathname === item.href);
+  const hasActiveItem = items.some(item => pathname === item.href) || (headerHref && pathname === headerHref);
   const [isOpen, setIsOpen] = useState(defaultOpen || hasActiveItem);
   const open = hasActiveItem || isOpen;
-  const firstHref = items[0]?.href;
+  const navHref = headerHref || items[0]?.href;
 
   return (
     <div className="mb-4">
       <div className="flex w-full items-start gap-3">
         <Link
-          href={firstHref}
+          href={navHref}
           onClick={onNavigate}
           className={`text-3xl font-light -mt-1.25 transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-cyan hover:text-banpu-purple'}`}
         >
@@ -61,7 +62,7 @@ function AccordionItem({ title, number, partPrefix, items, defaultOpen = true, o
         <div className="flex-1">
           <div className="text-xs text-banpu-cyan font-medium mb-1">{partPrefix}</div>
           <div className={`font-semibold text-sm leading-tight flex items-center justify-between transition-colors ${hasActiveItem ? 'text-gradient-banpu' : 'text-banpu-purple'}`}>
-            <Link href={firstHref} onClick={onNavigate} className={`flex-1 transition-colors ${!hasActiveItem ? 'hover:text-banpu-cyan' : ''}`}>
+            <Link href={navHref} onClick={onNavigate} className={`flex-1 transition-colors ${!hasActiveItem ? 'hover:text-banpu-cyan' : ''}`}>
               {title}
             </Link>
             <button onClick={() => { if (!hasActiveItem) setIsOpen(!isOpen); }} className="shrink-0 ml-1">
@@ -133,6 +134,7 @@ export default function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           number="1"
           title={t('part1')}
           partPrefix={t('part_prefix')}
+          headerHref={p('005_cover')}
           onNavigate={onNavigate}
           items={[
             { page: '005', label: t('part1_1'), href: p('005'), isSection: true },
@@ -175,6 +177,7 @@ export default function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           number="2"
           title={t('part2')}
           partPrefix={t('part_prefix')}
+          headerHref={p('032_cover')}
           onNavigate={onNavigate}
           items={[
             { page: '032', label: t('part2_1'), href: p('032'), isSection: true },

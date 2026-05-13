@@ -27,7 +27,7 @@ const page: PageData = {
         },
     ],
     prevPage: '003',
-    nextPage: '005',
+    nextPage: '005_cover',
 };
 
 export default page;

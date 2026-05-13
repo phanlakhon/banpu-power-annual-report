@@ -17,14 +17,12 @@ const page: PageData = {
                     text: { th: "รายชื่อบริษัทย่อยและบริษัทร่วมและการร่วมค้าของ บริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน)", en: "Details of the Company, Its Subsidiaries, Associated Companies and Joint Ventures of Banpu Power Public Company Limited" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "ข้อมูล ณ วันที่ 31 ธันวาคม 2568\n(ส่วนที่ถือหุ้นทางตรงและทางอ้อมเกินกว่าร้อยละ 10 ขึ้นไป)", en: "Information as of 31 December 2025\n(Direct and indirect with more than shareholdings more than 10%)" },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",

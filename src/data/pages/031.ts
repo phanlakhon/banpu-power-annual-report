@@ -19,7 +19,6 @@ const page: PageData = {
                     },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
@@ -29,7 +28,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_numbered_list",
@@ -125,7 +123,7 @@ const page: PageData = {
         },
     ],
     prevPage: "030",
-    nextPage: "032",
+    nextPage: "032_cover",
 };
 
 export default page;

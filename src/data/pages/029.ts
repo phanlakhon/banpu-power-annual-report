@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "อัตราส่วนทางการเงิน", en: "Financial Ratios" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",

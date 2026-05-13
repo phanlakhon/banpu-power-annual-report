@@ -17,14 +17,12 @@ const page: PageData = {
                     text: { th: "การจัดการด้านความยั่งยืนในมิติสังคม", en: "Sustainability Management of the Social Dimension" },
                     color: "#6cc0b3",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "นโยบายและแนวปฏิบัติด้านสังคม", en: "Social Policies and Practices" },
                     color: "#264897",
                     size: "md",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -40,7 +38,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานด้านสังคม", en: "Social Performance" },
                     color: "#264897",
                     size: "md",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_banner",
@@ -51,7 +48,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Human Rights" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -79,7 +75,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -99,7 +94,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -131,7 +125,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -192,7 +185,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -210,7 +202,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -227,7 +218,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -278,7 +268,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -310,7 +299,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -325,7 +313,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -348,7 +335,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -397,7 +383,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -460,7 +445,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -491,7 +475,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_list",
@@ -513,7 +496,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -549,7 +531,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -560,7 +541,6 @@ const page: PageData = {
                     text: { th: "การปฏิบัติตามกฎหมายและกรณีพิพาทด้านสังคม", en: "Social Compliance and Disputes" },
                     color: "#264897",
                     size: "md",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",

@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "แผนที่แสดงธุรกิจบริษัทฯ และกำลังผลิตตามสัดส่วนการลงทุน", en: "Operation Map and Equity-based Power Capacity" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",

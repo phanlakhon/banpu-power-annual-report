@@ -17,14 +17,12 @@ const page: PageData = {
                     text: { th: "สินทรัพย์ที่ใช้ในการประกอบธุรกิจ", en: "Assets for Business Operations" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "สินทรัพย์ถาวร", en: "Fixed Assets" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

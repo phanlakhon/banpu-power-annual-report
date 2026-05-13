@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "การบริหารจัดการความเสี่ยงและปัจจัยความเสียง", en: "Risk Management and Risk Factors" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_banner",
@@ -28,7 +27,6 @@ const page: PageData = {
                     text: { th: "โครงสร้างการบริหารจัดการความเสี่ยง", en: "Risk Management Structure" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",

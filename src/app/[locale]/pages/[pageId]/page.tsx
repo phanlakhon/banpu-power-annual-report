@@ -342,7 +342,7 @@ function renderSection(
     } else if (section.type === "pdf_sub_title") {
         const subTitleText = t(section.text);
         if (!subTitleText) return null;
-        const weightClass = section.weight === 'semibold' ? 'font-semibold' : section.weight === 'medium' ? 'font-medium' : 'font-bold';
+        const weightClass = section.weight === 'semibold' ? 'font-semibold' : section.weight === 'bold' ? 'font-bold' : 'font-medium';
         const sizeClass = section.size === 'sm' ? `text-[15px] ${weightClass}`
             : section.size === 'md' ? `text-base sm:text-lg ${weightClass}`
             : `text-lg sm:text-xl ${weightClass}`;
@@ -453,7 +453,7 @@ function renderSection(
                                 {'label' in item ? (
                                     <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{content}</span></span>
                                 ) : (
-                                    <span className="font-sarabun font-light">{content}</span>
+                                    <span className="font-sarabun font-light whitespace-pre-line">{content}</span>
                                 )}
                             </li>
                         );

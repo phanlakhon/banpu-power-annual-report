@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "โครงสร้างกลุ่ม บริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน)", en: "Banpu Power Group Structure" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_banner",

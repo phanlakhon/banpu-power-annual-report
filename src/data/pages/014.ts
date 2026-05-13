@@ -17,14 +17,12 @@ const page: PageData = {
                     text: { th: "รายละเอียดสิทธิในการใช้ที่ดินของธุรกิจ โรงไฟฟ้าในสาธารณรัฐประชาชนจีน", en: "Details of Land Used Rights of Power Business in China" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "สิทธิในการใช้ที่ดินของบริษัทย่อยที่ประกอบธุรกิจหลัก", en: "Land Used Rights Held by Subsidiaries Operating Major Businesses" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

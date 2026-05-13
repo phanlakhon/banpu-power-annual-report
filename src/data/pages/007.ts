@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "สรุปการเปลี่ยนแปลงและพัฒนาการ ที่สำคัญในรอบปีที่ผ่านมา", en: "Summary of Major Changes and Developments in the Past Year" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_banner",

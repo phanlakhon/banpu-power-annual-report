@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "ชื่อ สถานที่ตั้งสำนักงานใหญ่ประเภทธุรกิจ เลขทะเบียนบริษัท และจำนวนหุ้น", en: "Name, Headquarters Location, Type of Business, Registration Number, and Number of Shares" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_banner",
