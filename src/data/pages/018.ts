@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "หุ้นกู้", en: "Debenture" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_banner",

@@ -42,7 +42,6 @@ const page: PageData = {
                     text: { th: '"Empowering Tomorrow"', en: '"Empowering Tomorrow"' },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",

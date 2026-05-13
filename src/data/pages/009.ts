@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "โครงสร้างรายได้", en: "Revenue Structure" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -30,7 +29,6 @@ const page: PageData = {
                     text: { th: "บริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน) และบริษัทย่อย", en: "Banpu Power Public Company Limited and Its Subsidiaries" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",

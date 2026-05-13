@@ -17,14 +17,12 @@ const page: PageData = {
                     text: { th: "การจัดการความยั่งยืนในมิติสิ่งแวดล้อม", en: "Sustainable Management of the Environment Dimension" },
                     color: "#6cc0b3",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "นโยบายและแนวปฏิบัติด้านสิ่งแวดล้อม", en: "Environmental Policy and Practices" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -42,7 +40,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานด้านสิ่งแวดล้อม", en: "Environmental Performance" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -53,7 +50,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -67,7 +63,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -85,7 +80,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -117,7 +111,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -160,7 +153,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -178,7 +170,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -200,7 +191,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -233,7 +223,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2567", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -257,7 +246,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -283,7 +271,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -327,7 +314,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -341,7 +327,6 @@ const page: PageData = {
                     text: { th: "แนวทางการจัดการของเสีย", en: "Waste Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -359,7 +344,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -379,7 +363,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -393,7 +376,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -449,7 +431,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -475,7 +456,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -513,7 +493,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์", en: "Strategy" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -543,7 +522,6 @@ const page: PageData = {
                     text: { th: "เป้าหมาย", en: "Target" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -565,7 +543,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -593,7 +570,6 @@ const page: PageData = {
                     text: { th: "1. โรงไฟฟ้าพลังงานเชื้อเพลิงทั่วไปที่ดำเนินการผลิตในปัจจุบัน", en: "1. Operating Thermal Power Plants" },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -612,7 +588,6 @@ const page: PageData = {
                     text: { th: "2. โครงการโรงไฟฟ้าจากพลังงานหมุนเวียนและเทคโนโลยีด้านพลังงาน", en: "2. Renewable Power Plants and Energy Technology Projects" },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -623,7 +598,6 @@ const page: PageData = {
                     text: { th: "3. โครงการธุรกิจลดการปล่อยก๊าซเรือนกระจก", en: "3. Decarbonization Business Projects" },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -657,7 +631,6 @@ const page: PageData = {
                     text: { th: "ผลการดำเนินงานในปี 2568", en: "2025 Performance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_list",
@@ -708,14 +681,12 @@ const page: PageData = {
                     text: { th: "ปริมาณการปล่อยก๊าซเรือนกระจกทางตรงและทางอ้อม", en: "Scope 1 and Scope 2 GHG emissions" },
                     color: "var(--color-banpu-cyan)",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "(ล้านตัน CO₂e)", en: "(Million tCO₂e)" },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -727,14 +698,12 @@ const page: PageData = {
                     text: { th: "อัตราการปล่อยก๊าซเรือนกระจก", en: "GHG Emissions Intensity" },
                     color: "var(--color-banpu-cyan)",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "(ตัน CO₂e/เมกะวัตต์-ชั่วโมง)", en: "(tCO₂e/MWh)" },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -786,7 +755,6 @@ const page: PageData = {
                     text: { th: "การปฏิบัติตามกฎหมายและกรณีพิพาทด้านสิ่งแวดล้อม", en: "Legal Compliance and Environmental Disputes" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

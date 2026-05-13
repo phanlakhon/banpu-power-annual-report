@@ -205,7 +205,7 @@ function renderSection(
         content = (
             <div className="w-full relative" style={{ backgroundColor: section.backgroundColor || '#ffffff' }}>
                 {section.desktopFullImage && (
-                    <div className="hidden sm:block w-full" style={{ aspectRatio: '1 / 1.4142' }}>
+                    <div className="hidden sm:block w-full relative" style={{ aspectRatio: '1 / 1.4142' }}>
                         <FadeImage
                             src={img(section.desktopFullImage)}
                             alt={section.pageNumber ? `Page ${section.pageNumber}` : "PDF Page"}
@@ -216,6 +216,26 @@ function renderSection(
                             loading={isFirst ? "eager" : "lazy"}
                             fetchPriority={isFirst ? "high" : "auto"}
                         />
+                        {section.hotspots && (
+                            <div className="absolute inset-0 pointer-events-none">
+                                {section.hotspots.map((hotspot, idx) => (
+                                    <a
+                                        key={idx}
+                                        href={hotspot.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="absolute pointer-events-auto hover:bg-white/10 transition-colors"
+                                        style={{
+                                            top: hotspot.top,
+                                            left: hotspot.left,
+                                            width: hotspot.width,
+                                            height: hotspot.height,
+                                        }}
+                                        title="Click to open link"
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                 )}
                 <div className={`${section.desktopFullImage ? 'sm:hidden max-w-[410px]' : 'max-w-275'} mx-auto w-full`}>
@@ -322,7 +342,7 @@ function renderSection(
     } else if (section.type === "pdf_sub_title") {
         const subTitleText = t(section.text);
         if (!subTitleText) return null;
-        const weightClass = section.weight === 'semibold' ? 'font-semibold' : section.weight === 'medium' ? 'font-medium' : 'font-bold';
+        const weightClass = section.weight === 'semibold' ? 'font-semibold' : section.weight === 'bold' ? 'font-bold' : 'font-medium';
         const sizeClass = section.size === 'sm' ? `text-[15px] ${weightClass}`
             : section.size === 'md' ? `text-base sm:text-lg ${weightClass}`
             : `text-lg sm:text-xl ${weightClass}`;
@@ -388,16 +408,16 @@ function renderSection(
                 <ol className="space-y-4">
                     {section.items.map((item, i) => (
                         <li key={i} className="flex gap-2 items-start font-sarabun font-light text-[0.9rem] text-gray-800 leading-relaxed">
-                            <span className="shrink-0">{(section.startFrom ?? 1) + i}.</span>
+                            <span className="shrink-0" style={{ color: section.labelColor }}>{(section.startFrom ?? 1) + i}.</span>
                             <div>
-                                <span>
+                                <span className="whitespace-pre-line">
                                     {t(item.description) ? (
                                         <>
-                                            <span className="font-bold">{t(item.label)}</span>
-                                            <span> {t(item.description)}</span>
+                                            <span className="font-bold mr-1" style={{ color: section.labelColor }}>{t(item.label)}</span>
+                                            <span>{t(item.description)}</span>
                                         </>
                                     ) : (
-                                        <span>{t(item.label)}</span>
+                                        <span style={{ color: section.labelColor }}>{t(item.label)}</span>
                                     )}
                                 </span>
                                 {item.subItems && item.subItems.length > 0 && (
@@ -433,7 +453,7 @@ function renderSection(
                                 {'label' in item ? (
                                     <span><span className="font-medium" style={{ color: labelColor }}>{t(item.label)}</span><span className="font-sarabun font-light whitespace-pre-line">{itemSep}{content}</span></span>
                                 ) : (
-                                    <span className="font-sarabun font-light">{content}</span>
+                                    <span className="font-sarabun font-light whitespace-pre-line">{content}</span>
                                 )}
                             </li>
                         );
@@ -496,6 +516,17 @@ function renderSection(
                 </div>
             </div>
         );
+    } else if (section.type === "pdf_disclaimer") {
+        content = (
+            <div className="px-4 sm:px-8 md:px-[6%] py-5 md:py-7 my-6 md:my-10" style={{ backgroundColor: section.backgroundColor || '#f0f9f8' }}>
+                <h4 className="text-[12px] md:text-[13px] font-semibold mb-2 text-gray-800">
+                    {t(section.title)}
+                </h4>
+                <div className="text-[12px] md:text-[13px] text-gray-600 leading-relaxed text-justify whitespace-pre-line font-sarabun">
+                    {t(section.text)}
+                </div>
+            </div>
+        );
     }
 
     if (!content) return null;
@@ -522,7 +553,15 @@ export default async function PageDetail({ params }: Props) {
     const firstImageSrc = getFirstImageSrc(page.sections, locale);
 
     return (
-        <div className="min-h-screen flex flex-col transition-colors duration-300" style={{ backgroundColor: page.backgroundColor || '#f5f9fb' }}>
+        <div 
+            className="min-h-screen flex flex-col transition-colors duration-300 page-container" 
+            style={{ backgroundColor: page.backgroundColor || '#f5f9fb' }}
+        >
+            <style dangerouslySetInnerHTML={{ __html: `
+                @media (max-width: 640px) {
+                    .page-container { background-color: white !important; }
+                }
+            `}} />
             {firstImageSrc && <link rel="preload" as="image" href={firstImageSrc} />}
             <div className={`flex-grow ${page.layout === 'pdf_composition' ? "w-full max-w-360 mx-auto lg:p-2 p-1" : page.layout === 'pdf_single_full' ? "w-full max-w-275 mx-auto lg:p-2 p-1" : "px-4 sm:px-6 md:px-10 py-4 md:py-6"}`}>
                 <div className={page.layout === 'pdf_composition' ? "grid grid-cols-1 xl:grid-cols-2 w-full md:gap-y-2" : page.layout === 'pdf_single_full' ? "flex flex-col w-full" : "max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-4 sm:p-5 md:p-6 lg:p-8"}>

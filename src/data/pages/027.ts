@@ -20,7 +20,6 @@ const page: PageData = {
                     },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -41,7 +40,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_sub_title",
@@ -51,7 +49,6 @@ const page: PageData = {
                     },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -79,7 +76,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -100,7 +96,6 @@ const page: PageData = {
                     },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -128,7 +123,6 @@ const page: PageData = {
                     },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -149,7 +143,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -166,7 +159,6 @@ const page: PageData = {
                     },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

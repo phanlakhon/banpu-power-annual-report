@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "ผู้ถือหุ้นรายใหญ่", en: "Major Shareholders" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",

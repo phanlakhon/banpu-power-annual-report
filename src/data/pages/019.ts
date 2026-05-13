@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "นโยบายการจ่ายเงินปันผล", en: "Dividend Policy" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",

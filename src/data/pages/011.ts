@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "ข้อมูลกลุ่มธุรกิจ", en: "Information of Business Group" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -30,7 +29,6 @@ const page: PageData = {
                     text: { th: "1. ธุรกิจไฟฟ้าจากพลังงานความร้อน (Thermal Power Plant)", en: "1. Thermal Power Plants" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -44,7 +42,6 @@ const page: PageData = {
                     text: { th: "1.1 Banpu Power Investment Co., Ltd. (BPIC)", en: "1.1 Banpu Power Investment Co., Ltd. (BPIC)" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -105,7 +102,6 @@ const page: PageData = {
                     text: { th: "2.1 โรงไฟฟ้าพลังงานแสงอาทิตย์ในสาธารณรัฐประชาชนจีน", en: "2.1 Solar Power Plants in China" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -135,7 +131,6 @@ const page: PageData = {
                     text: { th: "2.2 โรงไฟฟ้าพลังงานแสงอาทิตย์ในประเทศญี่ปุ่น", en: "2.2 Solar Power Plants in Japan" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -171,7 +166,6 @@ const page: PageData = {
                     text: { th: "2.3 โรงไฟฟ้าพลังงานแสงอาทิตย์ในประเทศออสเตรเลีย", en: "2.3 Solar Power Plants in Australia" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -200,7 +194,6 @@ const page: PageData = {
                     text: { th: "2.4 โรงไฟฟ้าและโครงการโรงไฟฟ้าพลังงานแสงอาทิตย์และพลังงานลมในสาธารณรัฐสังคมนิยมเวียดนาม", en: "2.4 Solar and Wind Power Plants and Projects in Vietnam" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -229,7 +222,6 @@ const page: PageData = {
                     text: { th: "2.5 โรงไฟฟ้าพลังงานแสงอาทิตย์ในสหรัฐอเมริกา", en: "2.5 Solar Power Plants in the U.S." },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -261,7 +253,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -283,14 +274,12 @@ const page: PageData = {
                     text: { th: "ธุรกิจหลัก", en: "Core Business Pillars" },
                     color: "#6cc0b3",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "1. บริการด้านโครงสร้างพื้นฐาน:", en: "1. Infrastructure Services:" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -304,7 +293,6 @@ const page: PageData = {
                     text: { th: "1.1 ระบบกักเก็บพลังงานด้วยแบตเตอรี่ (Battery Energy Storage Systems: BESS)", en: "1.1 Battery Energy Storage System (BESS)" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

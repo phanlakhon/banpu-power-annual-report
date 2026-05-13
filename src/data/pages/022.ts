@@ -16,7 +16,6 @@ const page: PageData = {
                     text: { th: "การขับเคลื่อนธุรกิจเพื่อความยั่งยืน", en: "Driving Business Sustainability" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -30,7 +29,6 @@ const page: PageData = {
                     text: { th: "นโยบายและเป้าหมายการจัดการด้านความยิ่งยืน", en: "Sustainability Management Policies and Targets" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -48,7 +46,6 @@ const page: PageData = {
                     text: { th: "การปฏิบัติตามกฎหมายและมาตรฐานระดับสากล", en: "Compliance with Laws and International Standards" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -69,7 +66,6 @@ const page: PageData = {
                     text: { th: "แนวทางการบริหารจัดการ", en: "Management Approach" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -83,7 +79,6 @@ const page: PageData = {
                     text: { th: "โครงสร้างการกำกับดูแลด้านความยั่งยืน", en: "Structure of Sustainability Governance" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -140,7 +135,6 @@ const page: PageData = {
                     text: { th: "เป้าหมายการดำเนินงานด้านความยั่งยืน", en: "Sustainability Performance Targets" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

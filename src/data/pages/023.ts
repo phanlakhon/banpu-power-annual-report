@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "การจัดการผลกระทบต่อผู้มีส่วนได้เสียในห่วงโซ่คุณค่าของธุรกิจ", en: "Management of Impacts on Stakeholders in the Value Chain" },
                     color: "#6cc0b3",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_body_text",
@@ -31,7 +30,6 @@ const page: PageData = {
                     text: { th: "ขั้นตอนการสร้างการมีส่วนร่วมของผู้มีส่วนได้เสีย", en: "Steps of Stakeholder Engagement" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_numbered_list",
@@ -63,7 +61,6 @@ const page: PageData = {
                     text: { th: "ผลการจัดกลุ่มผู้มีส่วนได้เสียตามระดับอิทธิพลและความสนใจ", en: "Results of Stakeholder Mapping by Level of Influence and Interest" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -81,7 +78,6 @@ const page: PageData = {
                     text: { th: "ผลการมีส่วนร่วมของผู้มีส่วนได้เสีย", en: "Stakeholder Engagement Results" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",

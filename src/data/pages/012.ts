@@ -17,7 +17,6 @@ const page: PageData = {
                     text: { th: "ภาวะตลาดและการแข่งขัน", en: "Market and Competition" },
                     color: "#264897",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
@@ -27,14 +26,12 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "1.1 ภาพรวมการใช้พลังงานไฟฟ้าของโลก", en: "1.1 Global Electricity Consumption" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -78,7 +75,6 @@ const page: PageData = {
                     text: { th: "1.2 ภาวะตลาดและการแข่งขันในประเทศไทย", en: "1.2 Market and Competition in Thailand" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -110,7 +106,6 @@ const page: PageData = {
                     text: { th: "1.3 ภาวะตลาดและการแข่งขันในสหรัฐอเมริกา", en: "1.3 Market and Competition in the United States of America" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -126,7 +121,6 @@ const page: PageData = {
                     text: { th: "1.4 ภาวะตลาดและการแข่งขันในสาธารณรัฐประชาชนจีน", en: "1.4 Market and Competition in China" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -149,7 +143,6 @@ const page: PageData = {
                     text: { th: "1.5 ภาวะตลาดและการแข่งขันในประเทศญี่ปุ่น", en: "1.5 Market and Competition in Japan" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -167,7 +160,6 @@ const page: PageData = {
                     text: { th: "1.6 ภาวะตลาดและการแข่งขันในประเทศออสเตรเลีย", en: "1.6 Market and Competition in Australia" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -207,7 +199,6 @@ const page: PageData = {
                     text: { th: "1.7 ภาวะตลาดและการแข่งขันในสาธารณรัฐอินโดนีเซีย", en: "1.7 Market and Competition in Indonesia" },
                     color: "#264897",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_banner",
@@ -240,7 +231,6 @@ const page: PageData = {
                     text: { th: "1.8 ภาวะตลาดและการแข่งขันในสาธารณรัฐสังคมนิยมเวียดนาม", en: "1.8 Market and Competition in Vietnam" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -261,7 +251,6 @@ const page: PageData = {
                     text: { th: "1.9 ภาวะตลาดและการแข่งขันในสาธารณรัฐประชาธิปไตยประชาชนลาว (สปป.ลาว)", en: "1.9 Market and Competition in Lao PDR" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -303,14 +292,12 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขัน", en: "Competitive Strategies" },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "กลยุทธ์การแข่งขันในประเทศไทย", en: "Competitive Strategies in Thailand" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -328,7 +315,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขันในสหรัฐอเมริกา", en: "Competitive Strategies in the United States of America" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -368,7 +354,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขันในสาธารณรัฐประชาชนจีน", en: "Competitive Strategies in China" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -400,7 +385,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขันในประเทศญี่ปุ่น", en: "Competitive Strategies in Japan" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -432,7 +416,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขันในสาธารณรัฐอินโดนีเซีย", en: "Competitive Strategies in Indonesia" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -471,7 +454,6 @@ const page: PageData = {
                     text: { th: "คู่แข่งขันที่สำคัญ", en: "Major Competitors" },
                     color: "#6cc0b3",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_numbered_list",
@@ -504,7 +486,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขันในสาธารณรัฐสังคมนิยมเวียดนาม", en: "Competitive Strategies in Vietnam" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -536,7 +517,6 @@ const page: PageData = {
                     text: { th: "กลยุทธ์การแข่งขันในสาธารณรัฐประชาธิปไตยประชาชนลาว", en: "Competitive Strategies in Lao PDR" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -557,14 +537,12 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "lg",
-                    weight: "bold",
                 },
                 {
                     type: "pdf_sub_title",
                     text: { th: "ภาวะตลาด", en: "Market" },
                     color: "#264897",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
