@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import Sidebar from '@/components/Sidebar';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
@@ -9,9 +9,13 @@ import { usePathname } from 'next/navigation';
 export default function PagesShell({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathname = usePathname();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setSidebarOpen(false);
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return (
@@ -56,7 +60,7 @@ export default function PagesShell({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Scrollable content */}
-        <div className="flex-1 overflow-y-auto">
+        <div ref={scrollRef} className="flex-1 overflow-y-auto">
           {children}
         </div>
       </main>

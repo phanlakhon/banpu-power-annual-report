@@ -22,7 +22,7 @@ export type PageSection =
     | { type: 'image'; src: BilingualSrc; alt?: string; caption?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_banner'; src: BilingualSrc; mobileSrcs?: BilingualSrc[]; alt?: string; minWidth?: number; href?: string; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_row'; items: Array<{ src: BilingualSrc; alt?: string; colSpan?: number }>; withGap?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
-    | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: BilingualSrc; visibility?: 'desktop-only' | 'mobile-only' }
+    | { type: 'pdf_page'; items: PageSection[]; backgroundColor?: string; noPadding?: boolean; noMinHeight?: boolean; pageNumber?: string; pageNumberAlign?: 'left' | 'right'; pageNumberColor?: string; desktopFullImage?: BilingualSrc; visibility?: 'desktop-only' | 'mobile-only'; hotspots?: Array<{ top: string; left: string; width: string; height: string; href: string }> }
     | { type: 'pdf_note'; text: BilingualText; hidePrefix?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_header'; text: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_title'; text: BilingualText; large?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
@@ -31,7 +31,7 @@ export type PageSection =
     | { type: 'pdf_gradient_divider'; thin?: boolean; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_body_text'; text: BilingualText; paddingLeft?: string; colorPhrase?: BilingualText; boldPhrase?: BilingualText; visibility?: 'desktop-only' | 'mobile-only' }
     | { type: 'pdf_list'; items: Array<BilingualText | { label: BilingualText; description: BilingualText }>; paddingLeft?: string; color?: string; labelColor?: string; itemSeparator?: string; visibility?: 'desktop-only' | 'mobile-only' }
-    | { type: 'pdf_numbered_list'; items: Array<{ label: BilingualText; description: BilingualText; subItems?: BilingualText[] }>; paddingLeft?: string; startFrom?: number; visibility?: 'desktop-only' | 'mobile-only' }
+    | { type: 'pdf_numbered_list'; items: Array<{ label: BilingualText; description: BilingualText; subItems?: BilingualText[] }>; paddingLeft?: string; startFrom?: number; labelColor?: string; visibility?: 'desktop-only' | 'mobile-only' }
     | {
           type: 'pdf_quote_block';
           text: BilingualText;
@@ -47,6 +47,13 @@ export type PageSection =
           columns: BilingualText[];
           sections: TableSectionData[];
           highlightColumnIndex?: number;
+          visibility?: 'desktop-only' | 'mobile-only';
+      }
+    | {
+          type: 'pdf_disclaimer';
+          title: BilingualText;
+          text: BilingualText;
+          backgroundColor?: string;
           visibility?: 'desktop-only' | 'mobile-only';
       };
 
