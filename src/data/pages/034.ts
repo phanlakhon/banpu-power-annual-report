@@ -640,6 +640,533 @@ const page: PageData = {
                 },
             ],
         },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p19_full_th.webp", en: "/page_034/034_p19_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: { th: "/page_034/034_p19_mobile_th.webp", en: "/page_034/034_p19_mobile_en.webp" },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "ดูแลให้มีระบบการบริหารความเสี่ยง และการควบคุมภายในที่เหมาะสมนโยบายด้านการบริหารความเสี่ยง",
+                        en: "Strengthen Effective Risk Management and Internal Control",
+                    },
+                    color: "#6cc0b3",
+                    size: "md",
+                    textAlign: "center",
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "นโยบายด้านการบริหารความเสี่ยง",
+                        en: "Risk Management Policy",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทได้ความสำคัญในการบริหารความเสี่ยงที่เกี่ยวข้องทุกด้าน ครอบคลุมปัจจัยความเสี่ยงที่เกี่ยวข้องกับ วิสัยทัศน์ เป้าหมายกลยุทธ์ทางธุรกิจ การเงิน การผลิต การปฏิบัติการด้านอื่น ๆ และการต่อต้านคอร์รัปชัน รวมไปถึงการดำเนินกิจการด้านสิ่งแวดล้อม สังคม และบรรษัทภิบาล หรือ ESG โดยพิจารณาถึงโอกาสที่อาจจะเกิดความเสี่ยงขึ้น และระดับความรุนแรงของผลกระทบจากความเสี่ยง มีการกำหนดมาตรการในการป้องกันแก้ไขและผู้รับผิดชอบที่ชัดเจน รวมทั้งกำหนดมาตรการในการรายงานและการติดตามประเมินผล",
+                        en: "The Board of Directors places importance on comprehensive risk management encompassing risk factors associated with vision, goals, business strategies, finance, production, other operations, and anti-corruption as well as Environmental, Social, and Governance (ESG) principles while taking risk likelihood and levels of impact into account. The Board has set clear measures for risk management and ensures that there are people accountable for risk management. Additionally, the Board has established measures for reporting, monitoring, and evaluating risk management.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทกำหนดให้มีคณะกรรมการบริหารความเสี่ยงในระดับจัดการ (Risk Management Committee) ซึ่งมีหน้าที่นำเสนอแผนงานและผลการปฏิบัติตามแผนต่อคณะกรรมการตรวจสอบเป็นประจำทุกไตรมาส และให้รายงานต่อคณะกรรมการบริษัทเป็นรายไตรมาสโดยมีการทบทวนระบบหรือประเมินประสิทธิผลของการจัดการความเสี่ยงอย่างน้อยปีละ 1 ครั้ง และในทุก ๆ ระยะเวลาที่พบว่าระดับความเสี่ยง มีการเปลี่ยนแปลง โดยมีประธานเจ้าหน้าที่บริหาร¹ เป็นประธานคณะกรรมการบริหารความเสี่ยง ทั้งนี้ คณะกรรมการบริหารความเสี่ยง มีบทบาทหน้าที่และความรับผิดชอบ ดังต่อไปนี้",
+                        en: "The Risk Management Committee was set up by the Board to prepare and submit a risk management plan and report performance to the Audit Committee as well as the Board on a quarterly basis. The Committee reviews the risk management system and evaluates performance at least once a year and whenever the risk level changes. The Chief Executive Officer¹ serves as Chairperson of the Risk Management Committee. The roles, duties, and responsibilities of the Risk Management Committee are as follows:",
+                    },
+                },
+                {
+                    type: "pdf_numbered_list",
+                    items: [
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "ประเมินและบริหารจัดการความเสี่ยงเพื่อลดผลกระทบจากความเสี่ยงที่อาจส่งผลกระทบต่อการดำเนินงานของบริษัทฯ",
+                                en: "Assess and manage risks to mitigate the impact of risks that can affect the Company's operations.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "การให้ความสนับสนุนในเชิงนโยบายเพื่อให้การจัดการความเสี่ยงเป็นไปอย่างมีประสิทธิภาพและเกิดการตระหนักถึงความเสี่ยงในการดำเนินการกิจกรรมใด ๆ ของบริษัทฯ",
+                                en: "Provide support to related policies to ensure efficient risk mitigation and to raise awareness of any risks arising from the Company's activities.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "การให้การสนับสนุนในเรื่องของทรัพยากรทั้งจากภายในและภายนอกที่จำเป็นต่อการบริหารความเสี่ยงให้มีประสิทธิภาพ",
+                                en: "Provide essential internal and external resources to enable efficient risk management.",
+                            },
+                        },
+                    ],
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "บริษัทฯ ได้มีการประกาศนโยบายการบริหารจัดการความเสี่ยงและมีการปรับปรุงอย่างสม่ำเสมอ จัดตั้งให้มีหน่วยงานความยั่งยืนและบริหารความเสี่ยงที่รับผิดชอบโดยตรงเพื่อประสานงานกับทุกหน่วยงาน และผลักดันให้เกิดการบริหารความเสี่ยงอย่างมีประสิทธิภาพทั่วทั้งองค์กร มีกลไกในการค้นหาและระบุความเสี่ยงที่สำคัญของธุรกิจครอบคลุมมิติด้านสิ่งแวดล้อม สังคมและการกำกับดูแลกิจการ (ESG) โดยประเมิน ถึงโอกาสเกิดและผลกระทบที่อาจมีต่อผู้มีส่วนได้ส่วนเสียเพื่อพิจารณาความสำคัญ ก่อนกำหนดเป็นรายการความเสี่ยงองค์กร และมอบหมาย ผู้รับผิดชอบในการบริหารจัดการความเสี่ยงให้อยู่ในระดับที่องค์กรยอมรับได้ รวมถึงมีการติดตามความก้าวหน้าและทบทวนประเด็นความเสี่ยงอย่างสม่ำเสมอ",
+                        en: "The Company has announced and regularly updated its risk management policy and has established the Sustainability and Risk Management Department to coordinate with all other departments in driving effective risk management practices across the organization. The Company has incorporated a mechanism for identifying key business risks, encompassing environmental, social, and governance (ESG) dimensions. To identify risks, the Company evaluates the materiality of the issues based on likelihood and potential impacts on stakeholders. Responsible persons are assigned to manage risks within the Company's risk appetite. The Company also monitors and reviews risk issues on a regular basis.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "นอกจากนี้ บริษัทฯ ได้บูรณาการหลักการบริหารความเสี่ยงเข้ากับกระบวนการต่าง ๆ ภายในองค์กรเพื่อสร้างความตระหนักถึงความไม่แน่นอนในการดำเนินธุรกิจและส่งเสริมให้การบริหารความเสี่ยงเป็นส่วนหนึ่งของการดำเนินงาน เพื่อเตรียมพร้อมรับมือกับเหตุการณ์ที่อาจเกิดขึ้นในอนาคต อีกทั้งเป็นปัจจัยสำคัญในการพิจารณาประเด็นสำคัญด้านความยั่งยืน (Materiality) และการจัดทำแผนกลยุทธ์และแผนการดำเนินงานประจำปี ทั้งนี้ คณะกรรมการบริหารความเสี่ยงได้มีการประชุมเพื่อติดตามความเสี่ยงและผลการบริหารจัดการตามแผนบรรเทาความเสี่ยงรวมทั้งรายงานผลการสอบทานระบบการบริหารความเสี่ยงแก่คณะกรรมการตรวจสอบภายในและคณะกรรมการบริษัทเป็นประจำทุกไตรมาส",
+                        en: "In addition, the Company has integrated risk management principles into various organizational processes to enhance awareness of business uncertainties. Risk management is embedded within the Company's operations to ensure preparedness for future challenges. Risk management is also an important factor in assessing the materiality of sustainability issues and developing annual strategic and operational plans. The Risk Management Committee meets quarterly to monitor risks, assess the effectiveness of the risk mitigation plan, and report the reviewed results of the risk management system to the Internal Audit Committee and the Board of Directors.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "บริษัทฯ ได้ผนวกการบริหารจัดการความเสี่ยงเข้ากับแผนการดำเนินธุรกิจของบริษัทฯ เพื่อประสิทธิภาพสูงสุดในการบริหารจัดการความเสี่ยง ซึ่งให้ความสำคัญกับการสร้างคุณค่าให้แก่บริษัทฯ และผู้มีส่วนได้เสียอย่างยั่งยืนและครอบคลุมเรื่อง ESG โดยใช้หลักการการบริหารความเสี่ยงแบบสหพันธ์ (Risk Correlation) มาวิเคราะห์ความสัมพันธ์ของความเสี่ยงแต่ละประเด็นให้ครอบคลุมทั้งเชิงบวกและเชิงลบ กระบวนการบริหารความเสี่ยงของบริษัทฯ เริ่มจากการกำหนดวัตถุประสงค์ตามแผนการดำเนินธุรกิจและแยกย่อยกระจายไปสู่ระดับหน่วยธุรกิจ ฝ่าย แผนกและหน่วย โดยการระบุความเสี่ยง จะให้พนักงานระดับปฏิบัติงานซึ่งเป็นผู้มีความรู้และความเชี่ยวชาญในกิจกรรมนั้น ๆ ระบุความเสี่ยงจาก ผู้ปฏิบัติงานในแต่ละส่วนของตนเองอย่างละเอียด โดยจะทำการประเมินความน่าจะเป็นและผลกระทบจากความเสี่ยงนั้น ๆ พร้อมทั้งจัดเตรียมแนวทางปฏิบัติเพื่อบรรเทาความเสี่ยงที่อาจจะเกิดขึ้น และรายงานให้ผู้บังคับบัญชา หรือหัวหน้าได้รับทราบและติดตามความคืบหน้าอย่าง ต่อเนื่อง และส่งรายงานดังกล่าวมายังหน่วยงานความยั่งยืนและการบริหารความเสี่ยงเพื่อรวบรวมเป็นรายงานความเสี่ยงในระดับองค์กรแล้วนำเสนอต่อคณะกรรมการบริหารความเสี่ยง คณะกรรมการตรวจสอบ และคณะกรรมการบริหารทุกไตรมาส นอกจากนี้ คณะกรรมการ ESG ยังมีบทบาทสำคัญในการกำกับดูแลความเสี่ยงด้าน ESG",
+                        en: "The Company has integrated risk management into its business plans to maximize the efficiency of risk management, focusing on creating sustainable value for the Company and stakeholders, including ESG issues. By employing risk correlation management, the Company analyzes the relationship between risk issues, addressing positive and negative aspects. The corporate risk management process begins with defining business objectives based on the business plan and breaking them down into the business group, division, department, and unit levels. Operational staff, with knowledge and experience in their areas, are responsible for identifying risks in their processes. They assess the likelihood and impact of these risks and propose mitigation strategies. Progress is reported to the relevant supervisor, who monitors ongoing risk management efforts before forwarding the report to the Sustainability and Risk Management Department for compilation into a corporate risk report. The report is quarterly presented to the Risk Management Committee, the Audit Committee, and the Board of Directors. Additionally, the ESG Committee also plays a crucial role in overseeing ESG risks.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "ในรอบหลายปีที่ผ่านมา ผลการผนวกการบริหารความเสี่ยงเข้ากับแผนการดำเนินธุรกิจของบริษัทฯ สามารถส่งเสริมกลยุทธ์การดำเนินการของบริษัทฯ ให้เป็นไปตามเป้าหมาย สำหรับด้านการลงทุนในธุรกิจใหม่ บริษัทฯ มีการประเมินความเสี่ยงด้านผลตอบแทนจากการลงทุนและประเด็น ESG อย่างรอบด้านในแต่ละโครงการ เพื่อนำเสนอผลการประเมินและแผนการจัดการต่อคณะกรรมการบริหารระดับสูง (Executive Committee) เพื่อให้มั่นใจว่าการลงทุนของบริษัทฯ มีการประเมินและบริหารความเสี่ยงอย่างเหมาะสม",
+                        en: "Over the years, the integration of risk management into business plans has strengthened the Company's strategic execution, supporting the achievement of its business targets. For new business investments, the Company conducts comprehensive assessments of investment return risks and ESG factors for each project. The assessment results and risk management plans are then presented to the Executive Committee, ensuring that all investments undergo effective risk evaluation and management.",
+                    },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "ระบบการควบคุมและการตรวจสอบภายใน",
+                        en: "Internal Control System and Internal Audit",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทจัดให้มีระบบการควบคุมภายในที่ครอบคลุมทุกด้าน ทั้งด้านบัญชีและการเงิน ด้านการบริหาร การดูแลทรัพย์สิน การปฏิบัติงานการดำเนินการให้เป็นไปตามกฎหมาย ข้อบังคับ และระเบียบที่เกี่ยวข้อง อีกทั้งยังมีกลไกการตรวจสอบถ่วงดุลที่มีประสิทธิภาพเพียงพอในการปกป้องรักษาผู้มีส่วนได้เสีย ดูแลเงินทุนของผู้ถือหุ้น และทรัพย์สินของบริษัทฯ กำกับดูแลให้สำนักงานตรวจสอบภายในมีความเป็นอิสระโดยให้รายงานตรงต่อคณะกรรมการตรวจสอบ เพื่อให้เกิดความเชื่อมั่นว่าระบบการควบคุมภายในและตรวจสอบภายในเป็นหนึ่งในกลไกสำคัญ ที่จะขับเคลื่อนธุรกิจให้เติบโตอย่างยั่งยืน สำนักงานตรวจสอบภายในทำหน้าที่สอบทานการควบคุมภายในของกระบวนการปฏิบัติงานและระบบงานสำคัญ ครอบคลุมหน่วยงานธุรกิจและหน่วยงานสนับสนุน ให้คำปรึกษาและข้อเสนอแนะเกี่ยวกับระบบการควบคุมภายใน และการบริหารความเสี่ยง เพื่อพัฒนากระบวนการปฏิบัติงานของบริษัทฯ ไปสู่ความเป็นเลิศ ให้สอดคล้องกับการเติบโตของธุรกิจและเศรษฐกิจที่เปลี่ยนแปลง",
+                        en: "The Board of Directors has set up an internal control system that covers all aspects of BPP's businesses, ranging from accounting and finance, administration, asset management, operational management, and compliance with related laws, rules, and regulations. The Board has also established sufficient and effective checks and balances mechanisms to protect shareholders' equities and BPP's assets. Moreover, the Board has determined that the Internal Audit Unit operates independently and reports directly to the Audit Committee to ensure that the internal control system and internal audit are the key mechanisms to drive the Company's business to sustainable growth. The Internal Audit Unit audits the internal control of critical operational processes and work systems covering business units and supporting units. The Unit also provides consultancy and suggestions about the internal control system and risk management to improve the Company's operational excellence and accommodate business growth amid the changing economy.",
+                    },
+                },
+                {
+                    type: "pdf_note",
+                    hidePrefix: true,
+                    text: {
+                        th: "¹ประธานเจ้าหน้าที่บริหารของบริษัทฯ เป็นกรรมการบริษัทโดยตำแหน่ง ตามแนวปฏิบัติบริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน) ว่าด้วยคณะกรรมการบริษัท พ.ศ. 2558 ปรับปรุงครั้งที่ 3 พ.ศ. 2566",
+                        en: "¹BPP's Chief Executive Officer shall serve as an ex officio member of the Board of Directors of Directors of Banpu Power Public Company Limited B.E. 2558, Amendment No. 3 B.E. 2566.",
+                    },
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p20_full_th.webp", en: "/page_034/034_p20_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: { th: "/page_034/034_p20_mobile_th.webp", en: "/page_034/034_p20_mobile_en.webp" },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "รักษาความน่าเชื่อถือทางการเงิน และการเปิดเผยข้อมูล",
+                        en: "Ensure Disclosure and Financial Integrity",
+                    },
+                    color: "#6cc0b3",
+                    size: "md",
+                    textAlign: "center",
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "ความขัดแย้งของผลประโยชน์",
+                        en: "Conflict of Interest",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "บริษัทฯ ถือเป็นนโยบายสำคัญที่จะไม่ให้กรรมการ ผู้บริหาร และพนักงานใช้โอกาสจากการดำรงตำแหน่งดังกล่าว เพื่อแสวงหาผลประโยชน์ส่วนตน จึงกำหนดไว้ในนโยบายบรรษัทภิบาลและคู่มือจริยธรรมธุรกิจเพื่อให้เป็นข้อปฏิบัติสำหรับกรรมการ ผู้บริหาร และพนักงานในการหลีกเลี่ยงการทำรายการที่เกี่ยวโยงกับตนเองและผู้ที่เกี่ยวข้องที่อาจก่อให้เกิดความขัดแย้งทางผลประโยชน์กับบริษัทฯ และในกรณีที่จำเป็น ต้องทำรายการดังกล่าวจะต้องกระทำโดยมีราคาและเงื่อนไขเสมือนการทำรายการกับบุคคลภายนอก (Fair and at Arm's Length) โดยกรรมการ ผู้บริหาร หรือพนักงานที่มีส่วนได้เสียในรายการนั้น จะต้องไม่มีส่วนในการพิจารณาอนุมัติ หากรายการใดเข้าข่ายเป็นรายการที่เกี่ยวโยงกันภายใต้ประกาศของตลาดหลักทรัพย์แห่งประเทศไทยและประกาศของคณะกรรมการกำกับตลาดทุนจะต้องปฏิบัติตามหลักเกณฑ์ วิธีการ และการเปิดเผย ข้อมูลรายการที่เกี่ยวโยงกันของบริษัทจดทะเบียนอย่างเคร่งครัด",
+                        en: "BPP stresses the importance of its policy to prohibit directors, executives, and employees from misuse of position for personal gain. As stipulated in the Corporate Governance Policy and the Code of Conduct, directors, executives, and employees are to avoid connected transactions that could lead to a conflict of interest with the Company. If necessary, the transactions are to be conducted fairly and at arm's length, and directors, executives, or employees having an interest in the transactions must not be involved in the approval process. If any transaction is considered connected under the SET's notification and the Capital Market Supervisory Board's notification, all rules, procedures, and the disclosure of connected information of listed companies must be strictly complied with.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "นอกจากนี้ คณะกรรมการบริษัทยังกำหนดข้อห้ามไม่ให้ใช้โอกาสหรือข้อมูลที่ได้จากการเป็นกรรมการ ผู้บริหาร หรือพนักงานในการหาประโยชน์ส่วนตน หรือทำธุรกิจที่แข่งขันกับบริษัทฯ หรือธุรกิจที่เกี่ยวเนื่อง รวมทั้งไม่ใช้ข้อมูลภายในเพื่อประโยชน์ของตนในการซื้อขายหุ้นของบริษัทฯหรือให้ข้อมูลภายในแก่บุคคลอื่นเพื่อประโยชน์ในการซื้อขายหุ้นของบริษัทฯ ในกรณีที่ผู้บริหารหรือพนักงาน มีส่วนร่วมในการทำงานเฉพาะกิจ ที่เกี่ยวกับข้อมูลที่ยังไม่ได้เปิดเผยต่อสาธารณะและอยู่ระหว่างการเจรจา ซึ่งงานนั้น ๆ เข้าข่ายการเก็บรักษาข้อมูลภายในอันอาจมีผลต่อความเคลื่อนไหวของราคาหุ้นของบริษัทฯ บุคคลเหล่านั้นจะต้องทำสัญญารักษาความลับ (Confidentiality Agreement) ไว้กับบริษัทฯ จนกว่าจะมีการเปิดเผยข้อมูลต่อตลาดหลักทรัพย์แห่งประเทศไทย และสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+                        en: "The Board of Directors also prohibits directors, executives, or employees from using any opportunity or information acquired from their position for personal benefit or to compete with the Company or related business. Nor are they allowed to use insider information to sell or buy shares. If an executive or employee is involved in a special project of which the information has not yet been disclosed to the public or that it is under negotiation where the project's information has to be kept confidential as it could affect the share price, the executive or employee are to sign a confidentiality agreement until the information is disclosed to the SET and the SEC.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "ในปี 2561 บริษัทฯ ได้ประกาศใช้นโยบาย Market Sensitive Information และแนวปฏิบัติในการจัดการข้อมูลลับที่มีผลต่อตลาดหลักทรัพย์ซึ่งถือเป็นหน้าที่ของคณะกรรมการบริษัท ผู้บริหาร พนักงาน ที่ปรึกษา และบริษัทในเครือ ที่ต้องทำความเข้าใจและปฏิบัติตามโดยมีรายละเอียดตามหัวข้อที่ปรากฏในนโยบายและแนวปฏิบัติ ดังนี้",
+                        en: "In 2018, BPP announced the Market Sensitive Information Policy and practices on handling confidential information, which potentially affects the stock exchange. It is the duty of directors, executives, employees, consultants, and subsidiary companies to understand and comply with the policy and practices as follows:",
+                    },
+                },
+                {
+                    type: "pdf_numbered_list",
+                    items: [
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "จัดให้มีระบบควบคุมภายในเพื่อป้องกันการรั่วไหลของข้อมูลลับ",
+                                en: "Establish an internal control system to prevent the leak of confidential information.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "ปลูกฝังให้เป็นวัฒนธรรมองค์กรผ่านการสื่อสารอย่างสม่ำเสมอ เพื่อให้บุคคลที่เกี่ยวข้องตระหนักถึงหน้าที่ในการรักษาความลับของบริษัทฯ",
+                                en: "Cultivate a culture of information safety through constant communication to raise awareness of relevant persons of their duty to protect confidential information.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "จำกัดจำนวนบุคคลที่สามารถเข้าถึงข้อมูลลับให้น้อยที่สุดเท่าที่จำเป็น (Need to Know Basis) มีระบบควบคุมคู่สัญญาและผู้ให้บริการอื่นของบริษัทฯ ที่สามารถเข้าถึงระบบของบริษัทฯ ได้",
+                                en: "Limit the number of persons who have access to confidential information based on a need-to-know basis. Set up an information access control system for contract parties and service persons.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "ระมัดระวังในกรณีการรับหรือส่งต่อข้อมูลให้แก่บุคคลที่สาม โดยทุกฝ่ายต้องตระหนักรู้ถึงภาระหน้าที่ของตนในส่วนที่เกี่ยวข้องในการใช้และการควบคุมข้อมูลลับ",
+                                en: "Exercise extreme caution in receiving and sending information to and from third parties, being aware of one's duties in using and controlling confidential information.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "มีระบบเทคโนโลยีสารสนเทศ และการควบคุมที่เหมาะสม",
+                                en: "Establish an appropriate information technology and control system.",
+                            },
+                        },
+                    ],
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "การเปิดเผยข้อมูลกับผู้ลงทุน",
+                        en: "Disclosure of Information to Investors",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทดูแลให้มีการเปิดเผยข้อมูลและสารสนเทศทั้งทางการเงินและด้านอื่นที่เกี่ยวกับธุรกิจและผลประกอบการของบริษัทฯ ที่ตรงต่อความเป็นจริง ครบถ้วน เพียงพอ สม่ำเสมอ ทันเวลา และแสดงให้เห็นถึงสถานภาพของการประกอบการและสถานภาพทางการเงิน ที่แท้จริงของบริษัทฯ รวมทั้งอนาคตของธุรกิจของบริษัทฯ โดยจัดให้มีการปฏิบัติตามกฎหมาย ระเบียบ และข้อบังคับที่เกี่ยวข้องกับการเปิดเผย ข้อมูลของสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ และตลาดหลักทรัพย์แห่งประเทศไทยโดยเคร่งครัด นอกจากนั้นบริษัทฯ จัดให้มีการสื่อสารไปยังผู้ถือหุ้นและนักลงทุนผ่านช่องทางอื่น ๆ โดยมีหน่วยงานนักลงทุนสัมพันธ์ (Investor Relations) ทำหน้าที่สื่อสารโดยตรงกับผู้ถือหุ้น นักลงทุน และนักวิเคราะห์หลักทรัพย์ทั้งในและต่างประเทศ ในขณะที่หน่วยงานสื่อสารองค์กรทำหน้าที่เผยแพร่ข้อมูลข่าวสารของบริษัทฯ ไปยังผู้ถือหุ้น นักลงทุน และประชาชนทั่วไปผ่านสื่อมวลชนและสื่ออื่น ๆ ทั้งในและต่างประเทศเช่นเดียวกัน เพื่อให้กลุ่มบุคคลดังกล่าวได้รับทราบข้อมูลของบริษัทฯ อย่างทั่วถึงและตรงเวลา",
+                        en: "The Board of Directors oversees the disclosure of information and its transparency to ensure that both financial and non-financial information relating to the Company's business and performance is disclosed in a complete, accurate, adequate, regular, and timely manner. Moreover, the information must reflect the Company's actual performance and its true financial status, as well as its business future, while strictly complying with the laws, rules, and regulations relating to information disclosure of both the SEC and the SET. BPP also communicates with shareholders and investors through other channels. The Investor Relations Department directly communicates with shareholders, investors, and securities analysts both domestically and abroad, while the Corporate Communications Department discloses corporate information to shareholders, investors, and the public through the local and international press on an equitable and timely basis.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "ในปี 2568 บริษัทฯ จัดให้มีการนำเสนอข้อมูลแก่นักลงทุนต่างประเทศ นักลงทุนสถาบัน นักลงทุนรายย่อย นักวิเคราะห์หลักทรัพย์และสื่อมวลชน ดังนี้",
+                        en: "In 2025, BPP organized the following activities to disclose information to international investors, institutional investors, small investors, securities analysts, and the press:",
+                    },
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p21_full_th.webp", en: "/page_034/034_p21_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: { th: "/page_034/034_p21_mobile_table_th.webp", en: "/page_034/034_p21_mobile_table_en.webp" },
+                    minWidth: 800,
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p22_full_th.webp", en: "/page_034/034_p22_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "นอกจากนี้ได้มีการเปิดเผยข้อมูลสารสนเทศต่าง ๆ ผ่านเว็บไซต์บริษัทฯ ที่ www.banpupower.com เพื่อให้ผู้มีส่วนได้เสียกลุ่มอื่น ๆ ได้รับรู้ข้อมูลอย่างเท่าเทียมและทั่วถึง ผู้สนใจสามารถติดต่อสอบถามหรือขอข้อมูลต่าง ๆ จากหน่วยงานนักลงทุนสัมพันธ์ของบริษัทฯ ได้ที่โทรศัพท์หมายเลข 02-007-6000 หรือ Email: investor_relations@banpupower.co.th",
+                        en: "The Company also discloses its information and news via the Company's website, www.banpupower.com, to provide equal and equitable access for all stakeholders. Interested parties may contact or make inquiries to the Company's Investor Relations Department via Telephone: 02-007-6000 or E-mail: investor_relations@banpupower.co.th",
+                    },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "รายงานของคณะกรรมการ",
+                        en: "The Board of Directors' Report",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทเป็นผู้รับผิดชอบในรายงานงบการเงินรวมของบริษัทฯ และบริษัทย่อย และสารสนเทศทางการเงินที่ปรากฏในรายงานประจำปี รายงานงบการเงินดังกล่าวจัดทำขึ้นตามมาตรฐานการบัญชีที่รับรองทั่วไปในประเทศไทย โดยเลือกใช้นโยบายบัญชีที่เหมาะสมและถือปฏิบัติอย่างสม่ำเสมอ ซึ่งคณะกรรมการตรวจสอบและผู้สอบบัญชีจะร่วมกันพิจารณาทบทวนความเหมาะสมของนโยบายบัญชีที่ถือปฏิบัติอยู่เป็นประจำในการจัดทำรายงานงบการเงิน โดยคณะกรรมการบริษัทเน้นย้ำให้ผู้จัดทำใช้ดุลยพินิจอย่างระมัดระวังในการจัดทำ รวมถึงเปิดเผย ข้อมูลสำคัญอย่างเพียงพอในหมายเหตุประกอบงบการเงิน\n\nคณะกรรมการบริษัทได้มอบหมายให้คณะกรรมการตรวจสอบเป็นผู้รับผิดชอบดูแลเกี่ยวกับคุณภาพของรายงานทางการเงินและระบบควบคุมภายใน โดยความเห็นของคณะกรรมการตรวจสอบเกี่ยวกับเรื่องนี้ได้ปรากฏในรายงานของคณะกรรมการตรวจสอบซึ่งแสดงไว้ในรายงานประจำปีนี้แล้ว",
+                        en: "The Board of Directors is responsible for BPP's and its subsidiaries' consolidated financial statements and the financial information that appears in the Company's Annual Report. The financial statements are prepared under the Generally Accepted Accounting Principles (GAAP) in Thailand, where an appropriate accounting policy has been selected and implemented. The Audit Committee and auditors jointly review the accounting policy to ensure it remains practical. While preparing the financial statements, the Board of Directors insists that the working team carefully exercise its discretion and that important information is adequately disclosed in the notes to the financial statements. The Board entrusted the Audit Committee with the responsibility to supervise the quality of financial statements and the internal control system and to ensure that any opinions of the Audit Committee on these issues have been included in its report, which is also included in this Annual Report.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทมีความเห็นว่า รายงานงบการเงินของบริษัทฯ และบริษัทย่อย ณ วันที่ 31 ธันวาคม 2568 เป็นรายงานที่ถูกต้อง ครบถ้วนเพียงพอ และเชื่อถือได้",
+                        en: "The Board of Directors considered that the financial statements of the Company and its subsidiaries as of 31 December 2025 are accurate, complete, adequate, and reliable.",
+                    },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "นโยบายการใช้ข้อมูลภายใน",
+                        en: "Policy on the Use of Inside Information",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "บริษัทฯ ให้ความสำคัญกับการเปิดเผยข้อมูลและความโปร่งใส และได้กำหนดนโยบายด้านการเปิดเผยข้อมูล และความโปร่งใสของรายงานทางการเงินและการดำเนินการไว้ในนโยบายบรรษัทภิบาลของบริษัทฯ ในการเปิดเผยสารสนเทศทางการเงินและข้อมูลอื่นที่เกี่ยวข้องกับธุรกิจและผลประกอบการของบริษัทฯ ที่ถูกต้อง ครบถ้วน เพียงพอ เชื่อถือได้ และทันเวลาอย่างสม่ำเสมอให้กับผู้ถือหุ้น นักลงทุน นักวิเคราะห์หลักทรัพย์ตลอดจนบุคคลทั่วไป คณะกรรมการบริษัทมุ่งมั่นที่จะดูแลให้มีการปฏิบัติตามกฎหมายข้อบังคับ และระเบียบที่เกี่ยวข้องเกี่ยวกับการเปิดเผย ข้อมูลและความโปร่งใสอย่างเคร่งครัด โดยเมื่อกรรมการบริษัทหรือผู้บริหารมีการเปลี่ยนแปลงการซื้อขายหุ้นตามข้อกำหนดของสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์จะต้องรายงานข้อมูลให้กับหน่วยงานเลขานุการบริษัททราบ และกำหนดให้มีการรายงานการถือครองหลักทรัพย์ของกรรมการ และผู้บริหารที่มีการเปลี่ยนแปลงเป็นประจำทุกเดือนในการประชุมคณะกรรมการบริษัท นอกจากนี้กรณีที่กรรมการหรือผู้บริหาร ได้รับตำแหน่งครั้งแรกจะมีการรายงานการถือหลักทรัพย์ต่อคณะกรรมการบริษัท ซึ่งนับรวมถึงคู่สมรสและบุตร ที่ยังไม่บรรลุนิติภาวะ ตลอดจนบุคคลที่เกี่ยวข้อง",
+                        en: "The Company places great importance on information disclosure and transparency and has formulated a policy on information disclosure, transparency in financial statements, and corresponding policy implementation in BPP's Corporate Governance Policy. This is to ensure that financial and non-financial information about the Company's businesses and operating results are disclosed to shareholders, investors, securities analysts, and the general public in an accurate, complete, sufficient, reliable, and timely manner. The Board of Directors is committed to strict compliance with laws and regulations regarding information disclosure and transparency. Sales or purchases of shares by any director or executive, according to the SEC's notification, are duly reported to the Company Secretary Department. Changes in the securities holding of directors or executives are also subject to be reported at the Board of Directors' meeting on a monthly basis. In addition, directors and executives must disclose their holding of the Company's securities on the date they were appointed, including those of their spouses, minor children, and connected persons.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "การดูแลเรื่องการใช้ข้อมูลภายในของบริษัทฯ นั้น ได้กำหนดไว้ในข้อบังคับการทำงานของพนักงานทุกระดับ ในหมวดวินัยและลงโทษกำหนดว่าพนักงานผู้ใดไม่ปฏิบัติตามหรือฝ่าฝืนวินัยที่กำหนดไว้ ให้ถือว่าพนักงานผู้นั้น ทำผิดวินัยและต้องได้รับโทษตามลักษณะแห่งความผิดโดยมีใจความว่า \"เปิดเผยความลับของบริษัทฯ เจตนาทำลายชื่อเสียง ความเชื่อถือหรือผลิตภัณฑ์ของบริษัทฯ อันเป็นเหตุให้บริษัทฯ ได้รับความเสียหายหรือสูญเสียโอกาสทางธุรกิจ\" พนักงานผู้ทำผิดจะได้รับโทษรุนแรงถึงขั้นไล่ออก ทั้งนี้ ในปี 2568 ที่ผ่านมา ไม่มีกรณีฝ่าฝืนหรือไม่ปฏิบัติตามหลักเกณฑ์ซื้อขายหลักทรัพย์โดยใช้ข้อมูลภายใน และการซื้อขายสินทรัพย์ตามกฎเกณฑ์ของตลาดหลักทรัพย์และสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์แห่งประเทศไทย",
+                        en: "The Company prescribed the rule for the use of inside information under the Disciplinary Action section applied to employees at all levels that any employee who fails to comply or violates the set disciplinary requirements is considered to have breached the Company's rules and is subject to disciplinary penalties according to the nature of the offense. It is stated that anyone \"disclosing the Company's confidential information with an intention to destroy its reputation, credibility or products, resulting in a financial loss or a loss in a business opportunity to the Company\" may be subject to severe punishment up to dismissal. In 2025, there were no reports of insider trading violations or non-compliance with the SET's and the SEC's rules and regulations on the securities exchange.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "บริษัทฯ มีมาตรการป้องกันการใช้ข้อมูลภายใน โดยได้กำหนดเป็นข้อปฏิบัติไว้ใน \"คู่มือจริยธรรมธุรกิจ\" ในหัวข้อ \"ความขัดแย้งทางผลประโยชน์และการรักษาข้อมูลอันเป็นความลับโดยเฉพาะการใช้ข้อมูลของบริษัทฯ\" ในการดูแลเรื่องการใช้ข้อมูลภายในของบริษัทฯ นั้น บริษัทฯ มีมาตรการ ป้องกันการรั่วไหลของข้อมูลภายใน บริษัทฯ ถือว่าเป็นความรับผิดชอบของกรรมการ ผู้บริหาร และพนักงานทุกคนในการเก็บรักษาข้อมูลความลับของบริษัทฯ อย่างเคร่งครัด โดยเฉพาะอย่างยิ่งข้อมูลภายในที่ยังไม่เปิดเผยต่อสาธารณะหรือข้อมูลที่มีผลกระทบต่อการดำเนินธุรกิจหรือราคาหลักทรัพย์ ในส่วนของกรรมการได้มีกำหนดข้อปฏิบัติไว้ในแนวปฏิบัติของคณะกรรมการบริษัทว่าด้วยคณะกรรมการบริษัทพ.ศ. 2558 ปรับปรุงครั้งที่ 3 พ.ศ. 2566 และคู่มือจริยธรรมธุรกิจดังนี้",
+                        en: "The Company stipulated preventive measures for inside information security as practices in the Code of Conduct under the section \"Conflict of Interests and Keeping Confidential Information, \"especially \"Use of Company Information.\" Measures against internal information leakage have been put in place to supervise the use of the Company's internal information. It is the responsibility of the Company's directors, executives, and employees to keep corporate information strictly confidential, especially internal information not yet disclosed to the public or any data or information that may affect the business of the Company or its share price. Directors shall follow the guidelines set forth in the Practices for the Board of Directors of Banpu Power Public Company Limited B.E. 2558, Amendment No. 3 B.E. 2566, and the Code of Conduct, as follows:",
+                    },
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p23_full_th.webp", en: "/page_034/034_p23_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_numbered_list",
+                    items: [
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "ไม่ใช้โอกาสหรือข้อมูลที่ได้จากการเป็นกรรมการผู้บริหาร หรือพนักงานในการหาประโยชน์ส่วนตนและในเรื่องการทำธุรกิจที่แข่งขันกับบริษัทฯหรือธุรกิจที่เกี่ยวเนื่อง",
+                                en: "Directors, executives, and employees must not use the information they receive from their directorship or employment for personal benefit or for conducting business or other activities in competition with the Company.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "ไม่ใช้ข้อมูลภายในเพื่อประโยชน์ของตนในการซื้อขายหุ้นของบริษัทฯ หรือให้ข้อมูลภายในแก่บุคคลอื่นเพื่อประโยชน์ในการซื้อขายหุ้นของบริษัท",
+                                en: "Directors must not use internal information in trading the Company's shares or disclose internal information to any third party for the benefit of trading the Company's shares.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "ไม่เปิดเผยข้อมูลความลับทางธุรกิจของบริษัทฯ ต่อบุคคลภายนอก โดยเฉพาะคู่แข่งขัน แม้หลังพ้นสภาพการเป็นกรรมการผู้บริหารหรือพนักงานไปแล้ว",
+                                en: "Business secrets must not be disclosed to any third party, especially to competitors, even after a director, executive, or employee has left the Company.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "คณะกรรมการผู้บริหารตามนิยามของสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ หรือ ก.ล.ต. ตลอดจนบุคคลใด ที่ได้รับทราบ ข้อมูลภายในของบริษัทฯ ที่เป็นสาระสำคัญซึ่งมีผลกระทบต่อราคาหลักทรัพย์ของบริษัทฯ ต้องไม่กระทำการซื้อขาย หลักทรัพย์ของบริษัทฯในช่วงเวลาห้ามซื้อขายหลักทรัพย์ที่บริษัทฯ กำหนด (Blackout Period) โดยได้มีการกำหนดแนวปฏิบัติดังนี้\n\nคณะกรรมการ ผู้บริหารของบริษัทฯ (รวมทั้งคู่สมรสและบุตรที่ยังไม่บรรลุนิติภาวะของบุคคลดังกล่าว) ตลอดจนบุคคลใด ที่ได้รับทราบ ข้อมูลภายในของบริษัทฯ ที่เป็นสาระสำคัญซึ่งมีผลกระทบต่อราคาหลักทรัพย์ของบริษัทฯ ต้องไม่กระทำการซื้อขาย หลักทรัพย์ของบริษัทฯ ในช่วง 1 เดือน ก่อนที่ข้อมูลงบการเงินหรือข้อมูลอื่นที่มีผลกระทบต่อราคาหลักทรัพย์บริษัทฯ จะเปิดเผยต่อสาธารณชนและต้องไม่ซื้อขายหลักทรัพย์ของบริษัทฯ จนกว่าจะพ้นระยะเวลา 24 ชั่วโมง นับตั้งแต่ได้มีการเปิดเผยข้อมูลสู่สาธารณะแล้ว",
+                                en: "Directors and executives, as defined by the Securities and Exchange Commission (SEC), or any persons who know inside information which may influence the share price are prohibited from trading the Company's shares during the blackout period set by the Company as follows:\n\nDirectors and executives (including their spouses and minor children) or any persons who know inside information which may influence the share price are prohibited from trading the Company's shares within one month before information in the financial statements or other information which may influence the Company's share price, and until after 24 hours after the information is made public.",
+                            },
+                        },
+                        {
+                            label: { th: "", en: "" },
+                            description: {
+                                th: "คณะกรรมการและผู้บริหารตามนิยามของสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ หรือ ก.ล.ต. มีหน้าที่รายงานการเปลี่ยนแปลงการถือหลักทรัพย์ของบริษัทฯ ตามหลักเกณฑ์ที่ทาง ก.ล.ต. กำหนด",
+                                en: "Directors and executives, as defined by the Securities and Exchange Commission, shall report on their shareholding and its change with the method regulated by the Securities and Exchange Commission.",
+                            },
+                        },
+                    ],
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "นอกจากนี้ บริษัทฯ ได้กำหนดในนโยบายบรรษัทภิบาล ที่จะไม่ให้กรรมการผู้บริหาร และพนักงานใช้โอกาสจากการเป็นกรรมการ ผู้บริหาร หรือพนักงานบริษัทฯ แสวงหาผลประโยชน์ส่วนตน โดยห้ามไม่ให้กรรมการประกอบธุรกิจที่แข่งขันกับบริษัทฯ หลีกเลี่ยงการทำรายการที่เกี่ยวโยง ที่อาจก่อให้เกิดความขัดแย้งทางผลประโยชน์กับบริษัทฯ ในกรณีที่จำเป็นต้องทำรายการดังกล่าว บริษัทฯ ต้องดูแลให้การทำรายการเป็นไป ด้วยความโปร่งใส เที่ยงธรรม เหมือนการทำรายการกับบุคคลภายนอก ทั้งนี้ กรรมการ ผู้บริหาร หรือพนักงานที่มีส่วนได้เสียในรายการนั้นจะต้องไม่มีส่วนร่วมในการพิจารณาอนุมัติ หากรายการนั้นเข้าข่ายเป็นรายการที่เกี่ยวโยงกันภายใต้ประกาศของหน่วยงานที่เกี่ยวข้อง กรรมการ ผู้บริหาร หรือพนักงานที่มีส่วนได้เสียต้องปฏิบัติตามหลักเกณฑ์ วิธีการ และการเปิดเผยข้อมูลรายการที่เกี่ยวโยงกันของบริษัทฯ จดทะเบียนอย่างเคร่งครัด นอกจากนั้นในแนวปฏิบัติของกรรมการบริษัทได้มีการกำหนดแนวทางสำหรับกรรมการหากได้รับรู้ข้อมูลที่ยังไม่ได้เปิดเผย ต่อสาธารณะ นอกจากนี้ บริษัทฯ ได้แจ้งงดการซื้อขายหลักทรัพย์ของกรรมการและผู้บริหารภายในระยะเวลา 30 วัน ก่อนประกาศงบการเงิน",
+                        en: "Additionally, the Company stipulated in the Corporate Governance Policy that directors, executives, and employees shall not exploit their position for personal gain. They must avoid connected transactions that could lead to a conflict of interest with the Company. If necessary, the transactions are to be conducted fairly and at arm's length. Directors, executives, or employees having an interest in the transactions shall not be involved in the approval process. According to the SET's and the Capital Market Supervisory Board's notification, all rules, procedures, and the disclosure of connected information applied to listed companies must be strictly complied with if the transaction is considered a connected transaction. In addition, the Practices of the Board of Directors stipulate a guideline for directors to follow if they have access to non-public information. The Company also notifies directors and executives of a blackout period of 30 days prior to the disclosure of the financial statements.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "ในส่วนของการพัฒนาระบบควบคุมการใช้ข้อมูลภายใน บริษัทฯ ว่าจ้าง บมจ. บ้านปู โดยนำระบบเทคโนโลยีสารสนเทศ (Information Technology: IT) มาใช้ควบคุม เช่น ระบบการป้องกันการเข้าถึงข้อมูลของบริษัทฯ จากบุคคลภายนอก ระบบควบคุมระดับการเข้าถึงข้อมูลของบริษัทฯ ของพนักงานในระดับต่าง ๆ ให้ตรงกับความรับผิดชอบ และห้ามผู้บริหารและพนักงานเปิดเผยข้อมูลที่อยู่ในระบบข้อมูลที่มีการ ป้องกันใด ๆ ของบริษัทฯ รวมถึงการเปลี่ยนแปลง ทำซ้ำ ลบทิ้ง หรือทำลายข้อมูลที่มีการป้องกันใด ๆ ของบริษัทฯ โดยไม่ได้รับอนุญาตในกรณีที่กรรมการ ผู้บริหารหรือพนักงานที่มีส่วนร่วมในการทำงานเฉพาะกิจที่เกี่ยวกับข้อมูลที่ยังไม่ได้เปิดเผยต่อสาธารณะและอยู่ระหว่างการเจรจา ซึ่งงานนั้น ๆ เข้าข่ายการเก็บรักษาข้อมูลภายในอันอาจมีผลต่อความเคลื่อนไหวของราคาหลักทรัพย์ของบริษัทฯ ผู้บริหารและพนักงานเหล่านั้นจะต้องทำสัญญารักษาความลับ (Confidentiality Agreement) กับบริษัทฯ จนกว่าจะมีการเปิดเผยข้อมูลต่อสาธารณะและหน่วยงานกำกับดูแลที่เกี่ยวข้อง",
+                        en: "To develop the control system for the use of internal information, the Company hired Banpu Public Company Limited to install the IT system to supervise the use of Company information. For example, systems are in place to prevent access to information from a third party and to limit employees' information access levels according to their roles and responsibilities. The system also prevents unauthorized changes, duplication, or deletion of protected information.\nIn the case where a director, executive, or employee participates in a special task using information that has not yet been disclosed publicly, is under negotiation, or subject to internal control given its possible influence on the Company's share price, such an executive and employee must sign a Confidentiality Agreement with the Company. The Agreement shall remain in effect until the information is disclosed to the public or relevant regulatory authorities.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "ทั้งนี้ คณะกรรมการบริษัทและผู้บริหาร มีการรายงานการถือครองหลักทรัพย์ของบริษัทฯ เมื่อรับตำแหน่งครั้งแรก และรายงานการเปลี่ยนแปลงการถือหลักทรัพย์ ซึ่งนับรวมถึงคู่สมรสและบุตรที่ยังไม่บรรลุนิติภาวะ ตลอดจนบุคคลที่เกี่ยวข้องรวมทั้งรายงานการถือครองหลักทรัพย์ให้คณะกรรมการบริษัททราบเป็นประจำเมื่อมีการเปลี่ยนแปลง โดยในปี 2568 ที่ผ่านมา ไม่มีกรณีฝ่าฝืนหรือไม่ปฏิบัติตามหลักเกณฑ์ซื้อขายหลักทรัพย์โดยใช้ข้อมูลภายใน และการซื้อขายสินทรัพย์ตามกฎเกณฑ์ของตลาดหลักทรัพย์แห่งประเทศไทย และสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+                        en: "Directors and executives shall report on their holding of the Company's securities upon appointment and report on any changes in securities holding by themselves, spouses, minor children, and connected persons. They must also file a report on any changes in their securities holding to the Board meeting on a regular basis. In 2025, there were no violations of or non-compliance with regulations prohibiting insider trading and asset trading pursuant to the SEC's and SET's regulations.",
+                    },
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p24_full_th.webp", en: "/page_034/034_p24_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: { th: "/page_034/034_p24_mobile_th.webp", en: "/page_034/034_p24_mobile_en.webp" },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "สนับสนุนการมีส่วนร่วม และการสื่อสารกับผู้ถือหุ้น",
+                        en: "Ensure Engagement and Communication with Shareholders",
+                    },
+                    color: "#6cc0b3",
+                    size: "md",
+                    textAlign: "center",
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "สิทธิของผู้ถือหุ้น",
+                        en: "Shareholder's Rights",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทให้ความสำคัญต่อสิทธิและความเท่าเทียมกันของผู้ถือหุ้น โดยระบุไว้ในนโยบายบรรษัทภิบาลอย่างชัดเจน โดยกำหนดให้ผู้ถือหุ้นของบริษัทฯ มีสิทธิในการได้รับใบหุ้นและสิทธิในการโอนหุ้น สิทธิในการได้รับสารสนเทศที่เพียงพอ ทันเวลา และในรูปแบบที่เหมาะสม ต่อการตัดสินใจ สิทธิของผู้ถือหุ้นในการเข้าร่วมประชุมและออกเสียงลงคะแนนในที่ประชุมผู้ถือหุ้น เพื่อตัดสินใจในการเปลี่ยนแปลงนโยบาย ที่สำคัญของบริษัทฯ สิทธิในการเลือกตั้งและถอดถอนกรรมการ สิทธิในการให้ความเห็นชอบในการแต่งตั้งผู้สอบบัญชี และสิทธิในส่วนแบ่งผลกำไรในการประชุมผู้ถือหุ้น",
+                        en: "The Board of Directors stresses the importance of rights and equality between shareholders and institutional investors. It is clearly specified in the Corporate Governance Policy that shareholders are entitled to receive share certificates, transfer shares, and acquire adequate information in a timely fashion and a format conducive to decision-making. Shareholders are also entitled to attend a meeting, cast their votes at a shareholders' meeting to deliberate on BPP's important policies, elect and remove directors, approve appointments of auditors, and receive their shares of profit.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทมีนโยบายอำนวยความสะดวก โดยจัดส่งข้อมูลสารสนเทศที่ครบถ้วน ชัดเจน เพียงพอ และ ทันเวลา รวมถึงสนับสนุนให้ผู้ถือหุ้นเข้าร่วมและใช้สิทธิออกเสียง ในการประชุม หรือมอบฉันทะให้บุคคลใดบุคคลหนึ่งเข้าร่วมประชุม หรือกรรมการอิสระคนใดคนหนึ่งเป็นผู้ออกเสียงแทนในกรณีที่ไม่สามารถเข้าร่วมประชุมได้ด้วยตนเอง รวมทั้งเปิดโอกาสให้ผู้ถือหุ้นได้แสดงความคิดเห็น ขอคำอธิบาย หรือ ตั้งคำถามได้อย่างเท่าเทียมกัน นอกจากนี้ คณะกรรมการบริษัท ยังได้จัดทำหนังสือนัดประชุมและเอกสารที่เกี่ยวข้องเป็นภาษาอังกฤษทั้งฉบับโดยมีการเผยแพร่เอกสารดังกล่าวพร้อมกับฉบับภาษาไทย เพื่อให้มั่นใจว่าผู้ถือหุ้นได้มีส่วนร่วมในการตัดสินใจในเรื่องสำคัญของบริษัทฯ",
+                        en: "At each shareholders' meeting, the Board of Directors facilitates shareholders by furnishing them with complete, clear, sufficient, and timely information. The Board encourages shareholders to attend the meeting and cast their votes or to appoint an individual or an independent director as their proxy to cast votes on their behalf in case they cannot attend.\nShareholders are allowed to equally express opinions, seek explanations, or pose questions. Furthermore, the Board of Directors also prepares meeting invitation letters and related documents in English, which are disseminated to shareholders along with the Thai version to ensure that shareholders can actively participate in decision-making processes regarding important matters concerning the Company.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "สำหรับการประชุมสามัญผู้ถือหุ้นประจำปี 2568 บริษัทฯ ได้เปิดโอกาสให้สิทธิผู้ถือหุ้นส่วนน้อย เสนอเรื่องเพื่อพิจารณาเป็นวาระการประชุมและเสนอชื่อบุคคลเพื่อเป็นกรรมการ บริษัทฯ ได้ดำเนินการโดยประกาศผ่านตลาดหลักทรัพย์แห่งประเทศไทย เพื่อแจ้งให้ผู้ถือหุ้นทราบโดยเปิดรับเรื่องระหว่างวันที่ 1 พฤศจิกายน ถึง 30 ธันวาคม 2567 และลงประกาศในเว็บไซต์ของบริษัทฯ โดยระบุขั้นตอนและวิธีการในการพิจารณา ที่ชัดเจนและโปร่งใส ซึ่งในการประชุมสามัญผู้ถือหุ้นในปี 2568 ไม่มีผู้ถือหุ้นเสนอวาระการประชุมหรือเสนอชื่อบุคคลเพื่อเป็นกรรมการแต่อย่างใด",
+                        en: "In 2025, the Company also informed the SET to notify minor shareholders about the opportunities to propose agenda items to be included in the Annual General Meeting of Shareholders (AGM) and to nominate candidates to be considered for the director positions from 1 November - 30 December 2024. The procedures and methods for considering proposals were clearly and transparently published on the Company's website. In the 2025 AGM, no shareholder proposed additional agenda items or nominated candidates for director positions.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "นอกจากนั้น บริษัทฯ ได้จัดการประชุมสามัญู้ถือหุ้นประจำปี 2568 เมื่อวันที่ 4 เมษายน 2568 เวลา 09.30 น. ในรูปแบบการประชุมผ่าน สื่ออิเล็กทรอนิกส์ (E-Meeting) มีกรรมการเข้าร่วมประชุมครบทั้ง 11 คน คิดเป็นร้อยละ 100 ของกรรมการทั้งหมด โดยกรรมการจำนวน 4 คนจากทั้งหมด 11 คน เข้าร่วมประชุมผ่านสื่ออิเล็กทรอนิกส์ (ระบบ Zoom Meeting) ทั้งนี้ เป็นไปตามพระราชกำหนดว่าด้วยการประชุม ผ่านสื่ออิเล็กทรอนิกส์ พ.ศ. 2563 ลงวันที่ 19 เมษายน 2563 ซึ่งบริษัท ศูนย์รับฝากหลักทรัพย์ (ประเทศไทย) จำกัด นายทะเบียนหลักทรัพย์ของบริษัทฯ เป็นผู้จัดส่งหนังสือเชิญประชุมให้แก่ผู้ถือหุ้นล่วงหน้า และบริษัทฯ ยังได้แสดงไว้ที่เว็บไซต์ของบริษัทฯ ก่อนวันประชุม 30 วันและภายหลังการประชุม 14 วัน บริษัทฯ ได้นำรายงานการประชุมผู้ถือหุ้นแสดงไว้ที่เว็บไซต์ของบริษัทฯ เพื่อให้ผู้ถือหุ้นมีโอกาสเสนอข้อแก้ไขหากเห็นว่าการบันทึกมติการประชุมไม่ถูกต้อง สามารถแก้ไขได้ภายใน 30 วัน หลังจากที่ได้เปิดเผยในเว็บไซต์ของบริษัทฯ",
+                        en: "The 2025 Annual General Meeting of Shareholders (AGM) was convened online on 4 April 2025 at 09.30 hours via an e-meeting platform with full attendance of eleven directors or 100% of all directors. Four out of eleven directors attended the meeting via the Zoom meeting platform. The meeting protocol complied with the Emergency Decree on Electronic Meetings, B.E. 2563, which came into effect on 19 April 2020. BPP assigned the Thailand Securities Depository Co., Ltd., its share registrar, to send out an invitation letter to shareholders in advance and post it on the Company's website 30 days prior to the meeting date. The minutes of the 2025 AGM were also posted on the Company's website 14 days after the meeting took place so that the shareholders could propose amendments if they found the minutes to be inaccurate within the 30-day period after the minutes were posted on the Company's website.",
+                    },
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "การปฏิบัติต่อผู้ถือหุ้นอย่างเท่าเทียมกัน",
+                        en: "Equitable Treatment of Shareholders",
+                    },
+                    color: "#000000",
+                    size: "sm",
+                },
+                {
+                    type: "pdf_body_text",
+                    bold: true,
+                    underline: true,
+                    text: {
+                        th: "การประชุมสามัญผู้ถือหุ้นประจำปี 2568 ในรูปแบบการประชุมผ่านสื่ออิเล็กทรอนิกส์ (E-Meeting)",
+                        en: "2025 Annual General Meeting of Shareholders in the form of e-Meeting",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัท ได้ส่งเสริมการนำเทคโนโลยีมาใช้กับการประชุมสามัญประจำปี 2568 ทั้งในเรื่องของการลงทะเบียนผู้ถือหุ้น การนับคะแนนและการแสดงผล เพื่อให้การดำเนินการประชุมสามารถกระทำได้อย่างรวดเร็ว ถูกต้อง แม่นยำ จึงได้พิจารณาจัดการประชุมสามัญผู้ถือหุ้นประจำปี 2568 ในรูปแบบการประชุมผ่านสื่ออิเล็กทรอนิกส์ (E-Meeting) ตามหลักเกณฑ์ที่กำหนดในกฎหมายที่เกี่ยวข้องกับการประชุม ผ่านสื่ออิเล็กทรอนิกส์ โดยได้เปิดให้ผู้ถือหุ้นลงทะเบียนเข้าระบบ E-Meeting ตั้งแต่เวลา 07.30 น.",
+                        en: "The Board of Directors promoted the use of technology to facilitate the 2025 Annual General Meeting of Shareholders, aiming to ensure seamless, accurate, and precise meeting processes, including registration of shareholders, vote counting, and display of results. The Board thus decided to organize the 2025 Annual General Meeting of Shareholders via an e-meeting platform in compliance with the Emergency Decree on Electronic Meetings. The e-meeting was open for shareholders to register at 07.30 hours.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทมีนโยบายให้ผู้ถือหุ้นมีส่วนร่วมในการตัดสินใจ รวมถึงจัดการให้ผู้ถือหุ้นได้รับสารสนเทศอย่างครบถ้วนเพียงพอและ ทันเวลา เพื่อการตัดสินใจ โดยบริษัทฯ ได้จัดส่งหนังสือนัดประชุมพร้อมทั้งข้อมูลประกอบการประชุมตามวาระต่าง ๆ ให้ผู้ถือหุ้นทราบล่วงหน้า ก่อนประชุม โดยคณะกรรมการบริษัทได้แสดงความเห็นเพื่อประกอบการพิจารณาในแต่ละวาระ",
+                        en: "The Board of Directors has the policy to engage shareholders in a decision-making process and to ensure that shareholders receive comprehensive and adequate information in a timely fashion for such a process. As such, BPP sent out an invitation letter for the meeting, together with supporting documents for each agenda, to shareholders prior to the meeting. Opinions of the Board of Directors also accompany each agenda item.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "การประชุมสามัญผู้ถือหุ้นประจำปี 2568 มีกรรมการเข้าร่วมประชุมจำนวน 11 คน ซึ่งรวมถึงประธานคณะกรรมการตรวจสอบ ประธานคณะกรรมการบรรษัทภิบาลและสรรหา ประธานคณะกรรมการกำหนดค่าตอบแทน และประธานคณะกรรมการสิ่งแวดล้อม สังคม และการกำกับ ดูแลกิจการ ทั้งนี้ บริษัทฯ ได้จัดให้ผู้บริหารระดับสูง ผู้สอบบัญชี ผู้ตรวจสอบการนับคะแนน และผู้สังเกตการณ์อิสระจากสำนักงานกฎหมายเข้าร่วมประชุมด้วย นอกจากนั้น ประธานในที่ประชุมได้เปิดโอกาสให้ผู้ถือหุ้นทุกรายมีสิทธิอย่างเท่าเทียมกันในการตรวจสอบการดำเนินงานของบริษัทฯ และสอบถามข้อสงสัยต่าง ๆ ในแต่ละวาระการประชุม โดยประธานที่ประชุมสนับสนุนให้ผู้ถือหุ้นแสดงความคิดเห็นและขอคำอธิบายเกี่ยวกับการดำเนินงานของบริษัทฯ",
+                        en: "In the 2025 AGM, eleven directors attended the meeting, including the Chairman of the Audit Committee, the Chairman of the Corporate Governance and Nomination Committee, the Chairman of the Compensation Committee, and the Chairman of the Environment, Social and Governance Committee. Senior management, the auditor, and independent observers from a law firm also attended the meeting. The Chairman of the Meeting provided every shareholder an equal opportunity to examine the Company's operations and present questions in each agenda item. The Chairman also encouraged shareholders to express their opinions and make inquiries about the Company's operations.",
+                    },
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "นอกจากนี้ คณะกรรมการบริษัทยังมีนโยบายอำนวยความสะดวกแก่ผู้ถือหุ้นอย่างเท่าเทียมกัน โดยจัดส่งข้อมูลสารสนเทศที่ครบถ้วน ชัดเจนเพียงพอและทันเวลา ผ่านช่องทางของตลาดหลักทรัพย์แห่งประเทศไทยและเว็บไซต์ของบริษัทฯ",
+                        en: "Additionally, the Board of Directors has the policy to treat all shareholders equitably by disseminating complete, precise, adequate, and timely information to them via the channels of the Stock Exchange of Thailand (SET) and the Company's website.\n\n\nScan the QR Code or click on Click Here.",
+                    },
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: { th: "/page_034/034_p25_full_th.webp", en: "/page_034/034_p25_full_en.webp" },
+            items: [
+                {
+                    type: "pdf_banner",
+                    src: { th: "/page_034/034_p25_mobile_th.webp", en: "/page_034/034_p25_mobile_en.webp" },
+                    href: "https://www.banpupower.com/investor-relations/investor-update/set-notifications/?lang=th",
+                },
+                {
+                    type: "pdf_sub_title",
+                    text: {
+                        th: "การปฏิบัติตามหลักการกำกับดูแลกิจการที่ดีในเรื่องอื่น ๆ",
+                        en: "Compliance with Other Corporate Governance Principles",
+                    },
+                    color: "#6cc0b3",
+                    size: "md",
+                },
+                {
+                    type: "pdf_body_text",
+                    text: {
+                        th: "คณะกรรมการบริษัทมีความมุ่งมั่นที่จะบริหารงานโดยยึดหลักการกำกับดูแลกิจการที่ดี เพื่อให้การดำเนินงานของบริษัทฯ เป็นไปอย่างโปร่งใส มีประสิทธิภาพและรับผิดชอบต่อผู้มีส่วนได้เสียทุกฝ่าย ซึ่งคณะกรรมการบริษัทตระหนักถึงบทบาทหน้าที่ตามหลักปฏิบัติของหลักการดูแล กิจการที่ดี สำหรับบริษัทจดทะเบียน ปี 2560 (CG Code) รวมถึงได้พิจารณาและทบทวนการนำหลักปฏิบัติตาม CG Code ไปปรับใช้ตามบริบททางธุรกิจของบริษัทฯ แล้ว ซึ่งสรุปประเด็นที่ยังไม่ได้ปฏิบัติ โดยจะได้นำไปพิจารณาปรับใช้ตามความเหมาะสมต่อไป โดยมีรายละเอียดและแนวปฏิบัติของบริษัทฯ ดังนี้",
+                        en: "The Board of Directors endeavors to maintain good corporate governance to ensure transparent and efficient operations as well as responsibility to all stakeholders. BPP's Board of Directors is fully aware of its role and duty to comply with the SEC's Corporate Governance Code for Listed Companies (CG Code) 2017. The Board has considered and reviewed the application of the principles outlined in the CG Code 2017 to the Company's business context and summarized the principles the Company did not yet comply with but will further adopt and apply as appropriate, with details and practices as follows:",
+                    },
+                },
+                {
+                    type: "pdf_list",
+                    items: [
+                        {
+                            label: { th: "คณะกรรมการกำหนดค่าตอบแทนประกอบไปด้วยกรรมการอิสระเป็นส่วนใหญ่ (มากกว่าร้อยละ 50)", en: "The majority of the Compensation Committee members (more than 50%) are independent directors." },
+                            description: { th: "\nแนวปฏิบัติของบริษัทฯ ปัจจุบันสมาชิกของคณะกรรมการกำหนดค่าตอบแทน ประกอบด้วยกรรมการทั้งหมด 4 คน โดยเป็นกรรมการอิสระ 2 คน กรรมการที่ไม่เป็นผู้บริหาร 1 คน และกรรมการที่เป็นผู้บริหาร 1 คน โดยมีประธานคณะกรรมการกำหนดค่าตอบแทนเป็นกรรมการอิสระ ซึ่งคณะกรรมการชุดดังกล่าวมีคุณสมบัติ ความรู้ ความเชี่ยวชาญในด้านดังกล่าว ตามที่คณะกรรมการบริษัทได้กำหนดบทบาทหน้าที่ของคณะกรรมการกำหนดค่าตอบแทนไว้อย่างชัดเจนในกฎบัตรคณะกรรมการกำหนดค่าตอบแทน ซึ่งครอบคลุมการปฏิบัติหน้าที่ของคณะกรรมการกำหนดค่าตอบแทน", en: "\nThe Company's practice: Currently, the Compensation Committee consists of four members, namely two independent directors, one non-executive director, and one executive director. The Chairman of the Compensation Committee is an independent director. The Committee members are qualified, knowledgeable, and competent in compensation matters in accordance with the duties and responsibilities of the Compensation Committee stipulated by the Board in the Charter of the Compensation Committee." },
+                        },
+                        {
+                            label: { th: "บริษัทฯ ควรจัดให้มีที่ปรึกษาภายนอกเพื่อช่วยในการกำหนดแนวทาง และเสนอแนะประเด็นในการประเมินผลการปฏิบัติงานของคณะกรรมการอย่างน้อยทุก 3 ปี และเปิดเผยการดำเนินการดังกล่าวไว้ในรายงานประจำปี", en: "The Board should appoint an external consultant to facilitate a board evaluation at least once every three years, and evaluation results should be disclosed in the annual report." },
+                            description: { th: "\nแนวปฏิบัติของบริษัทฯ บริษัทฯ จัดให้มีการประเมินผลการปฏิบัติงานของคณะกรรมการบริษัททั้งคณะ รวมทั้งคณะกรรมการชุดย่อย และการประเมินรายบุคคลเป็นประจำทุกปี โดยในปี 2568 บริษัทฯ ใช้แบบประเมินการปฏิบัติงานของคณะกรรมการบริษัทที่ได้ปรับปรุงตามหลักเกณฑ์ของสมาคมส่งเสริมสถาบันกรรมการบริษัทไทย และหน้าที่ตามกฎบัตรคณะกรรมการชุดย่อยแต่ละคณะของบริษัท ซึ่งมีความสอดคล้องตามมาตรฐานสากล", en: "\nThe Company's practice: BPP conducts annual performance evaluations for the full Board, Sub-Committees, and individual directors. In 2025, the Company used revised evaluation forms that were updated in accordance with the criteria set by the Thai Institute of Directors Association (Thai IOD) and the duties outlined in each sub-committee's charter, which align with international standards." },
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            type: "pdf_page",
+            desktopFullImage: "/page_034/034_p26_full_en.webp",
+            visibility: "en-only",
+            items: [],
+        },
     ],
     prevPage: "033",
     nextPage: "035",

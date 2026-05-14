@@ -385,12 +385,18 @@ function renderSection(
         if (!bodyText) return null;
         const boldPhraseText = section.boldPhrase ? t(section.boldPhrase) : null;
         const colorPhraseText = section.colorPhrase ? t(section.colorPhrase) : null;
+        const isCombinedPhrase = boldPhraseText && colorPhraseText && boldPhraseText === colorPhraseText;
         const boldParts = boldPhraseText && bodyText.includes(boldPhraseText) ? bodyText.split(boldPhraseText) : null;
         const colorParts = colorPhraseText && bodyText.includes(colorPhraseText) ? bodyText.split(colorPhraseText) : null;
+        const bodyTextClass = `font-sarabun text-[0.9rem] text-gray-800 leading-relaxed whitespace-pre-line${section.bold ? ' font-bold' : ' font-light'}${section.underline ? ' underline' : ''}`;
         content = (
             <div className="pr-4 sm:pr-8 md:pr-[2%] py-1" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
-                <p className="font-sarabun font-light text-[0.9rem] text-gray-800 leading-relaxed whitespace-pre-line">
-                    {boldParts
+                <p className={bodyTextClass}>
+                    {isCombinedPhrase && boldParts
+                        ? boldParts.flatMap((part, i) =>
+                            i < boldParts.length - 1 ? [part, <strong key={i} style={{ color: '#264897' }}>{boldPhraseText}</strong>] : [part]
+                        )
+                        : boldParts
                         ? boldParts.flatMap((part, i) =>
                             i < boldParts.length - 1 ? [part, <strong key={i}>{boldPhraseText}</strong>] : [part]
                         )
@@ -439,7 +445,7 @@ function renderSection(
     } else if (section.type === "pdf_list") {
         const listColor = section.color ?? '#000000';
         const labelColor = section.labelColor ?? listColor;
-        const itemSep = section.itemSeparator ?? ' – ';
+        const itemSep = section.itemSeparator ?? '';
         content = (
             <div className="pr-4 sm:pr-8 md:pr-[2%] py-2" style={{ paddingLeft: section.paddingLeft ?? '1.4rem' }}>
                 <ul className="space-y-2">
@@ -536,6 +542,12 @@ function renderSection(
     }
     if (section.visibility === 'mobile-only') {
         return <div className="lg:hidden block">{content}</div>;
+    }
+    if (section.visibility === 'en-only' && locale !== 'en') {
+        return null;
+    }
+    if (section.visibility === 'th-only' && locale !== 'th') {
+        return null;
     }
 
     return content;
