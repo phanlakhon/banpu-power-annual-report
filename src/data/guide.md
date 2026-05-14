@@ -349,3 +349,274 @@ text
 th: "บริษัทฯ ให้ความสำคัญและมุ่งมั่นที่จะสร้างความเป็นธรรมแก่ผู้มีส่วนได้เสียทุกฝ่าย โดยได้รวบรวมหลักการต่าง ๆ ที่เกี่ยวกับสิทธิ และผลกระทบต่อผู้มีส่วนได้เสีย โดยกำหนดเป็นนโยบายต่อผู้มีส่วนได้เสียไว้ในนโยบายบรรษัทภิบาล เป็นความร่วมมือระหว่างบริษัทฯ และผู้มีส่วนได้เสียอาทิ ผู้ถือหุ้น พนักงาน ลูกค้า คู่ค้า เจ้าหนี้ หน่วยงานรัฐบาล ชุมชนที่บริษัทฯ ดำเนินธุรกิจ ตลอดจนสังคมส่วนรวม โดยได้กำหนดไว้ในคู่มือจริยธรรมธุรกิจเพื่อเป็นแนวปฏิบัติสำหรับกรรมการ ผู้บริหาร และพนักงาน บนพื้นฐานของความเป็นธรรมและความสมดุลในการประสานประโยชน์ร่วมกันเป็นหลัก มีหลักปฏิบัติที่สำคัญ ได้แก่ ความขัดแย้งทางผลประโยชน์ ความรับผิดชอบต่อผู้ถือหุ้น นโยบายและการปฏิบัติต่อ ผู้ถือหุ้น พนักงาน ลูกค้าคู่ค้า เจ้าหนี้ คู่แข่งทางการค้า และสังคมส่วนรวม โดยกำหนดให้เป็นหน้าที่และความรับผิดชอบของกรรมการ ผู้บริหารและพนักงานทุกคนที่จะต้องรับทราบ ทำความเข้าใจ และปฏิบัติตามแนวทางที่กำหนดไว้อย่างเคร่งครัด ทั้งนี้เพื่อให้มั่นใจว่าผู้มีส่วนได้เสีย ทุกกลุ่มได้รับการคุ้มครองสิทธิและได้รับการปฏิบัติด้วยดี\n\nบริษัทฯ ได้มีนโยบายการรับข้อร้องเรียนและการให้ความคุ้มครองผู้ร้องเรียน ตั้งแต่ปี 2558 เพื่อเป็นกลไกสำหรับผู้มีส่วนได้เสียสามารถแจ้ง ข้อร้องเรียนเกี่ยวกับบรรษัทภิบาลและจริยธรรมธุรกิจอย่างมีประสิทธิภาพและมีความรับผิดชอบ โดยบริษัทฯ จะรักษาข้อมูลที่ได้จากรายงาน ดังกล่าวไว้เป็นความลับ นโยบายนี้จัดทำขึ้นเพื่อให้ผู้มีส่วนได้เสียที่พบเห็นการกระทำที่ฝ่าฝืนกฎหมาย กฎระเบียบและจริยธรรมธุรกิจของบริษัทฯ สามารถรายงานการกระทำดังกล่าวได้โดยผู้มีส่วนได้เสียที่แจ้งเบาะแสจะได้รับการคุ้มครองจากบริษัทฯ นอกจากนี้นโยบายยังได้ครอบคลุมถึง",
 en: "BPP is committed to maintaining fairness for all stakeholders and has set forth a policy toward stakeholders in the Corporate Governance Policy based on collaboration between the Company and its stakeholders, namely shareholders, employees, customers, suppliers, creditors, government agencies, communities where the Company operates, and wider society. The practices were prescribed in the Code of Conduct for the directors, executives, and employees to comply with on the basis of fair and equitable distribution of benefits. Important guidelines pertain to conflicts of interest, the responsibility to shareholders, and policies on the treatment of shareholders, employees, customers, suppliers, creditors, competitors, and wider society. It is considered the duty and responsibility of directors, executives, and all employees to acknowledge, understand, and strictly comply with the guidelines in order to ensure that all stakeholders are well treated and their rights protected.\n\nSince 2015, BPP has put in place the Whistleblower Policy and whistleblower protection as a mechanism to allow stakeholders to effectively and responsibly file complaints about any wrongdoing against corporate governance and the Code of Conduct. All complaint information is treated with strict confidentiality. Any employees who have witnessed illicit conduct or other actions infringing on the Company's regulations and the Code of Conduct can report such acts under full protection. The policy also encompasses:",
 }
+
+
+----------
+
+p14
+
+list bullet สีเขียว 
+[
+{
+th: "การรักษาข้อมูลเป็นความลับ เพื่อให้ผู้มีส่วนได้เสียมั่นใจว่าข้อร้องเรียนของตนจะได้รับการตอบสนองอย่างจริงจังและผู้มีส่วนได้เสียที่แจ้งเบาะแสจะไม่ได้รับความเดือดร้อนเนื่องมาจากการรายงานข้อร้องเรียนโดยสุจริต",
+en: "Maintaining the confidentiality of complaints to ensure stakeholders that their complaints will be seriously responded to and sincere complaints will not result in any harm to the whistleblowers;",
+},
+{
+th: "การคุ้มครองสิทธิของผู้ร้องเรียน บริษัทฯ จะไม่กระทำการใดที่ไม่เป็นธรรมต่อพนักงาน ลูกจ้าง หรือบุคคลอื่นใดที่รับจ้างทำงานให้แก่บริษัทฯไม่ว่าจะโดยการเปลี่ยนแปลงตำแหน่งงาน ลักษณะงาน หรือสถานที่ทำงาน สั่งพักงาน ข่มขู่ รบกวนการปฏิบัติงาน เลิกจ้าง หรือกระทำการ อื่นใดที่มีลักษณะเป็นการปฏิบัติอย่างไม่เป็นธรรมต่อบุคคลดังกล่าว",
+en: "Protection of whistleblowers by ensuring that the Company will not unfairly treat whistleblowers who are employees, hired and contract workers by any means, such as position or job description or location transfer, job suspension, threatening, harassment, termination of a work contract, or other unfair treatments.",
+},
+]
+
+text 
+{
+th: "บริษัทฯ ได้เปิดช่องทางในการแจ้งเรื่องร้องเรียนสำหรับพนักงานและบุคคลภายนอก 4 ช่องทาง ดังนี้",
+en: "Regarding the whistleblower channels, employees and the concerned public can submit complaints via four channels:",
+}
+
+list bullet สีเขียว 
+[
+{
+th: "จดหมาย ส่งถึง เลขานุการคณะกรรมการบรรษัทภิบาลและสรรหา
+บริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน) ชั้น 26 อาคารธนภูมิ 1550 ถนนเพชรบุรีตัดใหม่ แขวงมักกะสัน เขตราชเทวี กรุงเทพมหานคร 10400",
+en: "Sending complaint letters to the Secretary of the Corporate Governance and Nomination Committee, Banpu Power Public Company Limited, 26th Floor, Thanapoom Tower, 1550 New Petchburi Road, Makkasan, Ratchathewi,
+Bangkok 10400",
+},
+{
+th: "เว็บไซต์บริษัทฯ www.banpupower.com/complaints_handling",
+en: "Company's website: www.banpupower.com/complaints_handling",
+},
+{
+th: "เว็บไซต์ภายในบริษัทฯ : https://portal.banpu.co.th (BPP Whistleblower)",
+en: "Internal website:https://portal.banpu.co.th (BPP Whistleblower)",
+},
+{
+th: "Email: GNCchairman@banpupower.co.th และ/หรือ BPP_Comsec@banpupower.co.th",
+en: "E-mail: GNCchairman@banpupower.co.th and/or BPP_Comsec@banpupower.co.th",
+},
+]
+
+text 
+{
+th: "บริษัทฯ ได้ติดตามอย่างสม่ำเสมอ โดยรายงานต่อคณะกรรมการบรรษัทภิบาลและสรรหาเป็นรายไตรมาส และรายงานต่อคณะกรรมการบริษัทเป็นรายปี หากผู้ใดกระทำการผิดวินัยจะต้องรับผิดชอบชดใช้ค่าเสียหายให้แก่บริษัทฯ หรือผู้ที่ได้รับความเสียหายได้รับผลกระทบจากการกระทำดังกล่าว และต้องรับผิดในทางกฎหมาย นอกจากนี้ บริษัทฯ ยังทบทวนกระบวนการเพื่อหาแนวทางป้องกันแก้ไขไม่ให้เกิดเหตุการณ์ซ้ำโดยบริษัทฯ ได้นำข้อร้องเรียนที่เกิดขึ้นมาประเมินความเสี่ยง และกำหนดให้มีมาตรการควบคุมภายใน รวมถึงการพัฒนาระเบียบการปฏิบัติงานภายในองค์กร เพื่อเป็นแนวทางป้องกันและการกำกับดูแลกิจการให้มีประสิทธิภาพมากยิ่งขึ้น สำหรับในปี 2568 บริษัทฯ ไม่ได้รับข้อร้องเรียนจากผู้มีส่วนได้เสียผ่านทุกช่องทาง",
+en: "The Company regularly monitors possible complaints and reports to the Corporate Governance and Nomination Committee on a quarterly basis and to the Board of Directors on an annual basis. Anyone committing a disciplinary offense must compensate the Company for any losses or those harmed or affected by such actions and shall be held legally responsible. The Company also reviews the process to find ways to prevent repeated incidents. Submitted grievances are considered as risks to be assessed, with the results leading to internal control measures, including developing work rules as guidelines for prevention and corporate governance to be more effective. In 2025, there were no reports of complaints through any channels.",
+}
+
+text
+{
+th: "ทั้งนี้ สามารถดูรายละเอียดเพิ่มเติมได้ในนโยบายการรับข้อร้องเรียนและการให้ความคุ้มครองผู้ร้องเรียน ที่เว็บไซต์บริษัทฯ",
+en: "For further information on the Whistleblower Policy and Protection of Whistleblowers, please scan the QR code or click on Click Here.",
+}
+
+รูป _mobile_1 [link: https://www.banpupower.com/corporate-governance/whistleblowing/reporting-and-whistleblower-policy/?lang=th]
+
+text
+{
+th: "รวมถึง "ช่องทางในการแจ้งเรื่องร้องเรียน" ที่เว็บไซต์บริษัทฯ",
+en: "For information on "whistleblower channels," please scan the QR code or click on Click Here.",
+}
+
+รูป _mobile_1 [link: https://www.banpupower.com/corporate-governance/whistleblowing/filing-complaints/?lang=th]
+
+text
+{
+th: "นอกจากนี้ บริษัทฯ ได้ประกาศใช้แนวปฏิบัติเรื่องการให้และรับขวัญ ของที่ระลึก หรือประโยชน์อื่นใด แก่ผู้ถือหุ้น นักลงทุน ลูกค้า พันธมิตรทางธุรกิจ และผู้มีส่วนได้เสียทุกฝ่ายผ่านเว็บไซต์ของบริษัทฯ รวมถึงจัดให้มีการบันทึกรายงานการรับของขวัญในระบบของบริษัทฯ ซึ่งถือเป็นหน้าที่ของคณะกรรมการ ผู้บริหาร พนักงาน และบริษัทย่อย ที่ต้องทำความเข้าใจและปฏิบัติตามอย่างเคร่งครัด ทั้งนี้ เพื่อให้สอดคล้องกับการประกาศใช้นโยบายต่อต้านคอร์รัปชัน นอกจากนี้ บริษัทฯ ยังกำหนดเรื่องการให้และรับสินบน รวมถึงการให้ของขวัญและการเลี้ยงรับรองทางธุรกิจไว้ในคู่มือจริยธรรมธุรกิจ ดังนี้",
+en: "Apart from that, the Company announced the Standard Practice Manual for Accepting and Offering of Gifts, Hospitality, or Other Similar Forms of Reward and informed shareholders, investors, customers, suppliers, and all stakeholders via the Company's website. The Company requires registration of gifts in the database system, which the Board members, executives, staff, and subsidiaries must understand and comply with in accordance with the Anti-Corruption Policy. The Company stipulated the practices of giving and receiving bribery, gifts, and business entertainment in its Code of Conduct as follows:",
+}
+
+-----------------
+
+p15
+
+รูป _mobile
+
+-----------------
+
+p16
+
+รูป _mobile
+
+-----------------
+
+p17
+
+รูป _mobile
+
+-----------------
+
+p18
+
+รูป _mobile_1
+
+รูป _mobile_2
+
+-------------
+
+p19
+
+รูป _mobile
+
+title สีเขียว md (center)
+{
+th: "ดูแลให้มีระบบการบริหารความเสี่ยง และการควบคุมภายในที่เหมาะสมนโยบายด้านการบริหารความเสี่ยง",
+en: "Strengthen Effective Risk Management and Internal Control",
+}
+
+title สีดำ sm
+{
+th: "นโยบายด้านการบริหารความเสี่ยง",
+en: "Risk Management Policy",
+}
+
+text
+{
+th: "คณะกรรมการบริษัทได้ความสำคัญในการบริหารความเสี่ยงที่เกี่ยวข้องทุกด้าน ครอบคลุมปัจจัยความเสี่ยงที่เกี่ยวข้องกับ วิสัยทัศน์ เป้าหมายกลยุทธ์ทางธุรกิจ การเงิน การผลิต การปฏิบัติการด้านอื่น ๆ และการต่อต้านคอร์รัปชัน รวมไปถึงการดำเนินกิจการด้านสิ่งแวดล้อม สังคม และบรรษัทภิบาล หรือ ESG โดยพิจารณาถึงโอกาสที่อาจจะเกิดความเสี่ยงขึ้น และระดับความรุนแรงของผลกระทบจากความเสี่ยง มีการกำหนดมาตรการในการป้องกันแก้ไขและผู้รับผิดชอบที่ชัดเจน รวมทั้งกำหนดมาตรการในการรายงานและการติดตามประเมินผล",
+en: "The Board of Directors places importance on comprehensive risk management encompassing risk factors associated with vision, goals, business strategies, finance, production, other operations, and anti-corruption as well as Environmental, Social, and Governance (ESG) principles while taking risk likelihood and levels of impact into account. The Board has set clear measures for risk management and ensures that there are people accountable for risk management. Additionally, the Board has established measures for reporting, monitoring, and evaluating risk management.",
+}
+
+text
+{
+th: "คณะกรรมการบริษัทกำหนดให้มีคณะกรรมการบริหารความเสี่ยงในระดับจัดการ (Risk Management Committee) ซึ่งมีหน้าที่นำเสนอแผนงานและผลการปฏิบัติตามแผนต่อคณะกรรมการตรวจสอบเป็นประจำทุกไตรมาส และให้รายงานต่อคณะกรรมการบริษัทเป็นรายไตรมาสโดยมีการทบทวนระบบหรือประเมินประสิทธิผลของการจัดการความเสี่ยงอย่างน้อยปีละ 1 ครั้ง และในทุก ๆ ระยะเวลาที่พบว่าระดับความเสี่ยง มีการเปลี่ยนแปลง โดยมีประธานเจ้าหน้าที่บริหาร¹ เป็นประธานคณะกรรมการบริหารความเสี่ยง ทั้งนี้ คณะกรรมการบริหารความเสี่ยง มีบทบาทหน้าที่และความรับผิดชอบ ดังต่อไปนี้",
+en: "The Risk Management Committee was set up by the Board to prepare and submit a risk management plan and report performance to the Audit Committee as well as the Board on a quarterly basis. The Committee reviews the risk management system and evaluates performance at least once a year and whenever the risk level changes. The Chief Executive Officer¹ serves as Chairperson of the Risk Management Committee. The roles, duties, and responsibilities of the Risk Management Committee are as follows:",
+}
+
+list
+[
+{
+th: "ประเมินและบริหารจัดการความเสี่ยงเพื่อลดผลกระทบจากความเสี่ยงที่อาจส่งผลกระทบต่อการดำเนินงานของบริษัทฯ",
+en: "Assess and manage risks to mitigate the impact of risks that can affect the Company's operations.",
+},
+{
+th: "การให้ความสนับสนุนในเชิงนโยบายเพื่อให้การจัดการความเสี่ยงเป็นไปอย่างมีประสิทธิภาพและเกิดการตระหนักถึงความเสี่ยงในการดำเนินการกิจกรรมใด ๆ ของบริษัทฯ",
+en: "Provide support to related policies to ensure efficient risk mitigation and to raise awareness of any risks arising from the Company's activities.",
+},
+{
+th: "การให้การสนับสนุนในเรื่องของทรัพยากรทั้งจากภายในและภายนอกที่จำเป็นต่อการบริหารความเสี่ยงให้มีประสิทธิภาพ",
+en: "Provide essential internal and external resources to enable efficient risk management.",
+},
+]
+
+text 
+{
+th: "บริษัทฯ ได้มีการประกาศนโยบายการบริหารจัดการความเสี่ยงและมีการปรับปรุงอย่างสม่ำเสมอ จัดตั้งให้มีหน่วยงานความยั่งยืนและบริหารความเสี่ยงที่รับผิดชอบโดยตรงเพื่อประสานงานกับทุกหน่วยงาน และผลักดันให้เกิดการบริหารความเสี่ยงอย่างมีประสิทธิภาพทั่วทั้งองค์กร มีกลไกในการค้นหาและระบุความเสี่ยงที่สำคัญของธุรกิจครอบคลุมมิติด้านสิ่งแวดล้อม สังคมและการกำกับดูแลกิจการ (ESG) โดยประเมิน ถึงโอกาสเกิดและผลกระทบที่อาจมีต่อผู้มีส่วนได้ส่วนเสียเพื่อพิจารณาความสำคัญ ก่อนกำหนดเป็นรายการความเสี่ยงองค์กร และมอบหมาย ผู้รับผิดชอบในการบริหารจัดการความเสี่ยงให้อยู่ในระดับที่องค์กรยอมรับได้ รวมถึงมีการติดตามความก้าวหน้าและทบทวนประเด็นความเสี่ยงอย่างสม่ำเสมอ",
+en: "The Company has announced and regularly updated its risk management policy and has established the Sustainability and Risk Management Department to coordinate with all other departments in driving effective risk management practices across the organization. The Company has incorporated a mechanism for identifying key business risks, encompassing environmental, social, and governance (ESG) dimensions. To identify risks, the Company evaluates the materiality of the issues based on likelihood and potential impacts on stakeholders. Responsible persons are assigned to manage risks within the Company's risk appetite. The Company also monitors and reviews risk issues on a regular basis.",
+}
+
+text
+{
+th: "นอกจากนี้ บริษัทฯ ได้บูรณาการหลักการบริหารความเสี่ยงเข้ากับกระบวนการต่าง ๆ ภายในองค์กรเพื่อสร้างความตระหนักถึงความไม่แน่นอนในการดำเนินธุรกิจและส่งเสริมให้การบริหารความเสี่ยงเป็นส่วนหนึ่งของการดำเนินงาน เพื่อเตรียมพร้อมรับมือกับเหตุการณ์ที่อาจเกิดขึ้นในอนาคต อีกทั้งเป็นปัจจัยสำคัญในการพิจารณาประเด็นสำคัญด้านความยั่งยืน (Materiality) และการจัดทำแผนกลยุทธ์และแผนการดำเนินงานประจำปี ทั้งนี้ คณะกรรมการบริหารความเสี่ยงได้มีการประชุมเพื่อติดตามความเสี่ยงและผลการบริหารจัดการตามแผนบรรเทาความเสี่ยงรวมทั้งรายงานผลการสอบทานระบบการบริหารความเสี่ยงแก่คณะกรรมการตรวจสอบภายในและคณะกรรมการบริษัทเป็นประจำทุกไตรมาส",
+en: "In addition, the Company has integrated risk management principles into various organizational processes to enhance awareness of business uncertainties. Risk management is embedded within the Company's operations to ensure preparedness for future challenges. Risk management is also an important factor in assessing the materiality of sustainability issues and developing annual strategic and operational plans. The Risk Management Committee meets quarterly to monitor risks, assess the effectiveness of the risk mitigation plan, and report the reviewed results of the risk management system to the Internal Audit Committee and the Board of Directors.",
+}
+
+text
+{
+th: "บริษัทฯ ได้ผนวกการบริหารจัดการความเสี่ยงเข้ากับแผนการดำเนินธุรกิจของบริษัทฯ เพื่อประสิทธิภาพสูงสุดในการบริหารจัดการความเสี่ยง ซึ่งให้ความสำคัญกับการสร้างคุณค่าให้แก่บริษัทฯ และผู้มีส่วนได้เสียอย่างยั่งยืนและครอบคลุมเรื่อง ESG โดยใช้หลักการการบริหารความเสี่ยงแบบสหพันธ์ (Risk Correlation) มาวิเคราะห์ความสัมพันธ์ของความเสี่ยงแต่ละประเด็นให้ครอบคลุมทั้งเชิงบวกและเชิงลบ กระบวนการบริหารความเสี่ยงของบริษัทฯ เริ่มจากการกำหนดวัตถุประสงค์ตามแผนการดำเนินธุรกิจและแยกย่อยกระจายไปสู่ระดับหน่วยธุรกิจ ฝ่าย แผนกและหน่วย โดยการระบุความเสี่ยง จะให้พนักงานระดับปฏิบัติงานซึ่งเป็นผู้มีความรู้และความเชี่ยวชาญในกิจกรรมนั้น ๆ ระบุความเสี่ยงจาก ผู้ปฏิบัติงานในแต่ละส่วนของตนเองอย่างละเอียด โดยจะทำการประเมินความน่าจะเป็นและผลกระทบจากความเสี่ยงนั้น ๆ พร้อมทั้งจัดเตรียมแนวทางปฏิบัติเพื่อบรรเทาความเสี่ยงที่อาจจะเกิดขึ้น และรายงานให้ผู้บังคับบัญชา หรือหัวหน้าได้รับทราบและติดตามความคืบหน้าอย่าง ต่อเนื่อง และส่งรายงานดังกล่าวมายังหน่วยงานความยั่งยืนและการบริหารความเสี่ยงเพื่อรวบรวมเป็นรายงานความเสี่ยงในระดับองค์กรแล้วนำเสนอต่อคณะกรรมการบริหารความเสี่ยง คณะกรรมการตรวจสอบ และคณะกรรมการบริหารทุกไตรมาส นอกจากนี้ คณะกรรมการ ESG ยังมีบทบาทสำคัญในการกำกับดูแลความเสี่ยงด้าน ESG",
+en: "The Company has integrated risk management into its business plans to maximize the efficiency of risk management, focusing on creating sustainable value for the Company and stakeholders, including ESG issues. By employing risk correlation management, the Company analyzes the relationship between risk issues, addressing positive and negative aspects. The corporate risk management process begins with defining business objectives based on the business plan and breaking them down into the business group, division, department, and unit levels. Operational staff, with knowledge and experience in their areas, are responsible for identifying risks in their processes. They assess the likelihood and impact of these risks and propose mitigation strategies. Progress is reported to the relevant supervisor, who monitors ongoing risk management efforts before forwarding the report to the Sustainability and Risk Management Department for compilation into a corporate risk report. The report is quarterly presented to the Risk Management Committee, the Audit Committee, and the Board of Directors. Additionally, the ESG Committee also plays a crucial role in overseeing ESG risks.",
+}
+
+text
+{
+th: "ในรอบหลายปีที่ผ่านมา ผลการผนวกการบริหารความเสี่ยงเข้ากับแผนการดำเนินธุรกิจของบริษัทฯ สามารถส่งเสริมกลยุทธ์การดำเนินการของบริษัทฯ ให้เป็นไปตามเป้าหมาย สำหรับด้านการลงทุนในธุรกิจใหม่ บริษัทฯ มีการประเมินความเสี่ยงด้านผลตอบแทนจากการลงทุนและประเด็น ESG อย่างรอบด้านในแต่ละโครงการ เพื่อนำเสนอผลการประเมินและแผนการจัดการต่อคณะกรรมการบริหารระดับสูง (Executive Committee) เพื่อให้มั่นใจว่าการลงทุนของบริษัทฯ มีการประเมินและบริหารความเสี่ยงอย่างเหมาะสม",
+en: "Over the years, the integration of risk management into business plans has strengthened the Company's strategic execution, supporting the achievement of its business targets. For new business investments, the Company conducts comprehensive assessments of investment return risks and ESG factors for each project. The assessment results and risk management plans are then presented to the Executive Committee, ensuring that all investments undergo effective risk evaluation and management.",
+}
+
+title สีดำ sm
+{
+th: "ระบบการควบคุมและการตรวจสอบภายใน",
+en: "Internal Control System and Internal Audit",
+}
+
+text
+{
+th: "คณะกรรมการบริษัทจัดให้มีระบบการควบคุมภายในที่ครอบคลุมทุกด้าน ทั้งด้านบัญชีและการเงิน ด้านการบริหาร การดูแลทรัพย์สิน การปฏิบัติงานการดำเนินการให้เป็นไปตามกฎหมาย ข้อบังคับ และระเบียบที่เกี่ยวข้อง อีกทั้งยังมีกลไกการตรวจสอบถ่วงดุลที่มีประสิทธิภาพเพียงพอในการปกป้องรักษาผู้มีส่วนได้เสีย ดูแลเงินทุนของผู้ถือหุ้น และทรัพย์สินของบริษัทฯ กำกับดูแลให้สำนักงานตรวจสอบภายในมีความเป็นอิสระโดยให้รายงานตรงต่อคณะกรรมการตรวจสอบ เพื่อให้เกิดความเชื่อมั่นว่าระบบการควบคุมภายในและตรวจสอบภายในเป็นหนึ่งในกลไกสำคัญ ที่จะขับเคลื่อนธุรกิจให้เติบโตอย่างยั่งยืน สำนักงานตรวจสอบภายในทำหน้าที่สอบทานการควบคุมภายในของกระบวนการปฏิบัติงานและระบบงานสำคัญ ครอบคลุมหน่วยงานธุรกิจและหน่วยงานสนับสนุน ให้คำปรึกษาและข้อเสนอแนะเกี่ยวกับระบบการควบคุมภายใน และการบริหารความเสี่ยง เพื่อพัฒนากระบวนการปฏิบัติงานของบริษัทฯ ไปสู่ความเป็นเลิศ ให้สอดคล้องกับการเติบโตของธุรกิจและเศรษฐกิจที่เปลี่ยนแปลง",
+en: "The Board of Directors has set up an internal control system that covers all aspects of BPP's businesses, ranging from accounting and finance, administration, asset management, operational management, and compliance with related laws, rules, and regulations. The Board has also established sufficient and effective checks and balances mechanisms to protect shareholders' equities and BPP's assets. Moreover, the Board has determined that the Internal Audit Unit operates independently and reports directly to the Audit Committee to ensure that the internal control system and internal audit are the key mechanisms to drive the Company's business to sustainable growth. The Internal Audit Unit audits the internal control of critical operational processes and work systems covering business units and supporting units. The Unit also provides consultancy and suggestions about the internal control system and risk management to improve the Company's operational excellence and accommodate business growth amid the changing economy.",
+}
+
+หมายเหต ไม่มี prefix
+{
+th: "¹ประธานเจ้าหน้าที่บริหารของบริษัทฯ เป็นกรรมการบริษัทโดยตำแหน่ง ตามแนวปฏิบัติบริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน) ว่าด้วยคณะกรรมการบริษัท พ.ศ. 2558 ปรับปรุงครั้งที่ 3 พ.ศ. 2566",
+en: "¹BPP's Chief Executive Officer shall serve as an ex officio member of the Board of Directors of Directors of Banpu Power Public Company Limited B.E. 2558, Amendment No. 3 B.E. 2566."
+}
+
+-----------------
+
+p20
+
+รูป _mobile
+
+title สีเขียว md (center)
+{
+th: "รักษาความน่าเชื่อถือทางการเงิน และการเปิดเผยข้อมูล",
+en: "Ensure Disclosure and Financial Integrity",
+}
+
+title สีดำ sm
+{
+th: "ความขัดแย้งของผลประโยชน์",
+en: "Conflict of Interest",
+}
+
+text
+{
+th: "บริษัทฯ ถือเป็นนโยบายสำคัญที่จะไม่ให้กรรมการ ผู้บริหาร และพนักงานใช้โอกาสจากการดำรงตำแหน่งดังกล่าว เพื่อแสวงหาผลประโยชน์ส่วนตน จึงกำหนดไว้ในนโยบายบรรษัทภิบาลและคู่มือจริยธรรมธุรกิจเพื่อให้เป็นข้อปฏิบัติสำหรับกรรมการ ผู้บริหาร และพนักงานในการหลีกเลี่ยงการทำรายการที่เกี่ยวโยงกับตนเองและผู้ที่เกี่ยวข้องที่อาจก่อให้เกิดความขัดแย้งทางผลประโยชน์กับบริษัทฯ และในกรณีที่จำเป็น ต้องทำรายการดังกล่าวจะต้องกระทำโดยมีราคาและเงื่อนไขเสมือนการทำรายการกับบุคคลภายนอก (Fair and at Arm's Length) โดยกรรมการ ผู้บริหาร หรือพนักงานที่มีส่วนได้เสียในรายการนั้น จะต้องไม่มีส่วนในการพิจารณาอนุมัติ หากรายการใดเข้าข่ายเป็นรายการที่เกี่ยวโยงกันภายใต้ประกาศของตลาดหลักทรัพย์แห่งประเทศไทยและประกาศของคณะกรรมการกำกับตลาดทุนจะต้องปฏิบัติตามหลักเกณฑ์ วิธีการ และการเปิดเผย ข้อมูลรายการที่เกี่ยวโยงกันของบริษัทจดทะเบียนอย่างเคร่งครัด",
+en: "BPP stresses the importance of its policy to prohibit directors, executives, and employees from misuse of position for personal gain. As stipulated in the Corporate Governance Policy and the Code of Conduct, directors, executives, and employees are to avoid connected transactions that could lead to a conflict of interest with the Company. If necessary, the transactions are to be conducted fairly and at arm's length, and directors, executives, or employees having an interest in the transactions must not be involved in the approval process. If any transaction is considered connected under the SET's notification and the Capital Market Supervisory Board's notification, all rules, procedures, and the disclosure of connected information of listed companies must be strictly complied with.",
+}
+
+text 
+{
+th: "นอกจากนี้ คณะกรรมการบริษัทยังกำหนดข้อห้ามไม่ให้ใช้โอกาสหรือข้อมูลที่ได้จากการเป็นกรรมการ ผู้บริหาร หรือพนักงานในการหาประโยชน์ส่วนตน หรือทำธุรกิจที่แข่งขันกับบริษัทฯ หรือธุรกิจที่เกี่ยวเนื่อง รวมทั้งไม่ใช้ข้อมูลภายในเพื่อประโยชน์ของตนในการซื้อขายหุ้นของบริษัทฯหรือให้ข้อมูลภายในแก่บุคคลอื่นเพื่อประโยชน์ในการซื้อขายหุ้นของบริษัทฯ ในกรณีที่ผู้บริหารหรือพนักงาน มีส่วนร่วมในการทำงานเฉพาะกิจ ที่เกี่ยวกับข้อมูลที่ยังไม่ได้เปิดเผยต่อสาธารณะและอยู่ระหว่างการเจรจา ซึ่งงานนั้น ๆ เข้าข่ายการเก็บรักษาข้อมูลภายในอันอาจมีผลต่อความเคลื่อนไหวของราคาหุ้นของบริษัทฯ บุคคลเหล่านั้นจะต้องทำสัญญารักษาความลับ (Confidentiality Agreement) ไว้กับบริษัทฯ จนกว่าจะมีการเปิดเผยข้อมูลต่อตลาดหลักทรัพย์แห่งประเทศไทย และสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์",
+en: "The Board of Directors also prohibits directors, executives, or employees from using any opportunity or information acquired from their position for personal benefit or to compete with the Company or related business. Nor are they allowed to use insider information to sell or buy shares. If an executive or employee is involved in a special project of which the information has not yet been disclosed to the public or that it is under negotiation where the project's information has to be kept confidential as it could affect the share price, the executive or employee are to sign a confidentiality agreement until the information is disclosed to the SET and the SEC.",
+}
+
+text
+{
+th: "ในปี 2561 บริษัทฯ ได้ประกาศใช้นโยบาย Market Sensitive Information และแนวปฏิบัติในการจัดการข้อมูลลับที่มีผลต่อตลาดหลักทรัพย์ซึ่งถือเป็นหน้าที่ของคณะกรรมการบริษัท ผู้บริหาร พนักงาน ที่ปรึกษา และบริษัทในเครือ ที่ต้องทำความเข้าใจและปฏิบัติตามโดยมีรายละเอียดตามหัวข้อที่ปรากฏในนโยบายและแนวปฏิบัติ ดังนี้",
+en: "In 2018, BPP announced the Market Sensitive Information Policy and practices on handling confidential information, which potentially affects the stock exchange. It is the duty of directors, executives, employees, consultants, and subsidiary companies to understand and comply with the policy and practices as follows:",
+}
+
+list number
+[
+{
+th: "จัดให้มีระบบควบคุมภายในเพื่อป้องกันการรั่วไหลของข้อมูลลับ",
+en: "Establish an internal control system to prevent the leak of confidential information.",
+},
+{
+th: "ปลูกฝังให้เป็นวัฒนธรรมองค์กรผ่านการสื่อสารอย่างสม่ำเสมอ เพื่อให้บุคคลที่เกี่ยวข้องตระหนักถึงหน้าที่ในการรักษาความลับของบริษัทฯ",
+en: "Cultivate a culture of information safety through constant communication to raise awareness of relevant persons of their duty to protect confidential information.",
+},
+{
+th: "จำกัดจำนวนบุคคลที่สามารถเข้าถึงข้อมูลลับให้น้อยที่สุดเท่าที่จำเป็น (Need to Know Basis) มีระบบควบคุมคู่สัญญาและผู้ให้บริการอื่นของบริษัทฯ ที่สามารถเข้าถึงระบบของบริษัทฯ ได้",
+en: "Limit the number of persons who have access to confidential information based on a need-to-know basis. Set up an information access control system for contract parties and service persons.",
+},
+{
+th: "ระมัดระวังในกรณีการรับหรือส่งต่อข้อมูลให้แก่บุคคลที่สาม โดยทุกฝ่ายต้องตระหนักรู้ถึงภาระหน้าที่ของตนในส่วนที่เกี่ยวข้องในการใช้และการควบคุมข้อมูลลับ",
+en: "Exercise extreme caution in receiving and sending information to and from third parties, being aware of one's duties in using and controlling confidential information.",
+},
+{
+th: "มีระบบเทคโนโลยีสารสนเทศ และการควบคุมที่เหมาะสม",
+en: "Establish an appropriate information technology and control system.",
+},
+]
+
+title สีดำ sm
+{
+th: "การเปิดเผยข้อมูลกับผู้ลงทุน",
+en: "Disclosure of Information to Investors",
+},
+
+text
+{
+th: "คณะกรรมการบริษัทดูแลให้มีการเปิดเผยข้อมูลและสารสนเทศทั้งทางการเงินและด้านอื่นที่เกี่ยวกับธุรกิจและผลประกอบการของบริษัทฯ ที่ตรงต่อความเป็นจริง ครบถ้วน เพียงพอ สม่ำเสมอ ทันเวลา และแสดงให้เห็นถึงสถานภาพของการประกอบการและสถานภาพทางการเงิน ที่แท้จริงของบริษัทฯ รวมทั้งอนาคตของธุรกิจของบริษัทฯ โดยจัดให้มีการปฏิบัติตามกฎหมาย ระเบียบ และข้อบังคับที่เกี่ยวข้องกับการเปิดเผย ข้อมูลของสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ และตลาดหลักทรัพย์แห่งประเทศไทยโดยเคร่งครัด นอกจากนั้นบริษัทฯ จัดให้มีการสื่อสารไปยังผู้ถือหุ้นและนักลงทุนผ่านช่องทางอื่น ๆ โดยมีหน่วยงานนักลงทุนสัมพันธ์ (Investor Relations) ทำหน้าที่สื่อสารโดยตรงกับผู้ถือหุ้น นักลงทุน และนักวิเคราะห์หลักทรัพย์ทั้งในและต่างประเทศ ในขณะที่หน่วยงานสื่อสารองค์กรทำหน้าที่เผยแพร่ข้อมูลข่าวสารของบริษัทฯ ไปยังผู้ถือหุ้น นักลงทุน และประชาชนทั่วไปผ่านสื่อมวลชนและสื่ออื่น ๆ ทั้งในและต่างประเทศเช่นเดียวกัน เพื่อให้กลุ่มบุคคลดังกล่าวได้รับทราบข้อมูลของบริษัทฯ อย่างทั่วถึงและตรงเวลา",
+en: "The Board of Directors oversees the disclosure of information and its transparency to ensure that both financial and non-financial information relating to the Company's business and performance is disclosed in a complete, accurate, adequate, regular, and timely manner. Moreover, the information must reflect the Company's actual performance and its true financial status, as well as its business future, while strictly complying with the laws, rules, and regulations relating to information disclosure of both the SEC and the SET. BPP also communicates with shareholders and investors through other channels. The Investor Relations Department directly communicates with shareholders, investors, and securities analysts both domestically and abroad, while the Corporate Communications Department discloses corporate information to shareholders, investors, and the public through the local and international press on an equitable and timely basis.",
+},
+
+text
+{
+th: "ในปี 2568 บริษัทฯ จัดให้มีการนำเสนอข้อมูลแก่นักลงทุนต่างประเทศ นักลงทุนสถาบัน นักลงทุนรายย่อย นักวิเคราะห์หลักทรัพย์และสื่อมวลชน ดังนี้",
+en: "In 2025, BPP organized the following activities to disclose information to international investors, institutional investors, small investors, securities analysts, and the press:",
+}
+
+--------------------
+
+p21
+
+รูป _mobile_table

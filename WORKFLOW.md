@@ -129,6 +129,13 @@ export default page;
     src: { th: "/page_XXX/XXX_p01_mobile_table_th.webp", en: "/page_XXX/XXX_p01_mobile_table_en.webp" },
     minWidth: 800,
 }
+
+// รูปที่คลิกได้ (link ไปหน้าอื่น)
+{
+    type: "pdf_banner",
+    src: { th: "...", en: "..." },
+    href: "https://...",
+}
 ```
 
 ---
@@ -191,7 +198,38 @@ export default page;
             ],
         },
     ],
-    startFrom: 1,   // เริ่มนับจากเลขไหน (optional, default 1)
+    startFrom: 1,       // เริ่มนับจากเลขไหน (optional, default 1)
+    labelColor: "#264897",  // สี label (optional)
+}
+```
+
+---
+
+### `pdf_disclaimer` — กล่องข้อความแจ้งเตือน / disclaimer
+
+```ts
+{
+    type: "pdf_disclaimer",
+    title: { th: "หัวข้อ", en: "Title" },
+    text: { th: "เนื้อหา...", en: "Content..." },
+    backgroundColor: "#f0f0f0",   // optional
+}
+```
+
+---
+
+### `pdf_page` — hotspots (คลิกพื้นที่บนรูป)
+
+ใช้กำหนดพื้นที่คลิกได้บน `desktopFullImage` (เช่น link ซ้อนบนรูป PDF)
+
+```ts
+{
+    type: "pdf_page",
+    desktopFullImage: { th: "...", en: "..." },
+    hotspots: [
+        { top: "10%", left: "20%", width: "30%", height: "5%", href: "https://..." },
+    ],
+    items: [],
 }
 ```
 
