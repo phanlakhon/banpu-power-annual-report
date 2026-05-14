@@ -272,3 +272,27 @@ list bullet and label สีเขียว
 ]
 
 รูป _mobile_3
+
+text 
+{
+th: "บริษัทฯ มุ่งมั่นสร้างวัฒนธรรมองค์กรอย่างจริงจังต่อเนื่องให้สอดคล้องกับกลุ่มบ้านปูในทุกประเทศ เพื่อหัวใจร่วมที่เป็นหนึ่งเดียว อันนำไปสู่การสร้างระบบนิเวศทางธุรกิจของกลุ่มบ้านปูที่แข็งแกร่ง ด้วยพลังหลักจาก "คน" และวัฒนธรรมองค์กร",
+en: "BPP has been committed to developing a corporate culture in alignment with Banpu Group's business units in all host countries, leading to strengthened Banpu ecosystems powered by "people" and corporate culture.",
+}
+
+title สีเขียว md
+{
+th: "3. โครงสร้างองค์กรที่สนับสนุนความคล่องตัว",
+en: "3. Agility-Oriented Organizational Structure",
+}
+
+text 
+{
+th: "บริษัทฯ มีการทบทวนและปรับโครงสร้างองค์กรอย่างต่อเนื่องให้สอดคล้องกับกลยุทธ์ทางธุรกิจ เพื่อเสริมสร้างความแข็งแกร่งในการดำเนินงาน ร่วมกับกลุ่มบ้านปู เพิ่มความคล่องตัวในการแข่งขันของแต่ละประเทศ และยกระดับประสิทธิภาพด้านการบริหารจัดการ ตลอดจนเสริมพลังความ ร่วมมือระหว่างธุรกิจไฟฟ้าในประเทศต่าง ๆ ให้เข้มแข็งยิ่งขึ้น เพื่อรองรับการเติบโตและการดำเนินธุรกิจแบบองค์รวมของกลุ่มบ้านปูในระยะยาว",
+en: "The Company continuously reviews and restructures its organization in alignment with its business strategy to strengthen collaboration with Banpu Group, enhance competitiveness across countries, and improve overall management efficiency. This restructuring also reinforces synergies among power businesses across markets and supports the Group's integrated and long-term growth.",
+}
+
+text 
+{
+th: "ในส่วนของการบริหารงานบุคคล มีการมอบหมายให้ผู้บริหารของหน่วยงานทรัพยากรบุคคลประจำประเทศไทยเข้าเป็นคณะกรรมการด้านบุคคล (Human Resources Committee หรือ HRC) ในบริษัทย่อยของ BPP ในประเทศต่าง ๆ เพื่อสร้างความเข้าใจอันดีกับผู้บริหารในประเทศ นั้น ๆ ผ่านการทำงานร่วมกัน รวมถึงการเพิ่มประสิทธิภาพในการทำงานโดยการลดขั้นตอนการสื่อสารและการพิจารณาอนุมัติในเรื่องสำคัญเพื่อเพิ่มความรวดเร็วด้านการบริหาร อีกทั้งช่วยเสริมสร้างทักษะและความสามารถของทีมทรัพยากรบุคคล (Human Resources Team)ในประเทศต่าง ๆ ผ่านการทำงานร่วมกันอย่างใกล้ชิด",
+en: "In human resource management, HR executives based in Thailand have been appointed to serve on the Human Resources Committee (HRC) of BPP's subsidiaries in various countries to foster mutual understanding and close collaboration with local executives through joint operations. The Company enhances efficiency by streamlining communication processes and accelerating the approval of key matters. This approach also strengthens the skills and capabilities of HR teams across countries through close and continuous collaboration.",
+}
