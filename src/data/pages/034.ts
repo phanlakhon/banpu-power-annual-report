@@ -656,7 +656,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                     textAlign: "center",
                 },
                 {
@@ -667,7 +666,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -745,7 +743,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -780,7 +777,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                     textAlign: "center",
                 },
                 {
@@ -791,7 +787,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -862,7 +857,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -910,7 +904,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -934,7 +927,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -1042,7 +1034,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                     textAlign: "center",
                 },
                 {
@@ -1053,7 +1044,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -1091,7 +1081,6 @@ const page: PageData = {
                     },
                     color: "#000000",
                     size: "sm",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
@@ -1149,7 +1138,6 @@ const page: PageData = {
                     },
                     color: "#6cc0b3",
                     size: "md",
-                    weight: "medium",
                 },
                 {
                     type: "pdf_body_text",
