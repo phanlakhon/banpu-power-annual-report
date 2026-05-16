@@ -49,6 +49,7 @@ import page045 from './045';
 import page046 from './046';
 import page047 from './047';
 import page048 from './048';
+import page049_cover from './049_cover';
 import page049 from './049';
 import page050 from './050';
 import page051 from './051';
@@ -109,6 +110,7 @@ export const pagesData: Record<string, PageData> = {
     '046': page046,
     '047': page047,
     '048': page048,
+    '049_cover': page049_cover,
     '049': page049,
     '050': page050,
     '051': page051,
@@ -121,5 +123,5 @@ export const pageOrder = [
     '028', '029', '030', '031', '032_cover',
     '032', '033', '034', '035', '036', '037', '038', '039', '040',
     '041', '042', '043', '044', '045', '046', '047', '048',
-    '049', '050', '051',
+    '049_cover', '049', '050', '051',
 ];

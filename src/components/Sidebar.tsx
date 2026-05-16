@@ -118,7 +118,7 @@ export default function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
       </div>
 
       <nav className="flex-1 px-6 pb-6 space-y-5">
-        <h2 className="text-banpu-purple text-xl font-bold mb-4">สารบัญ</h2>
+        <h2 className="text-banpu-purple text-xl font-bold mb-4">{t('contents')}</h2>
 
         <div className="space-y-3">
           <NavLink href={p('000')} pageId="000" label={t('intro')} pathname={pathname} onNavigate={onNavigate} />
@@ -209,6 +209,7 @@ export default function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
           number="3"
           title={t('part3')}
           partPrefix={t('part_prefix')}
+          headerHref={p('049_cover')}
           onNavigate={onNavigate}
           items={[
             { page: '049', label: t('part3_1'), href: p('049') },
