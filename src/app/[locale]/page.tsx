@@ -39,10 +39,10 @@ export default async function HomePage({ params }: Props) {
                     {/* Headings */}
                     <div className="space-y-2">
                         <h1 className="text-xl md:text-3xl lg:text-4xl font-medium leading-tight tracking-tight text-[#264997]">
-                            {isEn ? "PIONEERING ENERGY" : "บุกเบิกพลังงาน"}
+                            {isEn ? "Pioneering Energy" : "บุกเบิกนวัตกรรมพลังงาน"}
                         </h1>
                         <h2 className="text-base md:text-xl lg:text-2xl font-normal tracking-tight text-[#6bbfb3]">
-                            {isEn ? "EMPOWERING TOMORROW" : "สร้างพลังแห่งอนาคต"}
+                            {isEn ? "Empowering Tomorrow" : "เพื่ออนาคตที่ยั่งยืน"}
                         </h2>
                     </div>
 
