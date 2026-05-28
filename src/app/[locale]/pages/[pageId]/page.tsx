@@ -205,7 +205,7 @@ function renderSection(
         content = (
             <div className="w-full relative" style={{ backgroundColor: section.backgroundColor || '#ffffff' }}>
                 {section.desktopFullImage && (
-                    <div className="hidden sm:block w-full relative" style={{ aspectRatio: '1 / 1.4142' }}>
+                    <div className="hidden sm:block w-full relative" style={{ aspectRatio: section.desktopAspectRatio || '1 / 1.4142' }}>
                         <FadeImage
                             src={img(section.desktopFullImage)}
                             alt={section.pageNumber ? `Page ${section.pageNumber}` : "PDF Page"}
