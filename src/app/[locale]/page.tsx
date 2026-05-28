@@ -44,6 +44,18 @@ export default async function HomePage({ params }: Props) {
                         <h2 className="text-base md:text-xl lg:text-2xl font-normal tracking-tight text-[#6bbfb3]">
                             {isEn ? "Empowering Tomorrow" : "เพื่ออนาคตที่ยั่งยืน"}
                         </h2>
+                        <div className="pt-2 space-y-1">
+                            <p className="text-xs md:text-sm font-normal leading-snug text-[#6bbfb3]">
+                                {isEn
+                                    ? "Annual Report 2025 (Form 56-1 One Report)"
+                                    : "รายงานประจำปี 2568 (แบบ 56-1 One Report)"}
+                            </p>
+                            <p className="text-xs md:text-sm font-normal leading-snug text-black">
+                                {isEn
+                                    ? "Banpu Power Public Company Limited"
+                                    : "บริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน)"}
+                            </p>
+                        </div>
                     </div>
 
                     {/* Description */}
@@ -82,7 +94,7 @@ export default async function HomePage({ params }: Props) {
                 <div className="shrink-0 flex items-center justify-center">
                     <div className="w-full max-w-sm mx-auto">
                         <Image
-                            src="/page_1.webp"
+                            src={isEn ? "/page_1_en.webp" : "/page_1_th.webp"}
                             alt="page-1"
                             width={1240}
                             height={1754}

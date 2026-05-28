@@ -2,7 +2,7 @@ import type { PageData } from './types';
 
 const page: PageData = {
     pageId: "049_cover",
-    title: { th: "เอกสารแนบ 1 รายละเอียดเกี่ยวกับคณะกรรมการบริษัทและผู้บริหาร", en: "Attachment 1 Details about the Board of Directors and Management" },
+    title: { th: "การรับรองความถูกต้องของข้อมูล", en: "Certification of Information and Data Accuracy" },
     accentColor: "#264897",
     backgroundColor: "#f0f8ff",
     layout: "pdf_composition",

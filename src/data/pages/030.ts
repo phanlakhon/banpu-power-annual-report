@@ -115,10 +115,6 @@ const page: PageData = {
                         },
                     ],
                 },
-                {
-                    type: "pdf_banner",
-                    src: { th: "/page_030/030_p01_mobile_th.webp", en: "/page_030/030_p01_mobile_en.webp" },
-                },
             ],
         },
     ],
